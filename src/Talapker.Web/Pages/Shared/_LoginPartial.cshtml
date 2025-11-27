@@ -1,0 +1,115 @@
+@using System.Security.Claims
+@using Microsoft.Extensions.Localization
+@using Talapker.Infrastructure
+@using Talapker.Infrastructure.Data
+@using Talapker.Infrastructure.Data.UserAccess
+
+@inject IStringLocalizer<SharedResource> Localizer
+@inject SignInManager<ApplicationUser> SignInManager
+
+<div class="flex items-center gap-3">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <!-- User Profile Dropdown -->
+        <div class="relative group">
+            <button class="flex items-center gap-2 px-4 py-2 rounded-xl bg-card border border-border text-foreground font-medium hover:bg-accent hover:border-accent-foreground/20 transition-all duration-200 shadow-sm hover:shadow-md group">
+                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                    <img 
+                         src="@User.FindFirstValue("image")"
+                         alt="Avatar"
+                         class="w-full h-auto object-cover aspect-square rounded-full  shadow-md transition-transform duration-200 ease-in-out cursor-pointer hover:scale-105"
+                         onerror="this.onerror=null; this.src='/imgs/user.svg';" />
+                </div>
+                <span class="text-sm font-semibold text-primary">
+                    @(User.FindFirstValue("FirstName") + User.FindFirstValue("LastName"))
+                </span>
+                <svg class="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+            
+            <!-- Dropdown Menu -->
+            <div class="absolute top-full right-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="bg-card border border-border rounded-xl shadow-lg p-2 space-y-1">
+                    <a href="/Identity/Account/Manage"
+                       class="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-foreground hover:bg-accent transition-colors duration-150">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        <span>@Localizer["Profile"]</span>
+                    </a>
+                    <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout">
+                        <button type="submit"
+                                class="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-destructive hover:bg-destructive/10 transition-colors duration-150 cursor-pointer">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                            </svg>
+                            <span>@Localizer["Logout"]</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Login Button -->
+        <a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 shadow-md"
+           id="login"
+           asp-area="Identity"
+           asp-page="/Account/Login">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+            </svg>
+            <span>@Localizer["Login"]</span>
+        </a>
+    }
+
+    <!-- Language Selector -->
+    <div class="relative group">
+        <button class="flex items-center gap-2 px-3 py-2 rounded-xl border border-border bg-card text-foreground hover:bg-accent hover:border-accent-foreground/20 transition-all duration-200 shadow-sm hover:shadow-md min-w-[120px]">
+            <svg class="w-4 h-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+            </svg>
+            <span class="text-sm font-medium">Language</span>
+            <svg class="w-4 h-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+        </button>
+        
+        <!-- Language Dropdown -->
+        <div class="absolute top-full right-0 mt-2 w-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="bg-card border border-border rounded-xl shadow-lg p-2 space-y-1">
+                <button onclick="changeLanguage('en')" 
+                        class="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-foreground hover:bg-accent transition-colors duration-150 text-sm">
+                    <span class="w-6 text-center">🇺🇸</span>
+                    <span>English</span>
+                </button>
+                <button onclick="changeLanguage('ru')" 
+                        class="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-foreground hover:bg-accent transition-colors duration-150 text-sm">
+                    <span class="w-6 text-center">🇷🇺</span>
+                    <span>Русский</span>
+                </button>
+                <button onclick="changeLanguage('kk')" 
+                        class="flex items-center gap-3 w-full px-3 py-2 rounded-lg text-foreground hover:bg-accent transition-colors duration-150 text-sm">
+                    <span class="w-6 text-center">🇰🇿</span>
+                    <span>Қазақша</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeLanguage(lang) {
+        localStorage.setItem("culture", lang);
+        document.cookie = `.AspNetCore.Culture=c=${lang}|uic=${lang}; path=/`;
+        window.location.reload();
+    }
+
+    // Set current language in dropdown on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentLang = localStorage.getItem("culture") || 'en';
+        // You could highlight the current language in the dropdown if needed
+    });
+</script>

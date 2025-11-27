@@ -1,0 +1,144 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="min-h-screen flex">
+    <!-- Left Side - Image/Illustration -->
+    <div class="hidden lg:flex lg:flex-1 bg-gradient-to-br from-primary/20 to-primary/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="flex flex-col justify-center items-center w-full px-16">
+            <!-- Illustration Container -->
+            <div class="max-w-md text-center">
+                <div class="w-64 h-64 mx-auto mb-8 bg-primary/10 rounded-full flex items-center justify-center">
+                    <img src="/imgs/logo.svg" alt="Logo" class="size-32">
+                </div>
+                <h2 class="text-3xl font-bold text-foreground mb-4">Welcome to Talapker</h2>
+                <p class="text-muted-foreground text-lg">Your gateway to educational opportunities and career growth</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side - Login Form -->
+    <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-20 xl:px-24">
+        <div class="mx-auto w-full max-w-md">
+            <!-- Logo for Mobile -->
+            <div class="lg:hidden flex justify-center mb-8">
+                <a href="/" class="flex items-center gap-3">
+                    <img src="/imgs/logo.svg" alt="Logo" class="h-12 w-12">
+                    <p class="text-2xl font-bold text-foreground">Talapker</p>
+                </a>
+            </div>
+
+            <!-- Login Card -->
+            <div class="bg-card border border-border rounded-2xl shadow-lg p-8">
+                <!-- Header -->
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl font-bold text-foreground mb-2">Welcome back</h1>
+                    <p class="text-muted-foreground">Sign in to your account</p>
+                </div>
+
+                <form id="account" method="post" class="space-y-6">
+                    <div asp-validation-summary="ModelOnly" class="text-destructive text-sm bg-destructive/10 p-3 rounded-lg" role="alert"></div>
+
+                    <!-- Email Field -->
+                    <div class="space-y-2">
+                        <label asp-for="Input.Email" class="block text-sm font-medium text-foreground">Email address</label>
+                        <input asp-for="Input.Email"
+                               class="w-full px-4 py-3 border border-input rounded-xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                               autocomplete="username"
+                               aria-required="true"
+                               placeholder="Enter your email" />
+                        <span asp-validation-for="Input.Email" class="block text-destructive text-sm"></span>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <label asp-for="Input.Password" class="block text-sm font-medium text-foreground">Password</label>
+                            <a asp-page="./ForgotPassword" class="text-sm text-primary hover:text-primary/90 underline-offset-4 hover:underline transition-colors">
+                                Forgot password?
+                            </a>
+                        </div>
+                        <div class="relative">
+                            <input asp-for="Input.Password"
+                                   id="passwordInput"
+                                   type="password"
+                                   class="w-full px-4 py-3 border border-input rounded-xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 pr-12"
+                                   autocomplete="current-password"
+                                   aria-required="true"
+                                   placeholder="Enter your password" />
+                            <button type="button" 
+                                    onclick="togglePassword()"
+                                    class="absolute right-3 top-1/2 -translate-y-1/2 p-2 text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-accent">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <span asp-validation-for="Input.Password" class="block text-destructive text-sm"></span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                            class="w-full bg-primary text-primary-foreground py-3.5 px-4 rounded-xl font-semibold hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-md">
+                        Sign in
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="mt-8 pt-6 border-t border-border">
+                    <p class="text-center text-sm text-muted-foreground">
+                        Don't have an account? 
+                        <a asp-page="./Register" class="text-primary hover:text-primary/90 font-semibold underline-offset-4 hover:underline transition-colors">
+                            Create account
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="mt-8 text-center">
+                <p class="text-xs text-muted-foreground">
+                    By continuing, you agree to our 
+                    <a href="/terms" class="text-primary hover:text-primary/90 underline-offset-4 hover:underline">Terms of Service</a>
+                    and 
+                    <a href="/privacy" class="text-primary hover:text-primary/90 underline-offset-4 hover:underline">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function togglePassword() {
+            const input = document.getElementById('passwordInput');
+            const button = input.nextElementSibling;
+            const isPassword = input.type === 'password';
+            
+            input.type = isPassword ? 'text' : 'password';
+            
+            // Update icon
+            const svg = button.querySelector('svg');
+            if (isPassword) {
+                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"/>';
+            } else {
+                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>';
+            }
+        }
+    </script>
+}
+
+<style>
+    .bg-grid-pattern {
+        background-image: 
+            linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+</style>

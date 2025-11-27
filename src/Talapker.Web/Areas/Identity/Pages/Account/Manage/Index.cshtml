@@ -1,0 +1,114 @@
+﻿@page
+@model IndexModel
+@using Microsoft.Extensions.Localization
+@using Talapker.Infrastructure
+@using Talapker.UserAccess.Infrastructure
+@inject IStringLocalizer<SharedResource> Localizer
+
+@{
+    ViewData["Title"] = Localizer["Profile"];
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<div class="w-full">
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-2xl font-bold text-foreground">@Localizer["Profile"]</h1>
+        <p class="text-muted-foreground mt-2">@Localizer["ManageYourProfileInformation"]</p>
+    </div>
+
+    <form id="profile-form" method="post" enctype="multipart/form-data" class="space-y-8">
+        <!-- Avatar Section -->
+        <div class="flex flex-col items-center gap-4">
+            <div class="relative group cursor-pointer">
+                <img id="avatar-preview"
+                     src="@Model.Input.InitialAvatarPath"
+                     alt="Avatar"
+                     class="w-32 h-32 rounded-full object-cover shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+                     onerror="this.onerror=null; this.src='/imgs/user.svg';" />
+                
+                <!-- Edit overlay -->
+                <div class="absolute inset-0 bg-black/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <input type="file" id="avatarInput" name="AvatarFile" accept="image/*" class="hidden" />
+            <p class="text-sm text-muted-foreground text-center">
+                Click on the avatar to upload a new photo
+            </p>
+        </div>
+
+        <!-- Form Fields -->
+        <div class="space-y-2">
+            <!-- First Name -->
+            <div class="space-y-2">
+                <label asp-for="Input.FirstName" class="block text-sm font-medium text-foreground">
+                    @Localizer["FirstName"]
+                </label>
+                <input asp-for="Input.FirstName"
+                       class="w-full px-4 py-3 border border-input rounded-xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                       placeholder="Enter your first name" />
+                <span asp-validation-for="Input.FirstName" class="block text-destructive text-sm"></span>
+            </div>
+
+            <!-- Last Name -->
+            <div class="space-y-2">
+                <label asp-for="Input.LastName" class="block text-sm font-medium text-foreground">
+                    @Localizer["LastName"]
+                </label>
+                <input asp-for="Input.LastName"
+                       class="w-full px-4 py-3 border border-input rounded-xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                       placeholder="Enter your last name" />
+                <span asp-validation-for="Input.LastName" class="block text-destructive text-sm"></span>
+            </div>
+        </div>
+
+        <!-- Save Button -->
+        <div class="flex justify-end">
+            <button type="submit"
+                    class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 shadow-sm hover:shadow-md">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                @Localizer["Save"]
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        const fileInput = document.getElementById('avatarInput');
+        const preview = document.getElementById('avatar-preview');
+
+        preview.addEventListener("click", () => fileInput.click());
+
+        fileInput?.addEventListener('change', e => {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            // Validate file type
+            if (!file.type.startsWith('image/')) {
+                alert('Please select an image file');
+                return;
+            }
+            
+            // Validate file size (max 5MB)
+            if (file.size > 5 * 1024 * 1024) {
+                alert('Image size should be less than 5MB');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = () => { 
+                preview.src = reader.result; 
+                preview.classList.add('ring-2', 'ring-primary', 'ring-offset-2');
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+}

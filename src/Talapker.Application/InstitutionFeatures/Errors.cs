@@ -1,0 +1,2 @@
+namespace Talapker.Application.InstitutionFeatures;
+
