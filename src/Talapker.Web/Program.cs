@@ -1,9 +1,7 @@
-using System.Globalization;
-using Microsoft.AspNetCore.Diagnostics;
 using Talapker.Application.UserAccess.Queries.GetUserByIdQuery;
+using Talapker.Infrastructure.AI.TranslationAgent;
 using Talapker.Infrastructure.Auth;
 using Talapker.Infrastructure.AuthZ;
-using Talapker.Infrastructure.Data;
 using Talapker.Infrastructure.Data.UserAccess;
 using Talapker.Infrastructure.Email;
 using Talapker.Infrastructure.Exceptions;
@@ -26,6 +24,7 @@ builder.Host
     .AddAndConfigureWolverine(builder.Configuration, typeof(GetUserByIdQueryHandler).Assembly);
 
 builder.Services
+    .AddTranslationAgent()
     .AddS3Storage(builder.Configuration)
     .AddTalapkerDbContext(builder.Configuration)
     .AddEmailSender(builder.Configuration)

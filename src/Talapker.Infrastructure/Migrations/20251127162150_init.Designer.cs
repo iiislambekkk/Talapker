@@ -12,8 +12,8 @@ using Talapker.Infrastructure.Data;
 namespace Talapker.Infrastructure.Migrations
 {
     [DbContext(typeof(TalapkerDbContext))]
-    [Migration("20251125141955_initial2")]
-    partial class initial2
+    [Migration("20251127162150_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -378,7 +378,78 @@ namespace Talapker.Infrastructure.Migrations
                     b.ToTable("OpenIddictTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Talapker.Infrastructure.Data.ApplicationUser", b =>
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.City", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("LogoKey")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.ToTable("Cities", (string)null);
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Institution", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid?>("CityId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Coordinates")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool?>("HasHousing")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool?>("HasMilitaryDepartment")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("LogoKey")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<long>("MinCostPerYear")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("NationalCode")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("StudentsCount")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("WebSiteUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CityId");
+
+                    b.HasIndex("NationalCode")
+                        .IsUnique();
+
+                    b.ToTable("Institutions", (string)null);
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("text");
@@ -458,84 +529,7 @@ namespace Talapker.Infrastructure.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.City", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid?>("LogoFileReferenceId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("LogoKey")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int?>("SeedId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Id")
-                        .IsUnique();
-
-                    b.ToTable("Cities", (string)null);
-                });
-
-            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Institution", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid?>("CityId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Coordinates")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<bool?>("HasHousing")
-                        .HasColumnType("boolean");
-
-                    b.Property<bool?>("HasMilitaryDepartment")
-                        .HasColumnType("boolean");
-
-                    b.Property<string>("LogoKey")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<long>("MinCostPerYear")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("NationalCode")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("StudentsCount")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("WebSiteUrl")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CityId");
-
-                    b.HasIndex("NationalCode")
-                        .IsUnique();
-
-                    b.ToTable("Institutions", (string)null);
-                });
-
-            modelBuilder.Entity("Talapker.Infrastructure.Data.ApplicationRole", b =>
+            modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.ApplicationRole", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
 
@@ -553,7 +547,7 @@ namespace Talapker.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Talapker.Infrastructure.Data.ApplicationUser", null)
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -562,7 +556,7 @@ namespace Talapker.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Talapker.Infrastructure.Data.ApplicationUser", null)
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -577,8 +571,8 @@ namespace Talapker.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Talapker.Infrastructure.Data.ApplicationUser", null)
-                        .WithMany("Roles")
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", null)
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -586,7 +580,7 @@ namespace Talapker.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Talapker.Infrastructure.Data.ApplicationUser", null)
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -820,11 +814,6 @@ namespace Talapker.Infrastructure.Migrations
             modelBuilder.Entity("OpenIddict.EntityFrameworkCore.Models.OpenIddictEntityFrameworkCoreAuthorization", b =>
                 {
                     b.Navigation("Tokens");
-                });
-
-            modelBuilder.Entity("Talapker.Infrastructure.Data.ApplicationUser", b =>
-                {
-                    b.Navigation("Roles");
                 });
 
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.City", b =>

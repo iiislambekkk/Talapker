@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Talapker.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -61,9 +61,7 @@ namespace Talapker.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    SeedId = table.Column<int>(type: "integer", nullable: true),
                     LogoKey = table.Column<string>(type: "text", nullable: false),
-                    LogoFileReferenceId = table.Column<Guid>(type: "uuid", nullable: true),
                     Name = table.Column<string>(type: "jsonb", nullable: false)
                 },
                 constraints: table =>
@@ -228,6 +226,7 @@ namespace Talapker.Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     NationalCode = table.Column<int>(type: "integer", nullable: false),
+                    Type = table.Column<int>(type: "integer", nullable: false),
                     StudentsCount = table.Column<int>(type: "integer", nullable: false),
                     MinCostPerYear = table.Column<long>(type: "bigint", nullable: false),
                     HasHousing = table.Column<bool>(type: "boolean", nullable: true),

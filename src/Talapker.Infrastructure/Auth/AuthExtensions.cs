@@ -52,12 +52,7 @@ public static class AuthExtensions
     public static IServiceCollection AddAuthenticationAndAuthorization(this IServiceCollection services, IConfiguration configuration)
     {
         services.ConfigureOptions<ConfigureJwtBearerOptions>()
-            .AddAuthentication(options =>
-            {
-                options.DefaultScheme = "OpenIddict.Validation.AspNetCore";
-                options.DefaultChallengeScheme = "OpenIddict.Validation.AspNetCore";
-                options.DefaultAuthenticateScheme = "OpenIddict.Validation.AspNetCore";
-            });
+            .AddAuthentication();
         /*.AddGoogle(opt =>
         {
             opt.ClientId = configuration["Authorize:Google:Id"]!;

@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="AWSSDK.S3" Version="4.0.11.1" />
+        <PackageReference Include="Microsoft.Agents.AI" Version="1.0.0-preview.251125.1" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.8" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
 
@@ -19,6 +20,7 @@
 
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.8" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.8" />
+        <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.0.1-preview.1.25571.5" />
 
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
 

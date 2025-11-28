@@ -12,14 +12,26 @@ public static class Extension
     {
         services.AddAuthorization(options =>
         {
-            options.AddPolicy("SystemAdminOnly", policy => 
-                policy.RequireRole(UserRoles.SystemAdmin));
+            options.AddPolicy("SystemAdminOnly", policy =>
+                {
+                    policy.RequireRole(UserRoles.SystemAdmin);
+                    policy.AuthenticationSchemes = ["OpenIddict.Validation.AspNetCore"];
+                }
+            );
         
-            options.AddPolicy("TenantAdmins", policy => 
-                policy.RequireRole(UserRoles.TenantAdmin, UserRoles.PrimaryTenantAdmin));
+            options.AddPolicy("TenantAdmins", policy =>
+                {
+                    policy.RequireRole(UserRoles.TenantAdmin, UserRoles.PrimaryTenantAdmin);
+                    policy.AuthenticationSchemes = ["OpenIddict.Validation.AspNetCore"];
+                }
+            );
         
-            options.AddPolicy("AllTenantUsers", policy => 
-                policy.RequireRole(UserRoles.TenantAmbassador, UserRoles.TenantAdmin, UserRoles.PrimaryTenantAdmin));
+            options.AddPolicy("AllTenantUsers", policy =>
+                {
+                    policy.RequireRole(UserRoles.TenantAmbassador, UserRoles.TenantAdmin, UserRoles.PrimaryTenantAdmin);
+                    policy.AuthenticationSchemes = ["OpenIddict.Validation.AspNetCore"];
+                }
+            );
         });
         
         services.AddSingleton<IAuthorizationHandler, TenantAuthorizationHandler>();
