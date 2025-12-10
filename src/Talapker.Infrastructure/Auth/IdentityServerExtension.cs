@@ -72,7 +72,7 @@ public static class IdentityServerExtension
         
         services.Configure<OAuthSettings>(configuration.GetSection(nameof(OAuthSettings)));
         
-        if (configuration.GetValue<bool>("seed"))
+        if (Environment.GetCommandLineArgs().Contains("--seed"))
         {
             services.AddHostedService<IdentityServerSeedHostedService>();
         }

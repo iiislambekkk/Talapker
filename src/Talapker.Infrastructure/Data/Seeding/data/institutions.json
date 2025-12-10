@@ -1,0 +1,811 @@
+[
+  {
+    "code": 1,
+    "nameKk": "Астана медицина университеті",
+    "nameRu": "Медицинский университет Астана",
+    "nameEn": "Astana Medical University",
+    "cityId": 5,
+    "website": "https://amu.edu.kz/"
+  },
+  {
+    "code": 2,
+    "nameKk": "С.Сейфуллин атындағы Қазақ агротехникалық зерттеу университеті",
+    "nameRu": "Казахский агротехнический университет имени С.Сейфуллина",
+    "nameEn": "S.Seifullin Kazakh Agro Technical University",
+    "cityId": 5,
+    "website": "https://kazatu.edu.kz/"
+  },
+  {
+    "code": 3,
+    "nameKk": "Ш.Есенов атындағы Каспий технологиялар және инжиниринг университеті",
+    "nameRu": "Каспийский университет технологии и инжиниринга имени Ш.Есенова",
+    "nameEn": "Sh.Yesenov Caspian University of Technology and Engineering",
+    "cityId": 1,
+    "website": "https://yu.edu.kz/"
+  },
+  {
+    "code": 4,
+    "nameKk": "М.Оспанов атындағы Батыс Қазақстан медицина университеті",
+    "nameRu": "Западно-Казахстанский медицинский университет имени М.Оспанова",
+    "nameEn": "M.Ospanov West Kazakhstan Medical University",
+    "cityId": 2,
+    "website": "https://zkmu.kz/"
+  },
+  {
+    "code": 5,
+    "nameKk": "Қ.Жұбанов атындағы Ақтөбе өңірлік университеті",
+    "nameRu": "Актюбинский региональный университет имени К.Жубанова",
+    "nameEn": "K.Zhubanov Aktobe Regional University",
+    "cityId": 2,
+    "website": "http://zhubanov.edu.kz/"
+  },
+  {
+    "code": 6,
+    "nameKk": "Құрманғазы атындағы Қазақ ұлттық консерваториясы",
+    "nameRu": "Казахская национальная консерватория имени Курмангазы",
+    "nameEn": "Kurmanzazy Kazakh National Conservatory",
+    "cityId": 3,
+    "website": "http://www.conservatoire.edu.kz/kz"
+  },
+  {
+    "code": 7,
+    "nameKk": "Абай атындағы Қазақ ұлттық педагогикалық университеті",
+    "nameRu": "Казахский национальный педагогический университет имени Абая",
+    "nameEn": "Abai Kazakh National Pedagogical University",
+    "cityId": 3,
+    "website": "https://www.kaznpu.kz/kz/"
+  },
+  {
+    "code": 8,
+    "nameKk": "Ы.Алтынсарин атындағы Арқалық педагогикалық институты",
+    "nameRu": "Аркалыкский педагогический институт имени Ы.Алтынсарина",
+    "nameEn": "Y.Altynsarin Arkalyk Pedagogical Institute",
+    "cityId": 4,
+    "website": "https://aogu.edu.kz/kk/"
+  },
+  {
+    "code": 9,
+    "nameKk": "Сафи Өтебаев атындағы Атырау мұнай және газ университеті",
+    "nameRu": "Атырауский университет нефти и газа имени Сафи Утебаева",
+    "nameEn": "Safi Utebayev Atyrau University of Oil and Gas",
+    "cityId": 6,
+    "website": "https://aogu.edu.kz/kk/"
+  },
+  {
+    "code": 10,
+    "nameKk": "Халел Досмұхамедов атындағы Атырау университеті",
+    "nameRu": "Атырауский университет имени Халела Досмухамедова",
+    "nameEn": "Kh.Dosmukhamedov Atyrau University",
+    "cityId": 6,
+    "website": "https://asu.edu.kz/"
+  },
+  {
+    "code": 11,
+    "nameKk": "Сәрсен Аманжолов атындағы Шығыс Қазақстан университеті",
+    "nameRu": "Восточно-Казахстанский университет имени Сарсена Аманжолова",
+    "nameEn": "Sarsen Amanzholov East Kazakhstan University",
+    "cityId": 23,
+    "website": "https://www.vku.edu.kz/kk?theme=vkgu"
+  },
+  {
+    "code": 12,
+    "nameKk": "Д.Серікбаев атындағы Шығыс Қазақстан техникалық университеті",
+    "nameRu": "Восточно-Казахстанский технический университет имени Д.Серикбаева",
+    "nameEn": "D.Serikbayev East Kazakhstan Technical University",
+    "cityId": 23,
+    "website": "https://www.ektu.kz/"
+  },
+  {
+    "code": 13,
+    "nameKk": "Л.Н.Гумилев атындағы Еуразия ұлттық университеті",
+    "nameRu": "Евразийский национальный университет имени Л.Н.Гумилева",
+    "nameEn": "L.N.Gumilyov Eurasian National University",
+    "cityId": 5,
+    "website": "https://enu.kz/"
+  },
+  {
+    "code": 14,
+    "nameKk": "Ө.А.Байқоңыров атындағы Жезқазған университеті",
+    "nameRu": "Жезказганский университет имени О.А.Байконурова",
+    "nameEn": "O.A.Baykonurov Zhezkazgan University",
+    "cityId": 7,
+    "website": "https://www.zhezu.kz/"
+  },
+  {
+    "code": 15,
+    "nameKk": "Ілияс Жансүгіров атындағы Жетісу университеті",
+    "nameRu": "Жетысуский университет имени Ильяса Жансугурова",
+    "nameEn": "I.Jansugurov Zhetysu University",
+    "cityId": 17,
+    "website": "https://zhetysu.edu.kz/"
+  },
+  {
+    "code": 16,
+    "nameKk": "М.Өтемісов атындағы Батыс Қазақстан университеті",
+    "nameRu": "Западно-Казахстанский университет имени М.Утемисова",
+    "nameEn": "M.Otemisov West Kazakhstan University",
+    "cityId": 2,
+    "website": "https://wku.edu.kz/ru/"
+  },
+  {
+    "code": 17,
+    "nameKk": "Темірбек Жүргенов атындағы Қазақ ұлттық өнер академиясы",
+    "nameRu": "Казахская национальная академия искусств имени Темирбека Жургенова",
+    "nameEn": "Temirbek Zhurgenov Kazakh National Academy of Arts",
+    "cityId": 3,
+    "website": "https://kaznai.kz/"
+  },
+  {
+    "code": 18,
+    "nameKk": "Қазақ ұлттық өнер университеті",
+    "nameRu": "Казахский национальный университет искусств",
+    "nameEn": "Kazakh National University of Arts",
+    "cityId": 3,
+    "website": "https://kaznui.edu.kz/"
+  },
+  {
+    "code": 19,
+    "nameKk": "Логистика және көлік академиясы",
+    "nameRu": "Академия логистики и транспорта",
+    "nameEn": "Academy of Logistics and Transport",
+    "cityId": 3,
+    "website": "https://alt.edu.kz/"
+  },
+  {
+    "code": 20,
+    "nameKk": "Қазақ спорт және туризм академиясы",
+    "nameRu": "Казахская академия спорта и туризма",
+    "nameEn": "Kazakh Academy of Sport and Tourism",
+    "cityId": 3,
+    "website": "https://kazast.edu.kz/kz/"
+  },
+  {
+    "code": 21,
+    "nameKk": "«Нархоз» университеті",
+    "nameRu": "Университет «Нархоз»",
+    "nameEn": "Narxoz University",
+    "cityId": 3,
+    "website": "https://narxoz.edu.kz/"
+  },
+  {
+    "code": 22,
+    "nameKk": "Халықаралық білім беру корпорациясы",
+    "nameRu": "Международная образовательная корпорация",
+    "nameEn": "International Educational Corporation",
+    "cityId": 3,
+    "website": "http://kaz.mok.edu.kz/"
+  },
+  {
+    "code": 23,
+    "nameKk": "Абылай хан атындағы Қазақ халықаралық қатынастар және әлем тілдері университеті",
+    "nameRu": "Казахский университет международных отношений и мировых языков имени Абылай хана",
+    "nameEn": "Ablai Khan Kazakh University of International Relations and World Languages",
+    "cityId": 3,
+    "website": "https://www.ablaikhan.kz/kz/"
+  },
+  {
+    "code": 24,
+    "nameKk": "Қазақ ұлттық аграрлық зерттеу университеті",
+    "nameRu": "Казахский национальный аграрный исследовательский университет",
+    "nameEn": "Kazakh National Agrarian Research University",
+    "cityId": 3,
+    "website": "https://www.kaznaru.edu.kz/?lang=kz"
+  },
+  {
+    "code": 25,
+    "nameKk": "Қазақ ұлттық қыздар педагогикалық университеті",
+    "nameRu": "Казахский национальный женский педагогический университет",
+    "nameEn": "Kazakh National Women’s Pedagogical University",
+    "cityId": 3,
+    "website": "https://kazmkpu.kz/kz"
+  },
+  {
+    "code": 26,
+    "nameKk": "С.Ж.Асфендияров атындағы Қазақ ұлттық медицина университеті",
+    "nameRu": "Казахский национальный медицинский университет имени С.Д.Асфендиярова",
+    "nameEn": "S.D.Asfendiyarov Kazakh National Medical University",
+    "cityId": 3,
+    "website": "https://kaznmu.edu.kz/"
+  },
+  {
+    "code": 27,
+    "nameKk": "әл-Фараби атындағы Қазақ ұлттық университеті",
+    "nameRu": "Казахский национальный университет имени аль-Фараби",
+    "nameEn": "Al-Farabi Kazakh National University",
+    "cityId": 3,
+    "website": "https://www.kaznu.kz/"
+  },
+  {
+    "code": 29,
+    "nameKk": "Қ.И.Сәтбаев атындағы Қазақ ұлттық техникалық зерттеу университеті",
+    "nameRu": "Казахский национальный исследовательский технический университет имени К.И.Сатпаева",
+    "nameEn": "K.I.Satpayev Kazakh National Research Technical University",
+    "cityId": 3,
+    "website": "https://satbayev.university/"
+  },
+  {
+    "code": 30,
+    "nameKk": "Қарағанды медицина университеті",
+    "nameRu": "Медицинский университет Караганды",
+    "nameEn": "Karaganda Medical University",
+    "cityId": 9,
+    "website": "https://qmu.edu.kz/kz"
+  },
+  {
+    "code": 31,
+    "nameKk": "Е.А.Бөкетов атындағы Қарағанды университеті",
+    "nameRu": "Карагандинский университет имени академика Е.А.Букетова",
+    "nameEn": "E.A.Buketov Karaganda University",
+    "cityId": 9,
+    "website": "https://buketov.edu.kz/"
+  },
+  {
+    "code": 32,
+    "nameKk": "Әбілқас Сағынов атындағы Қарағанды техникалық университеті",
+    "nameRu": "Карагандинский технический университет имени Абылкаса Сагинова",
+    "nameEn": "Abilkass Saginov Karaganda Technical University",
+    "cityId": 9,
+    "website": "https://www.kstu.kz/"
+  },
+  {
+    "code": 33,
+    "nameKk": "Қарағанды индустриялық университеті",
+    "nameRu": "Карагандинский индустриальный университет",
+    "nameEn": "Karaganda Industrial University",
+    "cityId": 9,
+    "website": "https://kgiu.kz/?lang=ru"
+  },
+  {
+    "code": 34,
+    "nameKk": "Қорқыт ата атындағы Қызылорда университеті",
+    "nameRu": "Кызылординский университет имени Коркыт Ата",
+    "nameEn": "Korkyt Ata Kyzylorda University",
+    "cityId": 13,
+    "website": "https://korkyt.edu.kz/"
+  },
+  {
+    "code": 35,
+    "nameKk": "Ш.Уәлиханов атындағы Көкшетау университеті",
+    "nameRu": "Кокшетауский университет имени Ш.Уалиханова",
+    "nameEn": "Sh.Ualikhanov Kokshetau University",
+    "cityId": 11,
+    "website": "https://www.shokan.edu.kz/"
+  },
+  {
+    "code": 36,
+    "nameKk": "Ахмет Байтұрсынов атындағы Қостанай өңірлік университеті",
+    "nameRu": "Костанайский региональный университет имени Ахмета Байтурсынова",
+    "nameEn": "Ahmet Baitursynov Kostanay Regional University",
+    "cityId": 12,
+    "website": "https://ksu.edu.kz/kz/"
+  },
+  {
+    "code": 37,
+    "nameKk": "Қожа Ахмет Ясауи атындағы Халықаралық қазақ-түрік университеті",
+    "nameRu": "Международный казахско-турецкий университет имени Ходжи Ахмеда Ясави",
+    "nameEn": "Khoja Akhmet Yassawi International Kazakh-Turkish University",
+    "cityId": 21,
+    "website": "https://ayu.edu.kz/"
+  },
+  {
+    "code": 38,
+    "nameKk": "Торайғыров университеті",
+    "nameRu": "Торайгыров университет",
+    "nameEn": "Toraygirov University",
+    "cityId": 3,
+    "website": "http://www.tou.edu.kz/"
+  },
+  {
+    "code": 39,
+    "nameKk": "Рудный индустриялық институты",
+    "nameRu": "Рудненский индустриальный институт",
+    "nameEn": "Rudny Industrial Institute",
+    "cityId": 16,
+    "website": "https://www.rii.edu.kz/ru/home-2/"
+  },
+  {
+    "code": 40,
+    "nameKk": "Манаш Қозыбаев атындағы Солтүстік Қазақстан университеті",
+    "nameRu": "Северо-Казахстанский университет имени Манаша Козыбаева",
+    "nameEn": "Manash Kozybayev North Kazakhstan University",
+    "cityId": 15,
+    "website": "https://nku.edu.kz/"
+  },
+  {
+    "code": 41,
+    "nameKk": "«Семей медицина университеті» КеАҚ",
+    "nameRu": "НАО «Медицинский университет Семей»",
+    "nameEn": "Semey Medical University",
+    "cityId": 17,
+    "website": "https://semeymedicaluniversity.kz/"
+  },
+  {
+    "code": 42,
+    "nameKk": "Семей қаласының Шәкәрім атындағы университеті",
+    "nameRu": "Университет имени Шакарима города Семей",
+    "nameEn": "Shakarim University of Semey",
+    "cityId": 17,
+    "website": "https://shakarim.edu.kz/"
+  },
+  {
+    "code": 43,
+    "nameKk": "М.Х.Дулати атындағы Тараз өңірлік университеті",
+    "nameRu": "Таразский региональный университет имени М.Х.Дулати",
+    "nameEn": "M.H.Dulati Taraz Regional University",
+    "cityId": 19,
+    "website": "https://dulaty.kz/"
+  },
+  {
+    "code": 44,
+    "nameKk": "Оңтүстік Қазақстан медицина академиясы",
+    "nameRu": "Южно-Казахстанская медицинская академия",
+    "nameEn": "South Kazakhstan Medical Academy",
+    "cityId": 24,
+    "website": "https://skma.edu.kz/kk"
+  },
+  {
+    "code": 45,
+    "nameKk": "М.Әуезов атындағы Оңтүстік Қазақстан университеті",
+    "nameRu": "Южно-Казахстанский университет имени М.Ауэзова",
+    "nameEn": "M.Auezov South Kazakhstan University",
+    "cityId": 24,
+    "website": "https://auezov.edu.kz/kaz/"
+  },
+  {
+    "code": 47,
+    "nameKk": "А.Қ.Құсайынов атындағы Еуразия гуманитарлық институты",
+    "nameRu": "Евразийский гуманитарный институт имени А.К.Кусаинова",
+    "nameEn": "A.K.Kusainov Eurasian Humanitarian Institute",
+    "cityId": 3,
+    "website": "https://egi.edu.kz/ru/"
+  },
+  {
+    "code": 48,
+    "nameKk": "Қазақ еңбек және әлеуметтік қатынастар академиясы",
+    "nameRu": "Казахская академия труда и социальных отношений",
+    "nameEn": "Kazakh Academy of Labor and Social Relations",
+    "cityId": 3,
+    "website": "https://kazatiso.edu.kz/"
+  },
+  {
+    "code": 49,
+    "nameKk": "Халықаралық инженерлік-технологиялық университеті",
+    "nameRu": "Международный инженерно-технологический университет",
+    "nameEn": "International Engineering and Technology University",
+    "cityId": 3,
+    "website": "https://metu.edu.kz/"
+  },
+  {
+    "code": 53,
+    "nameKk": "Алматы технологиялық университеті",
+    "nameRu": "Алматинский технологический университет",
+    "nameEn": "Almaty University of Technology",
+    "cityId": 3,
+    "website": "https://atu.edu.kz/"
+  },
+  {
+    "code": 57,
+    "nameKk": "Ғұмарбек Дәукеев атындағы Алматы энергетика және байланыс университеті",
+    "nameRu": "Алматинский университет энергетики и связи имени Гумарбека Даукеева",
+    "nameEn": "Gumarbeka Daukeeva Almaty University of Power Engineering and Telecommunications",
+    "cityId": 3,
+    "website": "https://aues.edu.kz/kz"
+  },
+  {
+    "code": 69,
+    "nameKk": "К.Сағадиев атындағы Халықаралық бизнес университеті",
+    "nameRu": "Университет Международного бизнеса им.К.Сагадиева",
+    "nameEn": "K.Sagadiyev International Business University",
+    "cityId": 3,
+    "website": "https://uib.edu.kz/?newlang=english"
+  },
+  {
+    "code": 78,
+    "nameKk": "Л.Б.Гончаров атындағы Қазақ автомобиль-жол институты",
+    "nameRu": "Казахский автомобильно-дорожный институт имени Л.Б.Гончарова",
+    "nameEn": "L.B.Goncharov Kazakh Automobile and Road Institute",
+    "cityId": 3,
+    "website": "https://kazadi.edu.kz/"
+  },
+  {
+    "code": 79,
+    "nameKk": "Каспий қоғамдық университеті",
+    "nameRu": "Каспийский общественный университет",
+    "nameEn": "Caspian Public University",
+    "cityId": 1,
+    "website": "https://cu.edu.kz/"
+  },
+  {
+    "code": 80,
+    "nameKk": "Қазақстан-Ресей медициналық университеті",
+    "nameRu": "Казахстанско-Российский медицинский университет",
+    "nameEn": "Kazakhstan-Russia Medical University",
+    "cityId": 3,
+    "website": "https://krmu.edu.kz/kz/"
+  },
+  {
+    "code": 82,
+    "nameKk": "Қазақстан-Неміс университеті",
+    "nameRu": "Казахстанско-Немецкий университет",
+    "nameEn": "Kazakhstan-Germany University",
+    "cityId": 3,
+    "website": "https://dku.kz/"
+  },
+  {
+    "code": 83,
+    "nameKk": "Алматы менеджмент университеті",
+    "nameRu": "Алматы менеджмент университет",
+    "nameEn": "Almaty Management University",
+    "cityId": 3,
+    "website": "https://almau.edu.kz/"
+  },
+  {
+    "code": 89,
+    "nameKk": "«Қайнар» академиясы",
+    "nameRu": "Академия «Кайнар»",
+    "nameEn": "Kainar Academy",
+    "cityId": 3,
+    "website": "https://www.kainar-edu.kz/kz/"
+  },
+  {
+    "code": 93,
+    "nameKk": "«Тұран» университеті",
+    "nameRu": "Университет «Туран»",
+    "nameEn": "Turan University",
+    "cityId": 3,
+    "website": "https://www.turan-edu.kz/"
+  },
+  {
+    "code": 116,
+    "nameKk": "«Bolashaq» академиясы» Жеке меншік мекемесі",
+    "nameRu": "Частное учреждение «Академия «Bolashaq»",
+    "nameEn": "Private Institution «Bolashaq» Academy",
+    "cityId": 16,
+    "website": "https://bolashaq.edu.kz/"
+  },
+  {
+    "code": 122,
+    "nameKk": "ҚАЗТҰТЫНУОДАҒЫ ҚАРАҒАНДЫ УНИВЕРСИТЕТІ ЖММ",
+    "nameRu": "ЧУ КАРАГАНДИНСКИЙ УНИВЕРСИТЕТ КАЗПОТРЕБСОЮЗА",
+    "nameEn": "KEU Karaganda University of Kazpotrebsoyuz",
+    "cityId": 9,
+    "website": "https://www.keu.kz/ru/"
+  },
+
+  {
+    "code": 133,
+    "nameKk": "«Мирас» университеті",
+    "nameRu": "Университет «Мирас»",
+    "nameEn": "Miras University",
+    "cityId": 3,
+    "website": "https://miras.edu.kz/start/index.html"
+  },
+  {
+    "code": 140,
+    "nameKk": "М.Дулатов атындағы Қостанай инженерлік- экономикалық университеті",
+    "nameRu": "Костанайский инженерно-экономический университет имени М.Дулатова",
+    "nameEn": "M.Dulatov Kostanay Institute of Engineering and Economics",
+    "cityId": 12,
+    "website": "https://kineu.edu.kz/ru"
+  },
+  {
+    "code": 141,
+    "nameKk": "\"ALIKHAN BOKEIKHAN UNIVERSITY\" БІЛІМ БЕРУ МЕКЕМЕСІ",
+    "nameRu": "УЧРЕЖДЕНИЕ ОБРАЗОВАНИЯ \"ALIKHAN BOKEIKHAN UNIVERSITY\"",
+    "nameEn": "Alikhan Bokeikhan University",
+    "cityId": 3,
+    "website": "http://www.kazguiu.edu.kz/kz/"
+  },
+  {
+    "code": 143,
+    "nameKk": "Жұмабек Ахметұлы Тәшенев атындағы университет",
+    "nameRu": "Университет имени Жумабека Ахметулы  Ташенева",
+    "nameEn": "Zhumabek Tashenov University",
+    "cityId": 18,
+    "website": "https://www.syrdariya.edu.kz/kz"
+  },
+  {
+    "code": 145,
+    "nameKk": "Академик Зұлқайнар Алдамжар атындағы Қостанай әлеуметтік-техникалық университеті",
+    "nameRu": "Костанайский социально-технический университет имени академика Зулхарнай Алдамжара",
+    "nameEn": "Academic Z.Aldamzhar Kostanay Social and Technical University",
+    "cityId": 12,
+    "website": "https://kz.testing.kz/universites/Z.Aldamzhar-Kostanay-social-and-technical-university/"
+  },
+  {
+    "code": 146,
+    "nameKk": "Инновациялық Еуразия университеті",
+    "nameRu": "Инновационный Евразийский университет",
+    "nameEn": "Innovative Eurasian University",
+    "cityId": 3,
+    "website": "https://ineu.edu.kz/kz/"
+  },
+  {
+    "code": 147,
+    "nameKk": "Академик Қ.Сәтбаев Екібастұз инженерлік-техникалық институты",
+    "nameRu": "Екибастузский инженерно-технический институт имени академика К.Сатпаева",
+    "nameEn": "Academic K.Satpayev Ekibastuz Engineering-Technical Institute",
+    "cityId": 23,
+    "website": "https://eiti.edu.kz/kz/"
+  },
+  {
+    "code": 151,
+    "nameKk": "Гуманитарлы-Техникалық Академиясы",
+    "nameRu": "Гуманитарно-техническая академия",
+    "nameEn": "Humanitarian-Technical Academy",
+    "cityId": 3,
+    "website": "https://openu.kz/kz/institution/173"
+  },
+  {
+    "code": 153,
+    "nameKk": "Қазақстан-Американдық еркін университеті",
+    "nameRu": "Казахстанско-Американский свободный университет",
+    "nameEn": "Kazakhstan-American Free University",
+    "cityId": 3,
+    "website": "https://kafu.edu.kz/"
+  },
+  {
+    "code": 154,
+    "nameKk": "Алматы гуманитарлық-экономикалық университеті",
+    "nameRu": "Алматинский гуманитарно-экономический университет",
+    "nameEn": "Almaty University of Humanities and Economics",
+    "cityId": 3,
+    "website": "https://www.ageu.edu.kz/"
+  },
+  {
+    "code": 157,
+    "nameKk": "Азаматтық авиация академиясы",
+    "nameRu": "Академия гражданской авиации",
+    "nameEn": "Civil Aviation Academy",
+    "cityId": 3,
+    "website": "https://caa.edu.kz/"
+  },
+  {
+    "code": 158,
+    "nameKk": "Абай Мырзахметов атындағы Көкшетау университеті",
+    "nameRu": "Кокшетауский университет имени Абая Мырзахметова",
+    "nameEn": "A.Myrzakhmetov Kokshetau University",
+    "cityId": 11,
+    "website": "https://kuam.edu.kz/"
+  },
+  {
+    "code": 160,
+    "nameKk": "Еуразия технологиялық университеті",
+    "nameRu": "Евразийский технологический университет",
+    "nameEn": "Eurasian Technological University",
+    "cityId": 3,
+    "website": "https://etu.edu.kz/"
+  },
+  {
+    "code": 162,
+    "nameKk": "Халықаралық көліктік-гуманитарлық университеті",
+    "nameRu": "Международный транспортно-гуманитарный университет",
+    "nameEn": "International Transport and Humanities University",
+    "cityId": 3,
+    "website": "https://openu.kz/kz/institution/117"
+  },
+  {
+    "code": 173,
+    "nameKk": "Esil University",
+    "nameRu": "Esil University",
+    "nameEn": "Esil University",
+    "cityId": 3,
+    "website": "https://kuef.edu.kz/ru/"
+  },
+  {
+    "code": 174,
+    "nameKk": "MAQSUT NARIKBAYEV UNIVERSITY (KAZGUU)",
+    "nameRu": "MAQSUT NARIKBAYEV UNIVERSITY (KAZGUU)",
+    "nameEn": "Maqsut Narikbayev University (KAZGUU)",
+    "cityId": 3,
+    "website": "https://kazguu.kz/ru/"
+  },
+  {
+    "code": 182,
+    "nameKk": "Қазақ технология және бизнес университеті",
+    "nameRu": "Казахский университет технологии и бизнеса",
+    "nameEn": "Kazakh University of Technology and Business",
+    "cityId": 3,
+    "website": "https://kaztbu.edu.kz/ru"
+  },
+  {
+    "code": 184,
+    "nameKk": "«Тұран – Астана» университеті",
+    "nameRu": "Университет «Туран-Астана»",
+    "nameEn": "Turan – Astana University",
+    "cityId": 5,
+    "website": "https://tau-edu.kz/"
+  },
+  {
+    "code": 185,
+    "nameKk": "Астана халықаралық университеті",
+    "nameRu": "Международный университет Астана",
+    "nameEn": "Astana International University",
+    "cityId": 5,
+    "website": "https://www.aiu.edu.kz/ru"
+  },
+  {
+    "code": 190,
+    "nameKk": "Халықаралық ақпараттық технологиялар университеті",
+    "nameRu": "Международный университет информационных технологий",
+    "nameEn": "International University of Information Technologies",
+    "cityId": 3,
+    "website": "https://edu-kz.com/kz/vuzy/instituty/mezhdunarodnyj-universitet-informacionnyh-tehnologij-muit"
+  },
+  {
+    "code": 196,
+    "nameKk": "Оңтүстік Қазақстан мемлекеттік педагогикалық университеті",
+    "nameRu": "Южно-Казахстанский государственный педагогический университет",
+    "nameEn": "South Kazakhstan State Pedagogical University",
+    "cityId": 24,
+    "website": "https://okmpi.kz/"
+  },
+  {
+    "code": 198,
+    "nameKk": "Батыс Қазақстан инновациялық-технологиялық университеті",
+    "nameRu": "Западно-Казахстанский инновационно-технологический университет",
+    "nameEn": "West Kazakhstan Innovative-Technological University",
+    "cityId": 4,
+    "website": "https://wkitu.kz/kk/"
+  },
+  {
+    "code": 199,
+    "nameKk": "Қазақстан инновациялық және телекоммуникациялық жүйелер университеті",
+    "nameRu": "Казахстанский университет инновационных и телекоммуникационных систем",
+    "nameEn": "Kazakhstan University of Innovation and Telecommunication Systems",
+    "cityId": 3,
+    "website": "https://openu.kz/kz/institution/184"
+  },
+  {
+    "code": 200,
+    "nameKk": "Д.Қонаев атындағы Еуразиялық заң академиясы",
+    "nameRu": "Евразийская юридическая академия имени Д.Кунаева",
+    "nameEn": "D.Kunaev Eurasian Law Academy",
+    "cityId": 5,
+    "website": "https://vuzkunaeva.edu.kz/"
+  },
+  {
+    "code": 202,
+    "nameKk": "Академик Ә.Қуатбеков атындағы Халықтар достығы университеті",
+    "nameRu": "Университет дружбы народов имени академика А.Куатбекова",
+    "nameEn": "Academic A.Kuatbekov Peoples' Friendship University",
+    "cityId": 3,
+    "website": "https://udn.edu.kz/ru/home/"
+  },
+  {
+    "code": 205,
+    "nameKk": "Қазақ ұлттық хореография академиясы",
+    "nameRu": "Казахская национальная академия хореографии",
+    "nameEn": "Kazakh National Academy of Choreography",
+    "cityId": 3,
+    "website": "https://balletacademy.edu.kz/ru/home-ru/"
+  },
+  {
+    "code": 223,
+    "nameKk": "Шерхан Мұртаза атындағы Халықаралық Тараз инновациялық институты",
+    "nameRu": "Международный Таразский инновационный институт имени Шерхана Муртазы",
+    "nameEn": "International Taraz Innovative Institute named after Sherkhan Murtaza",
+    "cityId": 24,
+    "website": "https://htii.edu.kz/"
+  },
+  {
+    "code": 302,
+    "nameKk": "Сулейман Демирель атындағы университет",
+    "nameRu": "Университет имени Сулеймана Демиреля",
+    "nameEn": "Suleyman Demirel University",
+    "cityId": 24,
+    "website": "https://sdu.edu.kz/kz/suleyman-demirel-university-kz/"
+  },
+  {
+    "code": 318,
+    "nameKk": "Атырау инженерлік-гуманитарлық институты",
+    "nameRu": "Атырауский инженерно-гуманитарный институт",
+    "nameEn": "Atyrau Institute of Engineering and Humanities",
+    "cityId": 6,
+    "website": "https://aigi.kz/"
+  },
+  {
+    "code": 350,
+    "nameKk": "Қазақстан Республикасы Қорғаныс министрлігінің Құрлық әскерлерінің Әскери институты",
+    "nameRu": "Военный институт Сухопутных войск Министерства обороны Республики Казахстан",
+    "nameEn": "Military Institute of the Ground Forces of the Ministry of Defense of Kazakhstan",
+    "cityId": 5,
+    "website": "https://edu-kz.com/kz/vuzy/instituty/voennyj-institut-suhoputnyh-vojsk-ministerstva-oborony-rk"
+  },
+  {
+    "code": 351,
+    "nameKk": "Қазақстан Республикасы Қорғаныс министрлігінің Кеңес одағының екі мәрте батыры Т.Бигелдинов атындағы Әуе қорғаныс күштерінің әскери институты",
+    "nameRu": "Военный институт сил воздушной обороны имени дважды Героя Советского Союза Т.Бигельдинова Министерства обороны Республики Казахстан",
+    "nameEn": "Air Defense Forces Military Institute named after Twice Hero of the Soviet Union T.Bigeldinov",
+    "cityId": 5,
+    "website": "http://visvo.mil.kz/ru/"
+  },
+  {
+    "code": 353,
+    "nameKk": "Қазақстан Республикасы Ішкі істер министрлігі Төтенше жағдайлар Комитетінің Көкшетау техникалық институты",
+    "nameRu": "Кокшетауский технический институт Комитета по чрезвычайным ситуациям Министерства внутренних дел Республики Казахстан",
+    "nameEn": "Kokshetau Technical Institute of the Committee for Emergency Situations",
+    "cityId": 11,
+    "website": ""
+  },
+  {
+    "code": 354,
+    "nameKk": "Қазақстан Республикасы Ішкі істер министрлігінің М.Есбулатов атындағы Алматы академиясы",
+    "nameRu": "Алматинская академия Министерства внутренних дел Республики Казахстан имени М.Есбулатова",
+    "nameEn": "Almaty Academy of the Ministry of Internal Affairs of Kazakhstan named after M.Esbulatov",
+    "cityId": 3,
+    "website": "https://kz.testing.kz/universites/M.Esbulatov-Almaty-Academy-of-the-Ministry-of-the-Interior-of-the-Republic-of-Kazakhstan/"
+  },
+  {
+    "code": 355,
+    "nameKk": "Қазақстан Республикасы Ішкі істер министрлігінің Б.Бейсенов атындағы Қарағанды академиясы",
+    "nameRu": "Карагандинская академия Министерства внутренних дел Республики Казахстан имени Б.Бейсенова",
+    "nameEn": "Karaganda Academy of the Ministry of Internal Affairs named after B.Beisenov",
+    "cityId": 10,
+    "website": "https://kpa.gov.kz/"
+  },
+  {
+    "code": 356,
+    "nameKk": "Қазақстан Республикасы Ішкі істер министрлігінің Ш.Қабылбаев атындағы Қостанай академиясы",
+    "nameRu": "Костанайская академия Министерства внутренних дел Республики Казахстан имени Ш.Кабылбаева",
+    "nameEn": "Kostanay Academy of the Ministry of Internal Affairs named after Sh.Kabylbayev",
+    "cityId": 12,
+    "website": "https://kostacademy.edu.kz/"
+  },
+  {
+    "code": 357,
+    "nameKk": "Қазақстан Республикасының Ұлттық ұланы Әскери институты",
+    "nameRu": "Военный институт национальной гвардии Республики Казахстан",
+    "nameEn": "National Guard Military Institute of Kazakhstan",
+    "cityId": 5,
+    "website": "http://www.vivv.kz/kaz/"
+  },
+  {
+    "code": 359,
+    "nameKk": "Қазақстан Республикасы Қорғаныс министрлігінің Радиоэлектроника және байланыс әскери-инженерлік институты",
+    "nameRu": "Военно-инженерный институт радиоэлектроники и связи Министерства обороны Республики Казахстан",
+    "nameEn": "Military-Engineering Institute of Radioelectronics and Communications",
+    "cityId": 5,
+    "website": "https://www.viires.kz/kz/"
+  },
+  {
+    "code": 414,
+    "nameKk": "Шымкент университеті",
+    "nameRu": "Шымкентский университет",
+    "nameEn": "Shymkent University",
+    "cityId": 21,
+    "website": "https://univershu.edu.kz/ru/"
+  },
+  {
+    "code": 416,
+    "nameKk": "Баишев Университеті",
+    "nameRu": "Баишев Университет",
+    "nameEn": "Baishev University",
+    "cityId": 2,
+    "website": "https://edu-kz.com/vuzy/universitety/aktyubinskij-universitet-imeni-s-baisheva"
+  },
+  {
+    "code": 421,
+    "nameKk": "Қазақстан-Британ техникалық университеті",
+    "nameRu": "Казахстанско-Британский технический университет",
+    "nameEn": "Kazakhstan-British Technical University",
+    "cityId": 3,
+    "website": "https://kbtu.edu.kz/kz/"
+  },
+  {
+    "code": 501,
+    "nameKk": "Жәңгір хан атындағы Батыс Қазақстан аграрлық-техникалық университеті",
+    "nameRu": "Западно-Казахстанский аграрно-технический университет имени Жангир хана",
+    "nameEn": "Zhangir Khan West Kazakhstan Agrarian-Technical University",
+    "cityId": 4,
+    "website": "https://wkau.kz/ru/"
+  },
+  {
+    "code": 503,
+    "nameKk": "«Нұр-Мүбарак» Египет ислам мәдениеті университеті",
+    "nameRu": "Египетский университет исламской культуры «Нур-Мубарак»",
+    "nameEn": "Nur-Mubarak Egyptian Islamic Cultural University",
+    "cityId": 3,
+    "website": "https://nmu.edu.kz/kk/?lang=KK"
+  }
+]

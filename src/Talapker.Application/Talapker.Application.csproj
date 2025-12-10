@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="FacultyFeatures\Queries\" />
     <Folder Include="UserAccess\Commands\" />
   </ItemGroup>
 

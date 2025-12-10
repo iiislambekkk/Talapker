@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Talapker.Infrastructure.Data.Institution.Configurations;
@@ -33,18 +34,10 @@ public class InstitutionConfiguration : IEntityTypeConfiguration<InstitutionEnti
             a.OwnsOne(x => x.Description, t => t.ToJson());
         });
         
-        /*builder.Property(u => u.Advantages)
-            .HasColumnName("advantages")
-            .HasColumnType("jsonb")
-            .HasConversion(
-                v => JsonSerializer.Serialize(v, (JsonSerializerOptions?)null),
-                v => JsonSerializer.Deserialize<List<UniversityAdvantage>>(v, (JsonSerializerOptions?)null)!
-            );*/
-        
-        /*builder.HasMany(u => u.Faculties)
-            .WithOne(f => f.University)
-            .HasForeignKey(f => f.UniversityId)
-            .OnDelete(DeleteBehavior.Restrict);*/
+        builder.HasMany(u => u.Faculties)
+            .WithOne(f => f.Institution)
+            .HasForeignKey(f => f.InstitutionId)
+            .OnDelete(DeleteBehavior.Restrict);
         
         builder.ToTable("Institutions");
     }

@@ -2,6 +2,7 @@ using Talapker.Application.UserAccess.Queries.GetUserByIdQuery;
 using Talapker.Infrastructure.AI.TranslationAgent;
 using Talapker.Infrastructure.Auth;
 using Talapker.Infrastructure.AuthZ;
+using Talapker.Infrastructure.Data.Seeding;
 using Talapker.Infrastructure.Data.UserAccess;
 using Talapker.Infrastructure.Email;
 using Talapker.Infrastructure.Exceptions;
@@ -27,6 +28,7 @@ builder.Services
     .AddTranslationAgent()
     .AddS3Storage(builder.Configuration)
     .AddTalapkerDbContext(builder.Configuration)
+    .AddDataSeeding()
     .AddEmailSender(builder.Configuration)
     .AddAndConfigureSerilog(builder.Configuration);
 

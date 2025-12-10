@@ -1,0 +1,104 @@
+﻿[
+  {
+    "id": 1,
+    "code": "UNT-01",
+    "firstSubject": 4,
+    "secondSubject": 2
+  },
+  {
+    "id": 2,
+    "code": "UNT-02",
+    "firstSubject": 5,
+    "secondSubject": 5
+  },
+  {
+    "id": 3,
+    "code": "UNT-03",
+    "firstSubject": 6,
+    "secondSubject": 2
+  },
+  {
+    "id": 4,
+    "code": "UNT-04",
+    "firstSubject": 3,
+    "secondSubject": 16
+  },
+  {
+    "id": 5,
+    "code": "UNT-05",
+    "firstSubject": 3,
+    "secondSubject": 7
+  },
+  {
+    "id": 6,
+    "code": "UNT-06",
+    "firstSubject": 4,
+    "secondSubject": 1
+  },
+  {
+    "id": 7,
+    "code": "UNT-07",
+    "firstSubject": 8,
+    "secondSubject": 11
+  },
+  {
+    "id": 8,
+    "code": "UNT-08",
+    "firstSubject": 9,
+    "secondSubject": 12
+  },
+  {
+    "id": 9,
+    "code": "UNT-09",
+    "firstSubject": 10,
+    "secondSubject": 6
+  },
+  {
+    "id": 10,
+    "code": "UNT-10",
+    "firstSubject": 13,
+    "secondSubject": 6
+  },
+  {
+    "id": 11,
+    "code": "UNT-11",
+    "firstSubject": 14,
+    "secondSubject": 6
+  },
+  {
+    "id": 12,
+    "code": "UNT-12",
+    "firstSubject": 3,
+    "secondSubject": 2
+  },
+  {
+    "id": 13,
+    "code": "UNT-13",
+    "firstSubject": 6,
+    "secondSubject": 15
+  },
+  {
+    "id": 14,
+    "code": "UNT-14",
+    "firstSubject": 10,
+    "secondSubject": 2
+  },
+  {
+    "id": 15,
+    "code": "UNT-15",
+    "firstSubject": 13,
+    "secondSubject": 2
+  },
+  {
+    "id": 16,
+    "code": "UNT-16",
+    "firstSubject": 14,
+    "secondSubject": 2
+  },
+  {
+    "id": 17,
+    "code": "UNT-17",
+    "firstSubject": 16,
+    "secondSubject": 1
+  }
+]

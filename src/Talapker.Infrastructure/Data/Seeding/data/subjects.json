@@ -1,0 +1,114 @@
+﻿[
+  {
+    "id": 1,
+    "code": "SUBJ-CHEM",
+    "nameRu": "Химия",
+    "nameKk": "Химия",
+    "nameEn": "Chemistry"
+  },
+  {
+    "id": 2,
+    "code": "SUBJ-GEO",
+    "nameRu": "География",
+    "nameKk": "География",
+    "nameEn": "Geography"
+  },
+  {
+    "id": 3,
+    "code": "SUBJ-MATH",
+    "nameRu": "Математика",
+    "nameKk": "Математика",
+    "nameEn": "Mathematics"
+  },
+  {
+    "id": 4,
+    "code": "SUBJ-BIO",
+    "nameRu": "Биология",
+    "nameKk": "Биология",
+    "nameEn": "Biology"
+  },
+  {
+    "id": 5,
+    "code": "SUBJ-CREAT",
+    "nameRu": "Творческий экзамен",
+    "nameKk": "Шығармашылық емтихан",
+    "nameEn": "Creative exam"
+  },
+  {
+    "id": 6,
+    "code": "SUBJ-WORLDHIS",
+    "nameRu": "Всемирная история",
+    "nameKk": "Дүниежүзі тарихы",
+    "nameEn": "World history"
+  },
+  {
+    "id": 7,
+    "code": "SUBJ-COMP",
+    "nameRu": "Информатика",
+    "nameKk": "Информатика",
+    "nameEn": "Computer science"
+  },
+  {
+    "id": 8,
+    "code": "SUBJ-KAZLANG",
+    "nameRu": "Казахский язык",
+    "nameKk": "Қазақ тілі",
+    "nameEn": "Kazakh language"
+  },
+  {
+    "id": 9,
+    "code": "SUBJ-RUSLANG",
+    "nameRu": "Русский язык",
+    "nameKk": "Орыс тілі",
+    "nameEn": "Russian language"
+  },
+  {
+    "id": 10,
+    "code": "SUBJ-ENG",
+    "nameRu": "Английский язык",
+    "nameKk": "Ағылшын тілі",
+    "nameEn": "English language"
+  },
+  {
+    "id": 11,
+    "code": "SUBJ-KAZLIT",
+    "nameRu": "Казахская литература",
+    "nameKk": "Қазақ әдебиеті",
+    "nameEn": "Kazakh literature"
+  },
+  {
+    "id": 12,
+    "code": "SUBJ-RUSLIT",
+    "nameRu": "Русская литература",
+    "nameKk": "Орыс әдебиеті",
+    "nameEn": "Russian literature"
+  },
+  {
+    "id": 13,
+    "code": "SUBJ-DEUTSH",
+    "nameRu": "Немецкий язык",
+    "nameKk": "Неміс тілі",
+    "nameEn": "German language"
+  },
+  {
+    "id": 14,
+    "code": "SUBJ-FRENCH",
+    "nameRu": "Французский язык",
+    "nameKk": "Француз тілі",
+    "nameEn": "French language"
+  },
+  {
+    "id": 15,
+    "code": "SUBJ-LAW",
+    "nameRu": "Основы права",
+    "nameKk": "Құқық негіздері",
+    "nameEn": "Fundamentals of law"
+  },
+  {
+    "id": 16,
+    "code": "SUBJ-PHYS",
+    "nameRu": "Физика",
+    "nameKk": "Физика",
+    "nameEn": "Physics"
+  }
+]

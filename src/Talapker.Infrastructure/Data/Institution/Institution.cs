@@ -23,7 +23,7 @@ public class Institution
     
     public Guid? CityId { get; set; }
     public City? City { get; set; }
-    // public List<Faculty> Faculties { get; set; } = new();
+    public List<Faculty> Faculties { get; set; } = new();
     
     // public List<GrantCompetitionStatistic> GrantCompetitionStatistics { get; set; } = new ();
 }

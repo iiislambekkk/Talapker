@@ -48,4 +48,11 @@
       <AdditionalFiles Include="Resources\SharedResource.ru.resx" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="Data\Seeding\data\**\*.*">
+            <Link>SeedingData\%(RecursiveDir)%(Filename)%(Extension)</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
 </Project>

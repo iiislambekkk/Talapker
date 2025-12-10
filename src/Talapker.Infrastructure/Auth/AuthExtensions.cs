@@ -41,7 +41,7 @@ public static class AuthExtensions
             .AddEntityFrameworkStores<TalapkerDbContext>()
             .AddDefaultTokenProviders();
 
-        if (configuration.GetValue<bool>("seed"))
+        if (Environment.GetCommandLineArgs().Contains("--seed"))
         {
             services.AddHostedService<IdentitySeedHostedService>();
         }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Talapker.Application;
 using Talapker.Application.InstitutionFeatures.Commands.AssignPrimaryTenantAdmin;
+using Talapker.Application.InstitutionFeatures.Commands.ChangeInstitutionAdvantages;
 using Talapker.Application.InstitutionFeatures.Commands.ChangeInstitutionDescription;
 using Talapker.Application.InstitutionFeatures.Commands.ChangeInstitutionGeneralInfo;
 using Talapker.Application.InstitutionFeatures.Commands.CreateInstitution;
@@ -73,6 +74,14 @@ public class InstitutionsController(IMessageBus messageBus) : ControllerBase
     [HttpPut("{tenantId:guid}/edit/description")]
     [TenantAuthorize(Policy = AuthorizationPolicies.TenantAdmins)]
     public async Task<ActionResult<ApiResponse>> ChangeDescription(ChangeInstitutionDescriptionCommand command)
+    {
+        await messageBus.InvokeAsync(command);
+        return Ok();
+    }
+    
+    [HttpPut("{tenantId:guid}/edit/advantages")]
+    [TenantAuthorize(Policy = AuthorizationPolicies.TenantAdmins)]
+    public async Task<ActionResult<ApiResponse>> ChangeDescription(ChangeInstitutionAdvantagesCommand command)
     {
         await messageBus.InvokeAsync(command);
         return Ok();

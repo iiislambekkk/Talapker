@@ -76,7 +76,6 @@ public static class InstitutionMapper
     {
         return new InstitutionAdvantageDto
         {
-            Id = adv.Id,
             Title = adv.Title.Resolve(lang),
             Description = adv.Description.Resolve(lang)
         };
@@ -86,7 +85,6 @@ public static class InstitutionMapper
     {
         return new InstitutionAdvantageAdminDto
         {
-            Id = adv.Id,
             Title = adv.Title,
             Description = adv.Description
         };

@@ -22,6 +22,21 @@ namespace Talapker.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("EducationGroupUntPair", b =>
+                {
+                    b.Property<Guid>("EducationGroupsId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("UntSubjectsPairsId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("EducationGroupsId", "UntSubjectsPairsId");
+
+                    b.HasIndex("UntSubjectsPairsId");
+
+                    b.ToTable("EducationGroupUntPair");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -393,6 +408,136 @@ namespace Talapker.Infrastructure.Migrations
                     b.ToTable("Cities", (string)null);
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.EducationDirection", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Degree")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EducationDirections");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.GrantCompetitionStatistic", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("CompetitionType")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("EducationGroupId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("MinScore")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationGroupId");
+
+                    b.HasIndex("Year", "EducationGroupId", "CompetitionType")
+                        .IsUnique();
+
+                    b.ToTable("GrantCompetitionStatistics");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationField", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("EducationDirectionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("NationalCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationDirectionId");
+
+                    b.HasIndex("NationalCode")
+                        .IsUnique();
+
+                    b.ToTable("EducationFields");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationGroup", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("EducationFieldId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("NationalCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationFieldId");
+
+                    b.HasIndex("NationalCode")
+                        .IsUnique();
+
+                    b.ToTable("EducationGroups");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationProgram", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("EducationGroupId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("FacultyId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EducationGroupId");
+
+                    b.HasIndex("FacultyId");
+
+                    b.ToTable("EducationPrograms");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Faculty", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("InstitutionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("name");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InstitutionId");
+
+                    b.ToTable("faculties", (string)null);
+                });
+
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Institution", b =>
                 {
                     b.Property<Guid>("Id")
@@ -444,6 +589,55 @@ namespace Talapker.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Institutions", (string)null);
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.UntPair", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("FirstSubjectId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("SecondSubjectId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int?>("SeedId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FirstSubjectId");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.HasIndex("SecondSubjectId");
+
+                    b.ToTable("UntPairs", (string)null);
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.UntSubject", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("jsonb")
+                        .HasColumnName("description");
+
+                    b.Property<int?>("SeedId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.ToTable("UntSubjects", (string)null);
                 });
 
             modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", b =>
@@ -531,6 +725,21 @@ namespace Talapker.Infrastructure.Migrations
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
 
                     b.HasDiscriminator().HasValue("ApplicationRole");
+                });
+
+            modelBuilder.Entity("EducationGroupUntPair", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationGroup", null)
+                        .WithMany()
+                        .HasForeignKey("EducationGroupsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.UntPair", null)
+                        .WithMany()
+                        .HasForeignKey("UntSubjectsPairsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -641,6 +850,249 @@ namespace Talapker.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.EducationDirection", b =>
+                {
+                    b.OwnsOne("Talapker.Infrastructure.LocalizedText", "Name", b1 =>
+                        {
+                            b1.Property<Guid>("EducationDirectionId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("En")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Kk")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Ru")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("EducationDirectionId");
+
+                            b1.ToTable("EducationDirections");
+
+                            b1.ToJson("Name");
+
+                            b1.WithOwner()
+                                .HasForeignKey("EducationDirectionId");
+                        });
+
+                    b.Navigation("Name")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.GrantCompetitionStatistic", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationGroup", "EducationGroup")
+                        .WithMany("GrantCompetitionStatistics")
+                        .HasForeignKey("EducationGroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsMany("Talapker.Infrastructure.Data.Institution.GrantCompetitionRecord", "Records", b1 =>
+                        {
+                            b1.Property<Guid>("GrantCompetitionStatisticId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<int>("__synthesizedOrdinal")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer");
+
+                            b1.Property<int>("Score")
+                                .HasColumnType("integer");
+
+                            b1.Property<int>("UniversityCode")
+                                .HasColumnType("integer");
+
+                            b1.HasKey("GrantCompetitionStatisticId", "__synthesizedOrdinal");
+
+                            b1.ToTable("GrantCompetitionStatistics");
+
+                            b1.ToJson("Records");
+
+                            b1.WithOwner()
+                                .HasForeignKey("GrantCompetitionStatisticId");
+                        });
+
+                    b.Navigation("EducationGroup");
+
+                    b.Navigation("Records");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationField", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.EducationDirection", "EducationDirection")
+                        .WithMany("EducationFields")
+                        .HasForeignKey("EducationDirectionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.OwnsOne("Talapker.Infrastructure.LocalizedText", "Name", b1 =>
+                        {
+                            b1.Property<Guid>("EducationFieldId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("En")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Kk")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Ru")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("EducationFieldId");
+
+                            b1.ToTable("EducationFields");
+
+                            b1.ToJson("Name");
+
+                            b1.WithOwner()
+                                .HasForeignKey("EducationFieldId");
+                        });
+
+                    b.Navigation("EducationDirection");
+
+                    b.Navigation("Name")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationGroup", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationField", "EducationField")
+                        .WithMany("EducationGroups")
+                        .HasForeignKey("EducationFieldId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.OwnsOne("Talapker.Infrastructure.LocalizedText", "Name", b1 =>
+                        {
+                            b1.Property<Guid>("EducationGroupId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("En")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Kk")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Ru")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("EducationGroupId");
+
+                            b1.ToTable("EducationGroups");
+
+                            b1.ToJson("Name");
+
+                            b1.WithOwner()
+                                .HasForeignKey("EducationGroupId");
+                        });
+
+                    b.Navigation("EducationField");
+
+                    b.Navigation("Name")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationProgram", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationGroup", "EducationGroup")
+                        .WithMany("EducationPrograms")
+                        .HasForeignKey("EducationGroupId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Faculty", "Faculty")
+                        .WithMany("EducationPrograms")
+                        .HasForeignKey("FacultyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Talapker.Infrastructure.LocalizedText", "Description", b1 =>
+                        {
+                            b1.Property<Guid>("EducationProgramId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("En")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Kk")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Ru")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("EducationProgramId");
+
+                            b1.ToTable("EducationPrograms");
+
+                            b1.ToJson("Description");
+
+                            b1.WithOwner()
+                                .HasForeignKey("EducationProgramId");
+                        });
+
+                    b.OwnsOne("Talapker.Infrastructure.LocalizedText", "Name", b1 =>
+                        {
+                            b1.Property<Guid>("EducationProgramId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<string>("En")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Kk")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Ru")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("EducationProgramId");
+
+                            b1.ToTable("EducationPrograms");
+
+                            b1.ToJson("Name");
+
+                            b1.WithOwner()
+                                .HasForeignKey("EducationProgramId");
+                        });
+
+                    b.Navigation("Description")
+                        .IsRequired();
+
+                    b.Navigation("EducationGroup");
+
+                    b.Navigation("Faculty");
+
+                    b.Navigation("Name")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Faculty", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Institution", "Institution")
+                        .WithMany("Faculties")
+                        .HasForeignKey("InstitutionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Institution");
+                });
+
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Institution", b =>
                 {
                     b.HasOne("Talapker.Infrastructure.Data.Institution.City", "City")
@@ -710,9 +1162,6 @@ namespace Talapker.Infrastructure.Migrations
                             b1.Property<int>("__synthesizedOrdinal")
                                 .ValueGeneratedOnAdd()
                                 .HasColumnType("integer");
-
-                            b1.Property<Guid>("Id")
-                                .HasColumnType("uuid");
 
                             b1.HasKey("InstitutionId", "__synthesizedOrdinal");
 
@@ -801,6 +1250,25 @@ namespace Talapker.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.UntPair", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.UntSubject", "FirstSubject")
+                        .WithMany()
+                        .HasForeignKey("FirstSubjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.InstitutionEntity.UntSubject", "SecondSubject")
+                        .WithMany()
+                        .HasForeignKey("SecondSubjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("FirstSubject");
+
+                    b.Navigation("SecondSubject");
+                });
+
             modelBuilder.Entity("OpenIddict.EntityFrameworkCore.Models.OpenIddictEntityFrameworkCoreApplication", b =>
                 {
                     b.Navigation("Authorizations");
@@ -816,6 +1284,33 @@ namespace Talapker.Infrastructure.Migrations
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.City", b =>
                 {
                     b.Navigation("Institutions");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.EducationDirection", b =>
+                {
+                    b.Navigation("EducationFields");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationField", b =>
+                {
+                    b.Navigation("EducationGroups");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.EducationGroup", b =>
+                {
+                    b.Navigation("EducationPrograms");
+
+                    b.Navigation("GrantCompetitionStatistics");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Faculty", b =>
+                {
+                    b.Navigation("EducationPrograms");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.InstitutionEntity.Institution", b =>
+                {
+                    b.Navigation("Faculties");
                 });
 #pragma warning restore 612, 618
         }

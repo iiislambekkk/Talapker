@@ -1,0 +1,2120 @@
+[
+ {
+  "id": 0,
+  "degreeEn": "bachelor",
+  "degreeKk": "Бакалавриат",
+  "degreeRu": "Бакалавриат",
+  "domains": [
+   {
+    "domainCode": 1,
+    "domainDescriptionRu": "Педагогические науки",
+    "domainDescriptionKk": "Педагогикалық Ғылымдар",
+    "domainDescriptionEn": "Pedagogical sciences",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "6B011",
+      "fieldDescriptionRu": "Педагогика и психология",
+      "fieldDescriptionKk": "Педагогика және психология",
+      "fieldDescriptionEn": "Pedagogy and psychology",
+      "groups": [
+       {
+        "code": "B001",
+        "descriptionRu": "Педагогика и психология",
+        "descriptionKk": "Педагогика және психология",
+        "descriptionEn": "Pedagogy and psychology",
+        "subjectPairsCodes": [1]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В012",
+      "fieldDescriptionRu": "Педагогика дошкольного воспитания и обучения",
+      "fieldDescriptionKk": "Мектепке дейінгі тәрбиелеу және оқыту педагогикасы",
+      "fieldDescriptionEn": "Preschool education and training pedagogy",
+      "groups": [
+       {
+        "code": "B002",
+        "descriptionRu": "Дошкольное обучение и воспитание",
+        "descriptionKk": "Мектепке дейінгі оқыту және тәрбиелеу",
+        "descriptionEn": "Preschool education and upbringing",
+        "subjectPairsCodes": [1]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В013",
+      "fieldDescriptionRu": "Подготовка учителей без предметной специализации",
+      "fieldDescriptionKk": "Пәндік мамандандырусыз мұғалімдерді даярлау",
+      "fieldDescriptionEn": "Teacher training without subject specialization",
+      "groups": [
+       {
+        "code": "B003",
+        "descriptionRu": "Педагогика и методика начального обучения",
+        "descriptionKk": "Бастауыш оқытудың педагогикасы мен әдістемесі",
+        "descriptionEn": "Pedagogy and methodology of primary education",
+        "subjectPairsCodes": [1]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В014",
+      "fieldDescriptionRu": "Подготовка учителей с предметной специализацией общего развития",
+      "fieldDescriptionKk": "Жалпы даму пәндері бойынша мамандандырылған мұғалімдерді даярлау",
+      "fieldDescriptionEn": "Teacher training with subject specialization in general development",
+      "groups": [
+       {
+        "code": "B004",
+        "descriptionRu": "Подготовка учителей начальной военной подготовки",
+        "descriptionKk": "Алғашқы әскери дайындық мұғалімдерін даярлау",
+        "descriptionEn": "Training of initial military training teachers",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B005",
+        "descriptionRu": "Подготовка учителей физической культуры",
+        "descriptionKk": "Дене шынықтыру мұғалімдерін даярлау",
+        "descriptionEn": "Training of physical education teachers",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B006",
+        "descriptionRu": "Подготовка учителей музыки",
+        "descriptionKk": "Музыка мұғалімдерін даярлау",
+        "descriptionEn": "Training of music teachers",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B007",
+        "descriptionRu": "Подготовка учителей художественного труда и черчения",
+        "descriptionKk": "Көркем еңбек және сызу мұғалімдерін даярлау",
+        "descriptionEn": "Training of art and drafting teachers",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B008",
+        "descriptionRu": "Подготовка учителей основы права и экономики",
+        "descriptionKk": "Құқық және экономика негіздері мұғалімдерін даярлау",
+        "descriptionEn": "Training of law and economics teachers",
+        "subjectPairsCodes": [3]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В015",
+      "fieldDescriptionRu": "Подготовка учителей по естественнонаучным предметам",
+      "fieldDescriptionKk": "Жаратылыстану пәндері мұғалімдерін даярлау",
+      "fieldDescriptionEn": "Training of natural sciences teachers",
+      "groups": [
+       {
+        "code": "B009",
+        "descriptionRu": "Подготовка учителей математики",
+        "descriptionKk": "Математика мұғалімдерін даярлау",
+        "descriptionEn": "Training of mathematics teachers",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B010",
+        "descriptionRu": "Подготовка учителей физики",
+        "descriptionKk": "Физика мұғалімдерін даярлау",
+        "descriptionEn": "Training of physics teachers",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B011",
+        "descriptionRu": "Подготовка учителей информатики",
+        "descriptionKk": "Информатика мұғалімдерін даярлау",
+        "descriptionEn": "Training of informatics teachers",
+        "subjectPairsCodes": [5]
+       },
+       {
+        "code": "B012",
+        "descriptionRu": "Подготовка учителей химии",
+        "descriptionKk": "Химия мұғалімдерін даярлау",
+        "descriptionEn": "Training of chemistry teachers",
+        "subjectPairsCodes": [6]
+       },
+       {
+        "code": "B013",
+        "descriptionRu": "Подготовка учителей биологии",
+        "descriptionKk": "Биология мұғалімдерін даярлау",
+        "descriptionEn": "Training of biology teachers",
+        "subjectPairsCodes": [6]
+       },
+       {
+        "code": "B014",
+        "descriptionRu": "Подготовка учителей географии",
+        "descriptionKk": "География мұғалімдерін даярлау",
+        "descriptionEn": "Training of geography teachers",
+        "subjectPairsCodes": [3]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В016",
+      "fieldDescriptionKk": "Гуманитарлық пәндер мұғалімдерін даярлау",
+      "fieldDescriptionRu": "Подготовка учителей по гуманитарным предметам",
+      "fieldDescriptionEn": "Training of teachers in humanities",
+      "groups": [
+       {
+        "code": "B015",
+        "descriptionKk": "Гуманитарлық пәндер мұғалімдерін даярлау",
+        "descriptionRu": "Подготовка учителей по гуманитарным предметам",
+        "descriptionEn": "Training of teachers in humanities",
+        "subjectPairsCodes": [3]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В017",
+      "fieldDescriptionKk": "Тілдер мен әдебиет мұғалімдерін даярлау",
+      "fieldDescriptionRu": "Подготовка учителей по языкам и литературе",
+      "fieldDescriptionEn": "Training of teachers in languages and literature",
+      "groups": [
+       {
+        "code": "B016",
+        "descriptionKk": "Қазақ тілі мен әдебиеті мұғалімдерін даярлау",
+        "descriptionRu": "Подготовка учителей казахского языка и литературы",
+        "descriptionEn": "Training of teachers of Kazakh language and literature",
+        "subjectPairsCodes": [7]
+       },
+       {
+        "code": "B017",
+        "descriptionKk": "Орыс тілі мен әдебиеті мұғалімдерін даярлау",
+        "descriptionRu": "Подготовка учителей русского языка и литературы",
+        "descriptionEn": "Training of teachers of Russian language and literature",
+        "subjectPairsCodes": [8]
+       },
+       {
+        "code": "B018",
+        "descriptionKk": "Шетел тілі мұғалімдерін даярлау",
+        "descriptionRu": "Подготовка учителей иностранного языка",
+        "descriptionEn": "Training of teachers of foreign languages",
+        "subjectPairsCodes": [9, 10, 11]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В018",
+      "fieldDescriptionKk": "Әлеуметтік педагогика және өзін-өзі тану мамандарын даярлау",
+      "fieldDescriptionRu": "Подготовка специалистов по социальной педагогике и самопознанию",
+      "fieldDescriptionEn": "Training of specialists in social pedagogy and self-knowledge",
+      "groups": [
+       {
+        "code": "B019",
+        "descriptionKk": "Әлеуметтік педагогтарды даярлау",
+        "descriptionRu": "Подготовка cоциальных педагогов",
+        "descriptionEn": "Training of social pedagogues",
+        "subjectPairsCodes": [1]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В019",
+      "fieldDescriptionKk": "Арнайы педагогика мамандарын даярлау",
+      "fieldDescriptionRu": "Подготовка специалистов по специальной педагогике",
+      "fieldDescriptionEn": "Training of specialists in special pedagogy",
+      "groups": [
+       {
+        "code": "B020",
+        "descriptionKk": "Арнайы педагогика",
+        "descriptionRu": "Специальная педагогика",
+        "descriptionEn": "Special pedagogy",
+        "subjectPairsCodes": [1]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В01088",
+      "fieldDescriptionKk": "Педагогикалық ғылымдармен байланысты пәнаралық бағдарламалар",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные педагогическими науками",
+      "fieldDescriptionEn": "Interdisciplinary programs related to pedagogical sciences",
+      "groups": []
+     }
+    ]
+   },
+
+   {
+    "domainCode": 2,
+    "domainDescriptionRu": "Искусство и гуманитарные науки",
+    "domainDescriptionEn": "Өнер және гуманитарлық ғылымдар",
+    "domainDescriptionKk": "Искусство и гуманитарные науки",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "6B021",
+      "fieldDescriptionRu": "Искусство",
+      "fieldDescriptionKk": "Өнер",
+      "fieldDescriptionEn": "Art",
+      "groups": [
+       {
+        "code": "B021",
+        "descriptionRu": "Исполнительское искусство",
+        "descriptionKk": "Орындаушылық өнер",
+        "descriptionEn": "Performing arts",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B022",
+        "descriptionRu": "Музыковедение",
+        "descriptionKk": "Музыкатану",
+        "descriptionEn": "Musicology",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B023",
+        "descriptionRu": "Режиссура, арт-менеджмент",
+        "descriptionKk": "Режиссура, арт-менеджмент",
+        "descriptionEn": "Directing, art management",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B024",
+        "descriptionRu": "Искусствоведение",
+        "descriptionKk": "Өнертану",
+        "descriptionEn": "Art history",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B025",
+        "descriptionRu": "Дирижирование",
+        "descriptionKk": "Дирижерлік",
+        "descriptionEn": "Conducting",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B026",
+        "descriptionRu": "Композиция",
+        "descriptionKk": "Композиция",
+        "descriptionEn": "Composition",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B027",
+        "descriptionRu": "Театральное искусство",
+        "descriptionKk": "Театр өнері",
+        "descriptionEn": "Theatrical art",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B028",
+        "descriptionRu": "Хореография",
+        "descriptionKk": "Хореография",
+        "descriptionEn": "Choreography",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B029",
+        "descriptionRu": "Аудиовизуальные средства и медиа производство",
+        "descriptionKk": "Аудиовизуалды құралдар және медиа өндіріс",
+        "descriptionEn": "Audiovisual media and production",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B030",
+        "descriptionRu": "Изобразительное искусство",
+        "descriptionKk": "Бейнелеу өнері",
+        "descriptionEn": "Fine arts",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B031",
+        "descriptionRu": "Мода, дизайн",
+        "descriptionKk": "Мода, дизайн",
+        "descriptionEn": "Fashion, design",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B099",
+        "descriptionRu": "Инструментальное исполнительство",
+        "descriptionKk": "Аспаптық орындаушылық",
+        "descriptionEn": "Instrumental performance",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B100",
+        "descriptionRu": "Вокальное искусство",
+        "descriptionKk": "Вокалдық өнер",
+        "descriptionEn": "Vocal art",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B101",
+        "descriptionRu": "Традиционное музыкальное искусство",
+        "descriptionKk": "Дәстүрлі музыкалық өнер",
+        "descriptionEn": "Traditional musical art",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B102",
+        "descriptionRu": "Искусство эстрады",
+        "descriptionKk": "Эстрадалық өнер",
+        "descriptionEn": "Pop art",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B103",
+        "descriptionRu": "Режиссура кино и ТВ",
+        "descriptionKk": "Кино және ТВ режиссурасы",
+        "descriptionEn": "Film and TV directing",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B104",
+        "descriptionRu": "Режиссура сценических искусств и цирка",
+        "descriptionKk": "Сахналық өнер мен цирк режиссурасы",
+        "descriptionEn": "Stage and circus directing",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B105",
+        "descriptionRu": "Режиссура анимации",
+        "descriptionKk": "Анимация режиссурасы",
+        "descriptionEn": "Animation directing",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B106",
+        "descriptionRu": "Операторское и фото искусство",
+        "descriptionKk": "Операторлық және фотоөнер",
+        "descriptionEn": "Cinematography and photography",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B107",
+        "descriptionRu": "Медиаискусство и цифровые технологии",
+        "descriptionKk": "Медиаөнер және цифрлық технологиялар",
+        "descriptionEn": "Media art and digital technologies",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B108",
+        "descriptionRu": "Сценография",
+        "descriptionKk": "Сценография",
+        "descriptionEn": "Scenography",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B109",
+        "descriptionRu": "Декоративное искусство",
+        "descriptionKk": "Декоративтік өнер",
+        "descriptionEn": "Decorative art",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B110",
+        "descriptionRu": "Фэшн дизайн",
+        "descriptionKk": "Фэшн дизайн",
+        "descriptionEn": "Fashion design",
+        "subjectPairsCodes": [2]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B022",
+      "fieldDescriptionRu": "Гуманитарные науки",
+      "fieldDescriptionKk": "Гуманитарлық ғылымдар",
+      "fieldDescriptionEn": "Humanities",
+      "groups": [
+       {
+        "code": "B032",
+        "descriptionRu": "Философия и этика",
+        "descriptionKk": "Философия және этика",
+        "descriptionEn": "Philosophy and Ethics",
+        "subjectPairsCodes": [3]
+       },
+       {
+        "code": "B033",
+        "descriptionRu": "Религия и теология",
+        "descriptionKk": "Дінтану және теология",
+        "descriptionEn": "Religion and Theology",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B034",
+        "descriptionRu": "История",
+        "descriptionKk": "Тарих",
+        "descriptionEn": "History",
+        "subjectPairsCodes": [3]
+       },
+       {
+        "code": "B035",
+        "descriptionRu": "Тюркология",
+        "descriptionKk": "Түркология",
+        "descriptionEn": "Turkology",
+        "subjectPairsCodes": [9, 10, 11]
+       },
+       {
+        "code": "B134",
+        "descriptionRu": "Археология и этнология",
+        "descriptionKk": "Археология және этнология",
+        "descriptionEn": "Archaeology and Ethnology",
+        "subjectPairsCodes": [3]
+       },
+       {
+        "code": "B135",
+        "descriptionRu": "Востоковедение",
+        "descriptionKk": "Шығыстану",
+        "descriptionEn": "Oriental Studies",
+        "subjectPairsCodes": [9, 10, 11]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B023",
+      "fieldDescriptionRu": "Языки и литература",
+      "fieldDescriptionKk": "Тілдер және әдебиет",
+      "fieldDescriptionEn": "Languages and Literature",
+      "groups": [
+       {
+        "code": "B036",
+        "descriptionRu": "Переводческое дело",
+        "descriptionKk": "Аударма ісі",
+        "descriptionEn": "Translation Studies",
+        "subjectPairsCodes": [9, 10, 11]
+       },
+       {
+        "code": "B037",
+        "descriptionRu": "Филология",
+        "descriptionKk": "Филология",
+        "descriptionEn": "Philology",
+        "subjectPairsCodes": [7, 8]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В02088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с искусством и гуманитарными науками",
+      "fieldDescriptionKk": "Өнер мен гуманитарлық ғылымдарға байланысты пәнаралық бағдарламалар",
+      "fieldDescriptionEn": "Interdisciplinary programs related to art and humanities",
+      "groups": []
+     }
+    ]
+   },
+   {
+    "domainCode": 3,
+    "domainDescriptionRu": "Социальные науки, журналистика и информация",
+    "domainDescriptionEn": "Social sciences, journalism and information",
+    "domainDescriptionKk": "Әлеуметтік ғылымдар, журналистика және ақпарат",
+    "fieldsOfDomain": [
+     {
+        "fieldCode": "6B031",
+        "fieldDescriptionRu": "Социальные науки",
+        "fieldDescriptionKk": "Әлеуметтік ғылымдар",
+        "fieldDescriptionEn": "Social sciences",
+        "groups": [
+         {
+          "code": "B038",
+          "descriptionRu": "Социология",
+          "descriptionKk": "Социология",
+          "descriptionEn": "Sociology",
+          "subjectPairsCodes": [
+           12
+          ]
+         },
+         {
+          "code": "B039",
+          "descriptionRu": "Культурология",
+          "descriptionKk": "Мәдениеттану",
+          "descriptionEn": "Cultural studies",
+          "subjectPairsCodes": [
+           9,
+           10,
+           11
+          ]
+         },
+         {
+          "code": "B040",
+          "descriptionRu": "Политология",
+          "descriptionKk": "Саясаттану",
+          "descriptionEn": "Political science",
+          "subjectPairsCodes": [
+           9,
+           10,
+           11
+          ]
+         },
+         {
+          "code": "B041",
+          "descriptionRu": "Психология",
+          "descriptionKk": "Психология",
+          "descriptionEn": "Psychology",
+          "subjectPairsCodes": [
+           1
+          ]
+         },
+         {
+          "code": "B140",
+          "descriptionRu": "Международные отношения и дипломатия",
+          "descriptionKk": "Халықаралық қатынастар және дипломатия",
+          "descriptionEn": "International relations and diplomacy",
+          "subjectPairsCodes": [
+           9,
+           10,
+           11
+          ]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B032",
+        "fieldDescriptionRu": "Журналистика и информация",
+        "fieldDescriptionKk": "Журналистика және ақпарат",
+        "fieldDescriptionEn": "Journalism and information",
+        "groups": [
+         {
+          "code": "B042",
+          "descriptionRu": "Журналистика и репортерское дело",
+          "descriptionKk": "Журналистика және репортерлік іс",
+          "descriptionEn": "Journalism and reporting",
+          "subjectPairsCodes": [
+           2
+          ]
+         },
+         {
+          "code": "B043",
+          "descriptionRu": "Библиотечное дело, обработка информации и архивное дело",
+          "descriptionKk": "Кітапхана ісі, ақпаратты өңдеу және архив ісі",
+          "descriptionEn": "Library science, information processing, and archival studies",
+          "subjectPairsCodes": [
+           8,
+           7
+          ]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6В03088",
+        "fieldDescriptionRu": "Междисциплинарные программы, связанные социальными науками, журналистикой и информацией",
+        "fieldDescriptionKk": "Әлеуметтік ғылымдар, журналистика және ақпаратқа байланысты пәнаралық бағдарламалар",
+        "fieldDescriptionEn": "Interdisciplinary programs related to social sciences, journalism, and information",
+        "groups": []
+       }
+    ]
+   },
+
+   {
+    "domainCode": 4,
+    "domainDescriptionRu": "Бизнес, управление и право",
+    "domainDescriptionEn": "Business, management and law",
+    "domainDescriptionKk": "Бизнес, басқару және құқық",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "6B041",
+      "fieldDescriptionRu": "Бизнес и управление",
+      "fieldDescriptionKk": "Бизнес және басқару",
+      "fieldDescriptionEn": "Business and management",
+      "groups": [
+       {
+        "code": "B044",
+        "descriptionRu": "Менеджмент и управление",
+        "descriptionKk": "Менеджмент және басқару",
+        "descriptionEn": "Management and administration",
+        "subjectPairsCodes": [12]
+       },
+       {
+        "code": "B045",
+        "descriptionRu": "Аудит и налогообложение",
+        "descriptionKk": "Аудит және салық салу",
+        "descriptionEn": "Audit and taxation",
+        "subjectPairsCodes": [12]
+       },
+       {
+        "code": "B046",
+        "descriptionRu": "Финансы, экономика, банковское и страховое дело",
+        "descriptionKk": "Қаржы, экономика, банк және сақтандыру ісі",
+        "descriptionEn": "Finance, economics, banking and insurance",
+        "subjectPairsCodes": [12]
+       },
+       {
+        "code": "B047",
+        "descriptionRu": "Маркетинг и реклама",
+        "descriptionKk": "Маркетинг және жарнама",
+        "descriptionEn": "Marketing and advertising",
+        "subjectPairsCodes": [12]
+       },
+       {
+        "code": "B048",
+        "descriptionRu": "Трудовые навыки",
+        "descriptionKk": "Еңбек дағдылары",
+        "descriptionEn": "Work skills",
+        "subjectPairsCodes": [12]
+       },
+       {
+        "code": "B145",
+        "descriptionRu": "Государственный аудит",
+        "descriptionKk": "Мемлекеттік аудит",
+        "descriptionEn": "State audit",
+        "subjectPairsCodes": [12]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B042",
+      "fieldDescriptionRu": "Право",
+      "fieldDescriptionKk": "Құқық",
+      "fieldDescriptionEn": "Law",
+      "groups": [
+       {
+        "code": "B049",
+        "descriptionRu": "Право",
+        "descriptionKk": "Құқық",
+        "descriptionEn": "Law",
+        "subjectPairsCodes": [13]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В04088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с бизнесом, управлением и право",
+      "fieldDescriptionKk": "Бизнес, басқару және құқыққа байланысты пәнаралық бағдарламалар",
+      "fieldDescriptionEn": "Interdisciplinary programs related to business, management and law",
+      "groups": []
+     }
+    ]
+   },
+
+   {
+    "domainCode": 5,
+    "domainDescriptionRu": "Естественные науки, математика и статистика",
+    "domainDescriptionKk": "Жаратылыстану ғылымдары, математика және статистика",
+    "domainDescriptionEn": "Natural sciences, mathematics and statistics",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "6B051",
+      "fieldDescriptionRu": "Биологические и смежные науки",
+      "fieldDescriptionKk": "Биологиялық және туынды ғылымдар",
+      "fieldDescriptionEn": "Biological and related sciences",
+      "groups": [
+       {
+        "code": "B050",
+        "descriptionRu": "Биологические и смежные науки",
+        "descriptionKk": "Биологиялық және туынды ғылымдар",
+        "descriptionEn": "Biological and related sciences",
+        "subjectPairsCodes": [6]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B052",
+      "fieldDescriptionRu": "Окружающая среда",
+      "fieldDescriptionKk": "Қоршаған орта",
+      "fieldDescriptionEn": "Environment",
+      "groups": [
+       {
+        "code": "B051",
+        "descriptionRu": "Окружающая среда",
+        "descriptionKk": "Қоршаған орта",
+        "descriptionEn": "Environment",
+        "subjectPairsCodes": [1]
+       },
+       {
+        "code": "B052",
+        "descriptionRu": "Наука о земле",
+        "descriptionKk": "Жертану",
+        "descriptionEn": "Earth science",
+        "subjectPairsCodes": [12]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B053",
+      "fieldDescriptionRu": "Физические и химические науки",
+      "fieldDescriptionKk": "Физикалық және химиялық ғылымдар",
+      "fieldDescriptionEn": "Physical and chemical sciences",
+      "groups": [
+       {
+        "code": "B053",
+        "descriptionRu": "Химия",
+        "descriptionKk": "Химия",
+        "descriptionEn": "Chemistry",
+        "subjectPairsCodes": [6]
+       },
+       {
+        "code": "B054",
+        "descriptionRu": "Физика",
+        "descriptionKk": "Физика",
+        "descriptionEn": "Physics",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B054",
+      "fieldDescriptionRu": "Математика и статистика",
+      "fieldDescriptionKk": "Математика және статистика",
+      "fieldDescriptionEn": "Mathematics and statistics",
+      "groups": [
+       {
+        "code": "B055",
+        "descriptionRu": "Математика и статистика",
+        "descriptionKk": "Математика және статистика",
+        "descriptionEn": "Mathematics and statistics",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B056",
+        "descriptionRu": "Механика",
+        "descriptionKk": "Механика",
+        "descriptionEn": "Mechanics",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B055",
+      "fieldDescriptionRu": "Геология",
+      "fieldDescriptionKk": "Геология",
+      "fieldDescriptionEn": "Geology",
+      "groups": []
+     },
+     {
+      "fieldCode": "6В05088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с естественными науками, математикой, статистикой и геологией",
+      "fieldDescriptionKk": "Жаратылыстану ғылымдары, математика, статистика және геологияға байланысты пәнаралық бағдарламалар",
+      "fieldDescriptionEn": "Interdisciplinary programs related to natural sciences, mathematics, statistics and geology",
+      "groups": []
+     }
+    ]
+   },
+
+   {
+    "domainCode": 6,
+    "domainDescriptionRu": "Информационно-коммуникационные технологии",
+    "domainDescriptionKk": "Ақпараттық-коммуникациялық технологиялар",
+    "domainDescriptionEn": "Information and communication technologies",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "6B061",
+      "fieldDescriptionRu": "Информационно-коммуникационные технологии",
+      "fieldDescriptionKk": "Ақпараттық-коммуникациялық технологиялар",
+      "fieldDescriptionEn": "Information and communication technologies",
+      "groups": [
+       {
+        "code": "B057",
+        "descriptionRu": "Информационные технологии",
+        "descriptionKk": "Ақпараттық технологиялар",
+        "descriptionEn": "Information technologies",
+        "subjectPairsCodes": [5]
+       },
+       {
+        "code": "B058",
+        "descriptionRu": "Информационная безопасность",
+        "descriptionKk": "Ақпараттық қауіпсіздік",
+        "descriptionEn": "Information security",
+        "subjectPairsCodes": [5]
+       },
+       {
+        "code": "B157",
+        "descriptionRu": "Математическое и компьютерное моделирование",
+        "descriptionKk": "Математикалық және компьютерлік модельдеу",
+        "descriptionEn": "Mathematical and computer modeling",
+        "subjectPairsCodes": [5]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B062",
+      "fieldDescriptionRu": "Телекоммуникации",
+      "fieldDescriptionKk": "Телекоммуникациялар",
+      "fieldDescriptionEn": "Telecommunications",
+      "groups": [
+       {
+        "code": "B059",
+        "descriptionRu": "Коммуникации и коммуникационные технологии",
+        "descriptionKk": "Коммуникациялар және коммуникациялық технологиялар",
+        "descriptionEn": "Communications and communication technologies",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B063",
+      "fieldDescriptionRu": "Информационная безопасность",
+      "fieldDescriptionKk": "Ақпараттық қауіпсіздік",
+      "fieldDescriptionEn": "Information security",
+      "groups": [
+       {
+        "code": "B158",
+        "descriptionRu": "Криптология",
+        "descriptionKk": "Криптология",
+        "descriptionEn": "Cryptology",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В06088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с информационно-коммуникационными технологиями",
+      "fieldDescriptionKk": "Ақпараттық-коммуникациялық технологияларға байланысты пәнаралық бағдарламалар",
+      "fieldDescriptionEn": "Interdisciplinary programs related to information and communication technologies",
+      "groups": []
+     }
+    ]
+   },
+
+   {
+    "domainCode": 7,
+    "domainDescriptionRu": "Инженерные, обрабатывающие и строительные отрасли",
+    "domainDescriptionKk": "Инженерлік, өңдеу және құрылыс салалары",
+    "domainDescriptionEn": "Engineering, manufacturing and construction industries",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "6B071",
+      "fieldDescriptionRu": "Инженерия и инженерное дело",
+      "fieldDescriptionKk": "Инженерия және инженерлік іс",
+      "fieldDescriptionEn": "Engineering and engineering work",
+      "groups": [
+       {
+        "code": "B060",
+        "descriptionRu": "Химическая инженерия и процессы",
+        "descriptionKk": "Химиялық инженерия және процестер",
+        "descriptionEn": "Chemical engineering and processes",
+        "subjectPairsCodes": [17]
+       },
+       {
+        "code": "B061",
+        "descriptionRu": "Материаловедение и технологии",
+        "descriptionKk": "Материалтану және технологиялар",
+        "descriptionEn": "Materials science and technologies",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B062",
+        "descriptionRu": "Электротехника и энергетика",
+        "descriptionKk": "Электротехника және энергетика",
+        "descriptionEn": "Electrical engineering and energy",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B063",
+        "descriptionRu": "Электротехника и автоматизация",
+        "descriptionKk": "Электротехника және автоматтандыру",
+        "descriptionEn": "Electrical engineering and automation",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B064",
+        "descriptionRu": "Механика и металлообработка",
+        "descriptionKk": "Механика және металл өңдеу",
+        "descriptionEn": "Mechanics and metal processing",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B065",
+        "descriptionRu": "Транспортная техника и технологии",
+        "descriptionKk": "Көлік техникасы және технологиялары",
+        "descriptionEn": "Transport engineering and technologies",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B066",
+        "descriptionRu": "Морской транспорт и технологии",
+        "descriptionKk": "Теңіз көлігі және технологиялары",
+        "descriptionEn": "Maritime transport and technologies",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B067",
+        "descriptionRu": "Воздушный транспорт и технологии",
+        "descriptionKk": "Әуе көлігі және технологиялары",
+        "descriptionEn": "Air transport and technologies",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B162",
+        "descriptionRu": "Теплоэнергетика",
+        "descriptionKk": "Жылу энергетикасы",
+        "descriptionEn": "Thermal power engineering",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B164",
+        "descriptionRu": "Приборостроение",
+        "descriptionKk": "Құрылғы жасау",
+        "descriptionEn": "Instrumentation engineering",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B165",
+        "descriptionRu": "Магистральные сети и инфраструктура",
+        "descriptionKk": "Магистральдық желілер және инфрақұрылым",
+        "descriptionEn": "Main networks and infrastructure",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B166",
+        "descriptionRu": "Транспортные сооружения",
+        "descriptionKk": "Көлік құрылыстары",
+        "descriptionEn": "Transport structures",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B167",
+        "descriptionRu": "Летная эксплуатация летательных аппаратов и двигателей",
+        "descriptionKk": "Ұшу аппараттары мен қозғалтқыштарды пайдалану",
+        "descriptionEn": "Flight operation of aircraft and engines",
+        "subjectPairsCodes": [4]
+       }
+      ]
+    },
+
+     {
+      "fieldCode": "6B072",
+      "fieldDescriptionRu": "Производственные и обрабатывающие отрасли",
+      "fieldDescriptionKk": "Өндірістік және өңдеу салалары",
+      "fieldDescriptionEn": "Manufacturing and processing industries",
+      "groups": [
+       {
+        "code": "B068",
+        "descriptionRu": "Производство продуктов питания",
+        "descriptionKk": "Азық-түлік өнімдерін өндіру",
+        "descriptionEn": "Food production",
+        "subjectPairsCodes": [6]
+       },
+       {
+        "code": "B069",
+        "descriptionRu": "Производство материалов (стекло, бумага, пластик, дерево)",
+        "descriptionKk": "Материалдарды өндіру (шағыл, қағаз, пластик, ағаш)",
+        "descriptionEn": "Materials production (glass, paper, plastic, wood)",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B070",
+        "descriptionRu": "Текстиль: одежда, обувь и кожаные изделия",
+        "descriptionKk": "Текстиль: киім, аяқ киім және былғары бұйымдар",
+        "descriptionEn": "Textiles: clothing, footwear and leather goods",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B071",
+        "descriptionRu": "Горное дело и добыча полезных ископаемых",
+        "descriptionKk": "Тау-кен өндірісі және пайдалы қазбаларды өндіру",
+        "descriptionEn": "Mining and mineral extraction",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B072",
+        "descriptionRu": "Технология фармацевтического производства",
+        "descriptionKk": "Фармацевтикалық өндіріс технологиясы",
+        "descriptionEn": "Pharmaceutical manufacturing technology",
+        "subjectPairsCodes": [6]
+       },
+       {
+        "code": "B171",
+        "descriptionRu": "Металлургия",
+        "descriptionKk": "Металлургия",
+        "descriptionEn": "Metallurgy",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B172",
+        "descriptionRu": "Обработка материалов давлением",
+        "descriptionKk": "Материалдарды қысыммен өңдеу",
+        "descriptionEn": "Material processing under pressure",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B271",
+        "descriptionRu": "Нефтегазовое дело",
+        "descriptionKk": "Мұнай-газ ісі",
+        "descriptionEn": "Oil and gas industry",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B073",
+      "fieldDescriptionRu": "Архитектура и строительство",
+      "fieldDescriptionKk": "Мемлекеттік және құрылыс саласы",
+      "fieldDescriptionEn": "Architecture and construction",
+      "groups": [
+       {
+        "code": "B073",
+        "descriptionRu": "Архитектура",
+        "descriptionKk": "Сәулет",
+        "descriptionEn": "Architecture",
+        "subjectPairsCodes": [2]
+       },
+       {
+        "code": "B074",
+        "descriptionRu": "Градостроительство, строительные работы и гражданское строительство",
+        "descriptionKk": "Қалалық құрылыс, құрылыс жұмыстары және азаматтық құрылыс",
+        "descriptionEn": "Urban planning, construction works and civil engineering",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B075",
+        "descriptionRu": "Кадастр и землеустройство",
+        "descriptionKk": "Кадастр және жерді пайдалану",
+        "descriptionEn": "Cadastre and land management",
+        "subjectPairsCodes": [12]
+       },
+       {
+        "code": "B126",
+        "descriptionRu": "Транспортное строительство",
+        "descriptionKk": "Көлік құрылысы",
+        "descriptionEn": "Transport construction",
+        "subjectPairsCodes": []
+       },
+       {
+        "code": "B173",
+        "descriptionRu": "Гидромелиорация",
+        "descriptionKk": "Гидромелиорация",
+        "descriptionEn": "Hydromelioration",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B174",
+        "descriptionRu": "Геодезия и картография",
+        "descriptionKk": "Геодезия және картография",
+        "descriptionEn": "Geodesy and cartography",
+        "subjectPairsCodes": []
+       },
+       {
+        "code": "B175",
+        "descriptionRu": "Водоснабжение и водоотведение",
+        "descriptionKk": "Су жабдықтау және су ағызу",
+        "descriptionEn": "Water supply and drainage",
+        "subjectPairsCodes": [4]
+       },
+       {
+        "code": "B176",
+        "descriptionRu": "Гидротехническое строительство и управление водными ресурсами",
+        "descriptionKk": "Гидротехникалық құрылыс және су ресурстарын басқару",
+        "descriptionEn": "Hydrotechnical construction and water resources management",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6B074",
+      "fieldDescriptionRu": "Водное хозяйство",
+      "fieldDescriptionKk": "Су шаруашылығы",
+      "fieldDescriptionEn": "Water management",
+      "groups": []
+     },
+     {
+      "fieldCode": "6B075",
+      "fieldDescriptionRu": "Стандартизация, сертификация и метрология (по отраслям)",
+      "fieldDescriptionKk": "Стандарттау, сертификаттау және метрология (салалар бойынша)",
+      "fieldDescriptionEn": "Standardization, certification and metrology (by industries)",
+      "groups": [
+       {
+        "code": "B076",
+        "descriptionRu": "Стандартизация, сертификация и метрология (по отраслям)",
+        "descriptionKk": "Стандарттау, сертификаттау және метрология (салалар бойынша)",
+        "descriptionEn": "Standardization, certification and metrology (by industries)",
+        "subjectPairsCodes": [4]
+       }
+      ]
+     },
+     {
+      "fieldCode": "6В07088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с инженерными, обрабатывающими строительными отраслями",
+      "fieldDescriptionKk": "Сәулет, өңдеу және инженерлік салаларға байланысты пәнаралық бағдарламалар",
+      "fieldDescriptionEn": "Interdisciplinary programs related to engineering, manufacturing and construction industries"
+     }
+    ]
+   },
+
+     {
+      "domainCode": 8,
+      "domainDescriptionRu": "Сельское хозяйство и биоресурсы",
+      "domainDescriptionKk": "Ауыл шаруашылығы және биоресурстар",
+      "domainDescriptionEn": "Agriculture and Bioresources",
+      "fieldsOfDomain": [
+       {
+        "fieldCode": "6B081",
+        "fieldDescriptionRu": "Растениеводство (Агрономия)",
+        "fieldDescriptionKk": "Өсімдік шаруашылығы (Агрономия)",
+        "fieldDescriptionEn": "Crop production (Agronomy)",
+        "groups": [
+         {
+          "code": "B077",
+          "descriptionRu": "Растениеводство",
+          "descriptionKk": "Өсімдік шаруашылығы",
+          "descriptionEn": "Crop production",
+          "subjectPairsCodes": [6]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B082",
+        "fieldDescriptionRu": "Животноводство",
+        "fieldDescriptionKk": "Мал шаруашылығы",
+        "fieldDescriptionEn": "Animal husbandry",
+        "groups": [
+         {
+          "code": "B078",
+          "descriptionRu": "Животноводство",
+          "descriptionKk": "Мал шаруашылығы",
+          "descriptionEn": "Animal husbandry",
+          "subjectPairsCodes": [6]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B083",
+        "fieldDescriptionRu": "Лесное хозяйство",
+        "fieldDescriptionKk": "Орман шаруашылығы",
+        "fieldDescriptionEn": "Forestry",
+        "groups": [
+         {
+          "code": "B079",
+          "descriptionRu": "Лесное хозяйство",
+          "descriptionKk": "Орман шаруашылығы",
+          "descriptionEn": "Forestry",
+          "subjectPairsCodes": [1]
+         },
+         {
+          "code": "B179",
+          "descriptionRu": "Охотоведение и звероводство",
+          "descriptionKk": "Аңшылық және аң шаруашылығы",
+          "descriptionEn": "Hunting and fur animal breeding",
+          "subjectPairsCodes": []
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B084",
+        "fieldDescriptionRu": "Рыбное хозяйство",
+        "fieldDescriptionKk": "Балық шаруашылығы",
+        "fieldDescriptionEn": "Fisheries",
+        "groups": [
+         {
+          "code": "B080",
+          "descriptionRu": "Рыбное хозяйство",
+          "descriptionKk": "Балық шаруашылығы",
+          "descriptionEn": "Fisheries",
+          "subjectPairsCodes": [6]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B085",
+        "fieldDescriptionRu": "Землеустройство",
+        "fieldDescriptionKk": "Жер пайдалану",
+        "fieldDescriptionEn": "Land management",
+        "groups": [
+         {
+          "code": "B081",
+          "descriptionRu": "Землеустройство",
+          "descriptionKk": "Жер пайдалану",
+          "descriptionEn": "Land management",
+          "subjectPairsCodes": [4]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B086",
+        "fieldDescriptionRu": "Водные ресурсы и водопользования",
+        "fieldDescriptionKk": "Су ресурстары және су пайдалану",
+        "fieldDescriptionEn": "Water resources and usage",
+        "groups": [
+         {
+          "code": "B082",
+          "descriptionRu": "Водные ресурсы и водопользования",
+          "descriptionKk": "Су ресурстары және су пайдалану",
+          "descriptionEn": "Water resources and usage",
+          "subjectPairsCodes": [4]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B087",
+        "fieldDescriptionRu": "Агроинженерия",
+        "fieldDescriptionKk": "Агроинженерия",
+        "fieldDescriptionEn": "Agroengineering",
+        "groups": [
+         {
+          "code": "B183",
+          "descriptionRu": "Агроинженерия",
+          "descriptionKk": "Агроинженерия",
+          "descriptionEn": "Agroengineering",
+          "subjectPairsCodes": [4]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6В08088",
+        "fieldDescriptionRu": "Междисциплинарные программы, связанные с сельским хозяйством и биоресурсами",
+        "fieldDescriptionKk": "Ауыл шаруашылығы және биоресурстарға байланысты пәнаралық бағдарламалар",
+        "fieldDescriptionEn": "Interdisciplinary programs related to agriculture and bioresources"
+       }
+      ]
+     }
+    ,
+
+     {
+      "domainCode": 9,
+      "domainDescriptionRu": "Ветеринария",
+      "domainDescriptionKk": "Ветеринария",
+      "domainDescriptionEn": "Veterinary Medicine",
+      "fieldsOfDomain": [
+       {
+        "fieldCode": "6В091",
+        "fieldDescriptionRu": "Ветеринария",
+        "fieldDescriptionKk": "Ветеринария",
+        "fieldDescriptionEn": "Veterinary Medicine",
+        "groups": [
+         {
+          "code": "B083",
+          "descriptionRu": "Ветеринария",
+          "descriptionKk": "Ветеринария",
+          "descriptionEn": "Veterinary Medicine",
+          "subjectPairsCodes": [6]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6В09088",
+        "fieldDescriptionRu": "Междисциплинарные программы, связанные ветеринарией",
+        "fieldDescriptionKk": "Ветеринарияға байланысты пәнаралық бағдарламалар",
+        "fieldDescriptionEn": "Interdisciplinary programs related to veterinary medicine"
+       }
+      ]
+     },
+     {
+      "domainCode": 10,
+      "domainDescriptionRu": "Здравоохранение и социальное обеспечение (медицина)",
+      "domainDescriptionKk": "Денсаулық сақтау және әлеуметтік қамтамасыз ету (медицина)",
+      "domainDescriptionEn": "Healthcare and Social Welfare (Medicine)",
+      "fieldsOfDomain": [
+       {
+        "fieldCode": "6B101",
+        "fieldDescriptionRu": "Здравоохранение",
+        "fieldDescriptionKk": "Денсаулық сақтау",
+        "fieldDescriptionEn": "Healthcare",
+        "groups": [
+         {
+          "code": "B084",
+          "descriptionRu": "Сестринское дело",
+          "descriptionKk": "Мейіргер ісі",
+          "descriptionEn": "Nursing",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "B085",
+          "descriptionRu": "Фармация",
+          "descriptionKk": "Фармация",
+          "descriptionEn": "Pharmacy",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "B086",
+          "descriptionRu": "Общая медицина",
+          "descriptionKk": "Жалпы медицина",
+          "descriptionEn": "General Medicine",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "B087",
+          "descriptionRu": "Стоматология",
+          "descriptionKk": "Стоматология",
+          "descriptionEn": "Dentistry",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "B088",
+          "descriptionRu": "Педиатрия",
+          "descriptionKk": "Педиатрия",
+          "descriptionEn": "Pediatrics",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "B089",
+          "descriptionRu": "Общественное здоровье",
+          "descriptionKk": "Қоғамдық денсаулық",
+          "descriptionEn": "Public Health",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "BM086",
+          "descriptionRu": "Медицина",
+          "descriptionKk": "Медицина",
+          "descriptionEn": "Medicine",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "BM087",
+          "descriptionRu": "Стоматология",
+          "descriptionKk": "Стоматология",
+          "descriptionEn": "Dentistry",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "BM088",
+          "descriptionRu": "Педиатрия",
+          "descriptionKk": "Педиатрия",
+          "descriptionEn": "Pediatrics",
+          "subjectPairsCodes": [6]
+         },
+         {
+          "code": "BM089",
+          "descriptionRu": "Медико-профилактическое дело",
+          "descriptionKk": "Медико-профилактикалық іс",
+          "descriptionEn": "Medical and Preventive Care",
+          "subjectPairsCodes": [6]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B102",
+        "fieldDescriptionRu": "Социальное обеспечение",
+        "fieldDescriptionKk": "Әлеуметтік қамтамасыз ету",
+        "fieldDescriptionEn": "Social Welfare",
+        "groups": [
+         {
+          "code": "B090",
+          "descriptionRu": "Социальная работа",
+          "descriptionKk": "Әлеуметтік жұмыс",
+          "descriptionEn": "Social Work",
+          "subjectPairsCodes": [1]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6В10088",
+        "fieldDescriptionRu": "Междисциплинарные программы, связанные со здравоохранением и социальным обеспечением (медицина)",
+        "fieldDescriptionKk": "Денсаулық сақтау және әлеуметтік қамтамасыз етуге байланысты пәнаралық бағдарламалар (медицина)",
+        "fieldDescriptionEn": "Interdisciplinary programs related to healthcare and social welfare (medicine)"
+       }
+      ]
+     },
+
+     {
+      "domainCode": 11,
+      "domainDescriptionRu": "Услуги",
+      "domainDescriptionKk": "Қызмет көрсету саласы",
+      "domainDescriptionEn": "Services",
+      "fieldsOfDomain": [
+       {
+        "fieldCode": "6B111",
+        "fieldDescriptionRu": "Сфера обслуживания",
+        "fieldDescriptionKk": "Қызмет көрсету саласы",
+        "fieldDescriptionEn": "Service Industry",
+        "groups": [
+         {
+          "code": "B091",
+          "descriptionRu": "Туризм",
+          "descriptionKk": "Туризм",
+          "descriptionEn": "Tourism",
+          "subjectPairsCodes": [14, 15, 16]
+         },
+         {
+          "code": "B092",
+          "descriptionRu": "Досуг",
+          "descriptionKk": "Бос уақыт",
+          "descriptionEn": "Leisure",
+          "subjectPairsCodes": [2]
+         },
+         {
+          "code": "B093",
+          "descriptionRu": "Ресторанное дело и гостиничный бизнес",
+          "descriptionKk": "Мейрамхана ісі және қонақ үй бизнесі",
+          "descriptionEn": "Restaurant and Hospitality Management",
+          "subjectPairsCodes": [14, 15, 16]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B112",
+        "fieldDescriptionRu": "Гигиена и охрана труда на производстве",
+        "fieldDescriptionKk": "Өндірісте гигиена және еңбекті қорғау",
+        "fieldDescriptionEn": "Occupational Safety and Hygiene",
+        "groups": [
+         {
+          "code": "B094",
+          "descriptionRu": "Санитарно-профилактические мероприятия",
+          "descriptionKk": "Санитарлық-алдын алу іс-шаралары",
+          "descriptionEn": "Sanitary and Preventive Measures",
+          "subjectPairsCodes": [4]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6B113",
+        "fieldDescriptionRu": "Транспортные услуги",
+        "fieldDescriptionKk": "Көлік қызметтері",
+        "fieldDescriptionEn": "Transport Services",
+        "groups": [
+         {
+          "code": "B095",
+          "descriptionRu": "Транспортные услуги",
+          "descriptionKk": "Көлік қызметтері",
+          "descriptionEn": "Transport Services",
+          "subjectPairsCodes": [12]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6В11088",
+        "fieldDescriptionRu": "Междисциплинарные программы, связанные с услугами",
+        "fieldDescriptionKk": "Қызмет көрсету саласына байланысты пәнаралық бағдарламалар",
+        "fieldDescriptionEn": "Interdisciplinary programs related to services"
+       }
+      ]
+     },
+     {
+      "domainCode": 12,
+      "domainDescriptionRu": "Национальная безопасность и военное дело",
+      "domainDescriptionKk": "Ұлттық қауіпсіздік және әскери іс",
+      "domainDescriptionEn": "National Security and Military Affairs",
+      "fieldsOfDomain": [
+       {
+        "fieldCode": "6B121",
+        "fieldDescriptionRu": "Военное дело",
+        "fieldDescriptionKk": "Әскери іс",
+        "fieldDescriptionEn": "Military Affairs"
+       },
+       {
+        "fieldCode": "6B122",
+        "fieldDescriptionRu": "Национальная безопасность",
+        "fieldDescriptionKk": "Ұлттық қауіпсіздік",
+        "fieldDescriptionEn": "National Security"
+       },
+       {
+        "fieldCode": "6B123",
+        "fieldDescriptionRu": "Общественная безопасность",
+        "fieldDescriptionKk": "Қоғамдық қауіпсіздік",
+        "fieldDescriptionEn": "Public Safety",
+        "groups": [
+         {
+          "code": "B096",
+          "descriptionRu": "Правоохранительная деятельность",
+          "descriptionKk": "Құқық қорғау қызметі",
+          "descriptionEn": "Law Enforcement",
+          "subjectPairsCodes": [13]
+         },
+         {
+          "code": "B097",
+          "descriptionRu": "Пожарная безопасность",
+          "descriptionKk": "Өрт қауіпсіздігі",
+          "descriptionEn": "Fire Safety",
+          "subjectPairsCodes": [4]
+         }
+        ]
+       },
+       {
+        "fieldCode": "6В12088",
+        "fieldDescriptionRu": "Междисциплинарные программы, связанные с национальной безопасностью и военным делом",
+        "fieldDescriptionKk": "Ұлттық қауіпсіздік пен әскери іспен байланысты пәнаралық бағдарламалар",
+        "fieldDescriptionEn": "Interdisciplinary programs related to national security and military affairs"
+       }
+      ]
+     }
+   ]
+ },
+
+ {
+  "id": 2,
+  "degreeEn": "Magistracy",
+  "degreeKk": "Магистратура",
+  "degreeRu": "Магистратура",
+  "domains": [
+    {
+     "domainCode": 1,
+     "domainDescriptionRu": "Педагогические науки",
+     "fieldsOfDomain": [
+      {
+       "fieldCode": "7M011",
+       "fieldDescriptionRu": "Педагогика и психология"
+      },
+      {
+       "fieldCode": "7M012",
+       "fieldDescriptionRu": "Педагогика  дошкольного воспитания и обучения"
+      },
+      {
+       "fieldCode": "7M013",
+       "fieldDescriptionRu": "Подготовка учителей без предметной специализации"
+      },
+      {
+       "fieldCode": "7M014",
+       "fieldDescriptionRu": "Подготовка учителей с предметной специализацией общего развития"
+      },
+      {
+       "fieldCode": "7M015",
+       "fieldDescriptionRu": "Подготовка учителей по естественнонаучным предметам"
+      },
+      {
+       "fieldCode": "7M016",
+       "fieldDescriptionRu": "Подготовка учителей по гуманитарным предметам"
+      },
+      {
+       "fieldCode": "7M017",
+       "fieldDescriptionRu": "Подготовка учителей по языкам и литературе"
+      },
+      {
+       "fieldCode": "7M018",
+       "fieldDescriptionRu": "Подготовка специалистов по социальной педагогике и самопознанию"
+      },
+      {
+       "fieldCode": "7M019",
+       "fieldDescriptionRu": "Подготовка специалистов по  специальной педагогике"
+      },
+      {
+       "fieldCode": "7M01088",
+       "fieldDescriptionRu": "Междисциплинарные программы, связанные педагогическими науками"
+      }
+     ]
+    },
+
+   {
+    "domainCode": 2,
+    "domainDescriptionRu": "Искусство и гуманитарные науки",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M021",
+      "fieldDescriptionRu": "Искусство"
+     },
+     {
+      "fieldCode": "7M022",
+      "fieldDescriptionRu": "Гуманитарные науки"
+     },
+     {
+      "fieldCode": "7M023",
+      "fieldDescriptionRu": "Языки и литература"
+     },
+     {
+      "fieldCode": "7M02088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с искусством и гуманитарными науками"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 3,
+    "domainDescriptionRu": "Социальные науки, журналистика и информация",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M031",
+      "fieldDescriptionRu": "Социальные науки"
+     },
+     {
+      "fieldCode": "7M032",
+      "fieldDescriptionRu": "Журналистика и информация"
+     },
+     {
+      "fieldCode": "7M03088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные социальными науками, журналистикой и информацией"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 4,
+    "domainDescriptionRu": "Бизнес, управление и право",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M041",
+      "fieldDescriptionRu": "Бизнес и управление"
+     },
+     {
+      "fieldCode": "7M042",
+      "fieldDescriptionRu": "Право"
+     },
+     {
+      "fieldCode": "7M04088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с бизнесом, управлением и право"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 5,
+    "domainDescriptionRu": "Естественные науки, математика и статистика",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M051",
+      "fieldDescriptionRu": "Биологические и смежные науки"
+     },
+     {
+      "fieldCode": "7M052",
+      "fieldDescriptionRu": "Окружающая среда"
+     },
+     {
+      "fieldCode": "7M053",
+      "fieldDescriptionRu": "Физические и химические науки"
+     },
+     {
+      "fieldCode": "7M054",
+      "fieldDescriptionRu": "Математика и статистика"
+     },
+     {
+      "fieldCode": "7M055",
+      "fieldDescriptionRu": "Геология"
+     },
+     {
+      "fieldCode": "7M05088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с естественными науками, математикой и статистикой"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 6,
+    "domainDescriptionRu": "Информационно-коммуникационные технологии",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M061",
+      "fieldDescriptionRu": "Информационно-коммуникационные технологии"
+     },
+     {
+      "fieldCode": "7M062",
+      "fieldDescriptionRu": "Телекоммуникации"
+     },
+     {
+      "fieldCode": "7M06088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с информационно-коммуникационными технологиями"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 7,
+    "domainDescriptionRu": "Инженерные, обрабатывающие и строительные отрасли",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M071",
+      "fieldDescriptionRu": "Инженерия и инженерное дело"
+     },
+     {
+      "fieldCode": "7M072",
+      "fieldDescriptionRu": "Производственные и обрабатывающие отрасли"
+     },
+     {
+      "fieldCode": "7M073",
+      "fieldDescriptionRu": "Архитектура и строительство"
+     },
+     {
+      "fieldCode": "7M074",
+      "fieldDescriptionRu": "Водное хозяйство"
+     },
+     {
+      "fieldCode": "7M075",
+      "fieldDescriptionRu": "Стандартизация,  сертификация и метрология (по отраслям)"
+     },
+     {
+      "fieldCode": "7M07088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с инженерными, обрабатывающими строительными отраслями"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 8,
+    "domainDescriptionRu": "Сельское хозяйство и биоресурсы",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M081",
+      "fieldDescriptionRu": "Растениеводство"
+     },
+     {
+      "fieldCode": "7M082",
+      "fieldDescriptionRu": "Животноводство"
+     },
+     {
+      "fieldCode": "7M083",
+      "fieldDescriptionRu": "Лесное хозяйство"
+     },
+     {
+      "fieldCode": "7M084",
+      "fieldDescriptionRu": "Рыбное хозяйство"
+     },
+     {
+      "fieldCode": "7M085",
+      "fieldDescriptionRu": "Землеустройство"
+     },
+     {
+      "fieldCode": "7M086",
+      "fieldDescriptionRu": "Водные ресурсы и водопользования"
+     },
+     {
+      "fieldCode": "7M08088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с сельским хозяйством и биоресурсами"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 9,
+    "domainDescriptionRu": "Ветеринария",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M091",
+      "fieldDescriptionRu": "Ветеринария"
+     },
+     {
+      "fieldCode": "7M09088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные ветеринарией"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 10,
+    "domainDescriptionRu": "Здравоохранение и социальное обеспечение (медицина)",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M101",
+      "fieldDescriptionRu": "Здравоохранение"
+     },
+     {
+      "fieldCode": "7M102",
+      "fieldDescriptionRu": "Социальное обеспечение"
+     },
+     {
+      "fieldCode": "7M10088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные со здравоохранением и социальным обеспечением (медицина)"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 11,
+    "domainDescriptionRu": "Услуги",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M111",
+      "fieldDescriptionRu": "Сфера обслуживания"
+     },
+     {
+      "fieldCode": "7M112",
+      "fieldDescriptionRu": "Гигиена и охрана труда на производстве"
+     },
+     {
+      "fieldCode": "7M113",
+      "fieldDescriptionRu": "Транспортные услуги"
+     },
+     {
+      "fieldCode": "7M11088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с услугами"
+     }
+    ]
+   },
+
+   {
+    "domainCode": 12,
+    "domainDescriptionRu": "Национальная безопасность и военное дело",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "7M121",
+      "fieldDescriptionRu": "Военное дело"
+     },
+     {
+      "fieldCode": "7M122",
+      "fieldDescriptionRu": "Национальная безопасность"
+     },
+     {
+      "fieldCode": "7M123",
+      "fieldDescriptionRu": "Общественная безопасность"
+     },
+     {
+      "fieldCode": "7M12088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с национальной безопасностью и военным делом"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "degreeEn": "Doctorate",
+  "degreeKk": "Докторантура",
+  "degreeRu": "Докторантура",
+  "domains": [
+   {
+    "domainCode": 1,
+    "domainDescriptionRu": "Педагогические науки",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D011",
+      "fieldDescriptionRu": "Педагогика и психология"
+     },
+     {
+      "fieldCode": "8D012",
+      "fieldDescriptionRu": "Педагогика  дошкольного воспитания и обучения"
+     },
+     {
+      "fieldCode": "8D013",
+      "fieldDescriptionRu": "Подготовка учителей без предметной специализации"
+     },
+     {
+      "fieldCode": "8D014",
+      "fieldDescriptionRu": "Подготовка учителей с предметной специализацией общего развития"
+     },
+     {
+      "fieldCode": "8D015",
+      "fieldDescriptionRu": "Подготовка учителей по естественнонаучным предметам"
+     },
+     {
+      "fieldCode": "8D016",
+      "fieldDescriptionRu": "Подготовка учителей по гуманитарным предметам"
+     },
+     {
+      "fieldCode": "8D017",
+      "fieldDescriptionRu": "Подготовка учителей по языкам и литературе"
+     },
+     {
+      "fieldCode": "8D018",
+      "fieldDescriptionRu": "Подготовка специалистов по социальной педагогике и самопознанию"
+     },
+     {
+      "fieldCode": "8D019",
+      "fieldDescriptionRu": "Подготовка специалистов по специальной педагогике"
+     },
+     {
+      "fieldCode": "8D01088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные педагогическими науками"
+     }
+    ]
+   },
+   {
+    "domainCode": 2,
+    "domainDescriptionRu": "Искусство и гуманитарные науки",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D021",
+      "fieldDescriptionRu": "Искусство"
+     },
+     {
+      "fieldCode": "8D022",
+      "fieldDescriptionRu": "Гуманитарные науки"
+     },
+     {
+      "fieldCode": "8D023",
+      "fieldDescriptionRu": "Языки и литература"
+     },
+     {
+      "fieldCode": "8D02088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с искусством и гуманитарными науками"
+     }
+    ]
+   },
+   {
+    "domainCode": 3,
+    "domainDescriptionRu": "Социальные науки, журналистика и информация",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D031",
+      "fieldDescriptionRu": "Социальные науки"
+     },
+     {
+      "fieldCode": "8D032",
+      "fieldDescriptionRu": "Журналистика и информация"
+     },
+     {
+      "fieldCode": "8D03088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные социальными науками, журналистикой и информацией"
+     }
+    ]
+   },
+   {
+    "domainCode": 4,
+    "domainDescriptionRu": "Бизнес, управление и право",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D041",
+      "fieldDescriptionRu": "Бизнес и управление"
+     },
+     {
+      "fieldCode": "8D042",
+      "fieldDescriptionRu": "Право"
+     },
+     {
+      "fieldCode": "8D04088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с бизнесом, управлением и право"
+     }
+    ]
+   },
+   {
+    "domainCode": 5,
+    "domainDescriptionRu": "Естественные науки, математика и статистика",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D051",
+      "fieldDescriptionRu": "Биологические и смежные науки"
+     },
+     {
+      "fieldCode": "8D052",
+      "fieldDescriptionRu": "Окружающая среда"
+     },
+     {
+      "fieldCode": "8D053",
+      "fieldDescriptionRu": "Физические и химические науки"
+     },
+     {
+      "fieldCode": "8D054",
+      "fieldDescriptionRu": "Математика и статистика"
+     },
+     {
+      "fieldCode": "8D055",
+      "fieldDescriptionRu": "Геология"
+     },
+     {
+      "fieldCode": "8D05088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с естественными науками, математикой и статистикой"
+     }
+    ]
+   },
+   {
+    "domainCode": 6,
+    "domainDescriptionRu": "Информационно-коммуникационные технологии",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D061",
+      "fieldDescriptionRu": "Информационно-коммуникационные технологии"
+     },
+     {
+      "fieldCode": "8D062",
+      "fieldDescriptionRu": "Телекоммуникации"
+     },
+     {
+      "fieldCode": "8D06088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с информационно-коммуникационными технологиями"
+     }
+    ]
+   },
+   {
+    "domainCode": 7,
+    "domainDescriptionRu": "Инженерные, обрабатывающие и строительные отрасли",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D071",
+      "fieldDescriptionRu": "Инженерия и инженерное дело"
+     },
+     {
+      "fieldCode": "8D072",
+      "fieldDescriptionRu": "Производственные и обрабатывающие отрасли"
+     },
+     {
+      "fieldCode": "8D073",
+      "fieldDescriptionRu": "Архитектура и строительство"
+     },
+     {
+      "fieldCode": "8D074",
+      "fieldDescriptionRu": "Водное хозяйство"
+     },
+     {
+      "fieldCode": "8D075",
+      "fieldDescriptionRu": "Стандартизация,  сертификация и метрология (по отраслям)"
+     },
+     {
+      "fieldCode": "8D07088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с инженерными, обрабатывающими строительными отраслями"
+     }
+    ]
+   },
+   {
+    "domainCode": 8,
+    "domainDescriptionRu": "Сельское хозяйство и биоресурсы",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D081",
+      "fieldDescriptionRu": "Растениеводство"
+     },
+     {
+      "fieldCode": "8D082",
+      "fieldDescriptionRu": "Животноводство"
+     },
+     {
+      "fieldCode": "8D083",
+      "fieldDescriptionRu": "Лесное хозяйство"
+     },
+     {
+      "fieldCode": "8D084",
+      "fieldDescriptionRu": "Рыбное хозяйство"
+     },
+     {
+      "fieldCode": "8D085",
+      "fieldDescriptionRu": "Землеустройство"
+     },
+     {
+      "fieldCode": "8D086",
+      "fieldDescriptionRu": "Водные ресурсы и водопользования"
+     },
+     {
+      "fieldCode": "8D08088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с сельским хозяйством и биоресурсами"
+     }
+    ]
+   },
+   {
+    "domainCode": 9,
+    "domainDescriptionRu": "Ветеринария",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D091",
+      "fieldDescriptionRu": "Ветеринария"
+     },
+     {
+      "fieldCode": "8D09088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные ветеринарией"
+     }
+    ]
+   },
+   {
+    "domainCode": 10,
+    "domainDescriptionRu": "Здравоохранение и социальное обеспечение (медицина)",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D101",
+      "fieldDescriptionRu": "Здравоохранение"
+     },
+     {
+      "fieldCode": "8D102",
+      "fieldDescriptionRu": "Социальное обеспечение"
+     },
+     {
+      "fieldCode": "8D10088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные со здравоохранением и социальным обеспечением (медицина)"
+     }
+    ]
+   },
+   {
+    "domainCode": 11,
+    "domainDescriptionRu": "Услуги",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D111",
+      "fieldDescriptionRu": "Сфера обслуживания"
+     },
+     {
+      "fieldCode": "8D112",
+      "fieldDescriptionRu": "Гигиена и охрана труда на производстве"
+     },
+     {
+      "fieldCode": "8D113",
+      "fieldDescriptionRu": "Транспортные услуги"
+     },
+     {
+      "fieldCode": "8D11088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с услугами"
+     }
+    ]
+   },
+   {
+    "domainCode": 12,
+    "domainDescriptionRu": "Национальная безопасность и военное дело",
+    "fieldsOfDomain": [
+     {
+      "fieldCode": "8D121",
+      "fieldDescriptionRu": "Военное дело"
+     },
+     {
+      "fieldCode": "8D122",
+      "fieldDescriptionRu": "Национальная безопасность"
+     },
+     {
+      "fieldCode": "8D123",
+      "fieldDescriptionRu": "Общественная безопасность"
+     },
+     {
+      "fieldCode": "8D12088",
+      "fieldDescriptionRu": "Междисциплинарные программы, связанные с национальной безопасностью и военным делом"
+     }
+    ]
+   }
+  ]
+ }
+]
+
