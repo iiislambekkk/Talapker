@@ -55,6 +55,7 @@ public class TranslationService(IConfiguration configuration) : ITranslationServ
             Instructions = instructions
         };
         
+        
         AIAgent agent = new OpenAIClient(configuration["OpenAIKey"]!).GetChatClient("gpt-5-mini").AsIChatClient().CreateAIAgent(
             new ChatClientAgentOptions()
             {
@@ -70,3 +71,4 @@ public class TranslationService(IConfiguration configuration) : ITranslationServ
         return translationResult;
     }
 }
+
