@@ -1,4 +1,6 @@
-namespace Talapker.Infrastructure.Data.Institution.InstitutionEntity;
+using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
+
+namespace Talapker.Infrastructure.Data.Institution;
 
 public class Institution
 {

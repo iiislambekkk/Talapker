@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using Talapker.Infrastructure.Data.Institution;
 using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
+using Talapker.Infrastructure.Data.Seeding.Models;
 using Talapker.Institutions.Infrastructure.Data.Seeding.Models;
 
 namespace Talapker.Infrastructure.Data.Seeding;
@@ -15,7 +16,121 @@ public class SeedData(TalapkerDbContext context)
         SeedUntPairs(context);
         SeedClassifications(context);
         SeedStatistics(context);
+        SeedEducationPrograms(context);
     }
+    
+    private static void SeedEducationPrograms(TalapkerDbContext context)
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("Starting education programs seeding...");
+    
+    if (!context.EducationPrograms.Any())
+    {
+        // B01 - Музыка
+        var musicProgram = new EducationProgram
+        {
+            Id = Guid.NewGuid(),
+            Code = "6B01101",
+            MinimumUntScore = 70,
+            FacultyId = null,
+            EducationGroupId = null,
+            
+            Name = new LocalizedText
+            {
+                Ru = "Музыкальное образование",
+                Kk = "Музыкалық білім",
+                En = "Music Education"
+            },
+            
+            Description = new LocalizedText
+            {
+                Ru = "Подготовка педагогов-музыкантов",
+                Kk = "Педагог-музыканттарды даярлау",
+                En = "Training of music teachers"
+            },
+            
+            WorkPlaces = new LocalizedText
+            {
+                Ru = "Школы, музыкальные школы, колледжи",
+                Kk = "Мектептер, музыка мектептері, колледждер",
+                En = "Schools, music schools, colleges"
+            }
+        };
+        
+        // B02 - Химия
+        var chemistryProgram = new EducationProgram
+        {
+            Id = Guid.NewGuid(),
+            Code = "6B01102",
+            MinimumUntScore = 80,
+            FacultyId = null,
+            EducationGroupId = null,
+            
+            Name = new LocalizedText
+            {
+                Ru = "Химическое образование",
+                Kk = "Химиялық білім",
+                En = "Chemistry Education"
+            },
+            
+            Description = new LocalizedText
+            {
+                Ru = "Подготовка учителей химии",
+                Kk = "Химия мұғалімдерін даярлау",
+                En = "Training of chemistry teachers"
+            },
+            
+            WorkPlaces = new LocalizedText
+            {
+                Ru = "Школы, лицеи, колледжи, лаборатории",
+                Kk = "Мектептер, лицейлер, колледждер, зертханалар",
+                En = "Schools, lyceums, colleges, laboratories"
+            }
+        };
+        
+        // B03 - Математика
+        var mathProgram = new EducationProgram
+        {
+            Id = Guid.NewGuid(),
+            Code = "6B01103",
+            MinimumUntScore = 75,
+            FacultyId = null,
+            EducationGroupId = null,
+            
+            Name = new LocalizedText
+            {
+                Ru = "Математическое образование",
+                Kk = "Математикалық білім",
+                En = "Mathematics Education"
+            },
+            
+            Description = new LocalizedText
+            {
+                Ru = "Подготовка учителей математики",
+                Kk = "Математика мұғалімдерін даярлау",
+                En = "Training of mathematics teachers"
+            },
+            
+            WorkPlaces = new LocalizedText
+            {
+                Ru = "Школы, лицеи, колледжи, IT-центры",
+                Kk = "Мектептер, лицейлер, колледждер, IT-орталықтар",
+                En = "Schools, lyceums, colleges, IT centers"
+            }
+        };
+        
+        context.EducationPrograms.AddRange(musicProgram, chemistryProgram, mathProgram);
+        context.SaveChanges();
+        
+        Console.WriteLine($"Added 3 education programs with full data.");
+    }
+    else
+    {
+        Console.WriteLine("Education programs already seeded, skipping...");
+    }
+    
+    Console.ResetColor();
+}
 
 
     private static void SeedCities(TalapkerDbContext context)
@@ -239,13 +354,13 @@ public class SeedData(TalapkerDbContext context)
     }
 }
 
-    private static void SeedStatistics(TalapkerDbContext context)
+   private static void SeedStatistics(TalapkerDbContext context)
     {
         var options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         };
-    
+
         var basePath = Path.Combine(AppContext.BaseDirectory, "SeedingData", "Grants");
         var files = Directory.GetFiles(basePath, "*.json");
 
@@ -258,13 +373,13 @@ public class SeedData(TalapkerDbContext context)
         foreach (var statisticFile in files)
         {
             var jsonString = File.ReadAllText(statisticFile);
-    
-            var grantSeed = JsonSerializer.Deserialize<GrantSeed>(jsonString, options) 
+
+            var grantSeed = JsonSerializer.Deserialize<GrantSeed>(jsonString, options)
                             ?? new GrantSeed();
 
             var eduGroupCode = Path.GetFileName(statisticFile)[..^5];
             var educationGroup = context.EducationGroups
-                .FirstOrDefault(eg => eg.NationalCode == eduGroupCode); // Assuming file name is the education group code
+                .FirstOrDefault(eg => eg.NationalCode == eduGroupCode);
 
             if (educationGroup == null)
             {
@@ -274,48 +389,48 @@ public class SeedData(TalapkerDbContext context)
                 continue;
             }
 
-            var generalComp = grantSeed.General;
-            if (generalComp != null)
+            if (grantSeed.General != null)
             {
-                var newStatisticEntity = new GrantCompetitionStatistic()
-                {
-                    Year = 2025,
-                    Id = Guid.NewGuid(),
-                    EducationGroup = educationGroup,
-                    CompetitionType = GrantCompetitionType.General,
-                    Records = generalComp.Records.Select(r => new GrantCompetitionRecord()
-                    {
-                        Score = r.Score,
-                        UniversityCode = r.Ovpo
-                    }).ToList(),
-                    MinScore = generalComp.Records.Min(r => r.Score)
-                }; 
-            
-                context.GrantCompetitionStatistics.Add(newStatisticEntity);
+                context.GrantCompetitionStatistics.Add(
+                    BuildStatistic(educationGroup, GrantCompetitionType.General, grantSeed.General.Records)
+                );
             }
 
-            var ruralComp = grantSeed.Rural;
-            if (ruralComp != null)
+            if (grantSeed.Rural != null)
             {
-                var newStatisticEntity = new GrantCompetitionStatistic()
-                {
-                    Year = 2025,
-                    Id = Guid.NewGuid(),
-                    EducationGroup = educationGroup,
-                    CompetitionType = GrantCompetitionType.Rural,
-                    Records = ruralComp.Records.Select(r => new GrantCompetitionRecord()
-                    {
-                        Score = r.Score,
-                        UniversityCode = r.Ovpo
-                    }).ToList(),
-                    MinScore = ruralComp.Records.Min(r => r.Score)
-                }; 
-            
-                context.GrantCompetitionStatistics.Add(newStatisticEntity);
-            } 
-        }
-        
+                context.GrantCompetitionStatistics.Add(
+                    BuildStatistic(educationGroup, GrantCompetitionType.Rural, grantSeed.Rural.Records)
+                );
+            }
+            }
+
         context.SaveChanges();
         Console.WriteLine("GRANTS seeded.");
+    }
+
+    private static GrantCompetitionStatistic BuildStatistic(
+        EducationGroup educationGroup,
+        GrantCompetitionType competitionType,
+        List<RawRecord> rawRecords)
+    {
+        var scoreFrequencies = rawRecords
+            .GroupBy(r => r.Score)
+            .Select(g => new GrantCompetitionRecord
+            {
+                Score = g.Key,
+                Frequency = g.Count()
+            })
+            .ToList();
+
+        return new GrantCompetitionStatistic
+        {
+            Id = Guid.NewGuid(),
+            Year = 2025,
+            EducationGroup = educationGroup,
+            CompetitionType = competitionType,
+            Records = scoreFrequencies,
+            MinScore = rawRecords.Min(r => r.Score),
+            TotalGrants = rawRecords.Count
+        };
     }
 }

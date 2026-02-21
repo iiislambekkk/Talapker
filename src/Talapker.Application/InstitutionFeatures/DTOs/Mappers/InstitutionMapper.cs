@@ -1,3 +1,4 @@
+using Talapker.Infrastructure.Data.Institution;
 using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
 
 namespace Talapker.Application.InstitutionFeatures.DTOs.Mappers;

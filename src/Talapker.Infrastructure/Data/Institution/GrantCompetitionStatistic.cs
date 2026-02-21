@@ -10,6 +10,7 @@ public class GrantCompetitionStatistic
     public EducationGroup EducationGroup { get; set; } = null!;
     public List<GrantCompetitionRecord> Records { get; set; } = new List<GrantCompetitionRecord>();
     public int MinScore { get; set; }
+    public int TotalGrants { get; set; }
 }
 
 public enum GrantCompetitionType
@@ -21,5 +22,5 @@ public enum GrantCompetitionType
 public class GrantCompetitionRecord
 {
     public int Score { get; set; }
-    public int UniversityCode { get; set; }
+    public int Frequency  { get; set; }
 }

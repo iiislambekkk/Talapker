@@ -1,0 +1,306 @@
+[
+  {
+    "code": "6B01102",
+    "degree": 1,
+    "minUntScore": 75,
+    "service": {
+      "ru": [
+        "педагог-психолог в образовательных учреждениях, менеджер",
+        "коуч-тренер",
+        "тренер-психолог",
+        "тьютор",
+        "организатор в системе «субъект-субъект»",
+        "специалист-исследователь научно-исследовательских учреждений различного типа",
+        "преподаватель педагогики и психологии"
+      ],
+      "kz": [
+        "білім беру мекемелеріндегі педагог-психолог, менеджер",
+        "коуч-тренер",
+        "тренер-психолог",
+        "тьютор",
+        "«субъект-субъект» жүйесіндегі ұйымдастырушы",
+        "әртүрлі типтегі ғылыми-зерттеу мекемелерінің маман-зерттеушісі",
+        "педагогика және психология оқытушысы"
+      ],
+      "en": [
+        "educational psychologist in educational institutions, manager",
+        "coach-trainer",
+        "trainer-psychologist",
+        "tutor",
+        "organizer in the 'subject-subject' system",
+        "research specialist in various types of research institutions",
+        "teacher of pedagogy and psychology"
+      ]
+    },
+    "workplaces": {
+      "ru": [
+        "дошкольные организации образования",
+        "система общеобразовательной средней школы, в том числе лицеи, гимназии, малокомплектные, санаторные, спортивные школы, детские дома",
+        "специальные коррекционные учреждения (классы и школы-интернаты для детей и подростков с нарушениями умственного и физического развития)",
+        "учреждения среднего профессионального образования (колледжи)",
+        "научно-исследовательские учреждения различного типа"
+      ],
+      "kz": [
+        "мектепке дейінгі білім беру ұйымдары",
+        "жалпы білім беретін орта мектеп жүйесі, оның ішінде лицейлер, гимназиялар, шағын комплектілі, санаторлық, спорттық мектептер, балалар үйлері",
+        "арнайы түзету мекемелері (ақыл-ой және дене дамуында бұзылыстары бар балалар мен жасөспірімдерге арналған сыныптар мен мектеп-интернаттар)",
+        "орта кәсіптік білім беру мекемелері (колледждер)",
+        "әртүрлі типтегі ғылыми-зерттеу мекемелері"
+      ],
+      "en": [
+        "preschool educational organizations",
+        "system of general secondary schools, including lyceums, gymnasiums, small-class, sanatorium, sports schools, orphanages",
+        "special correctional institutions (classes and boarding schools for children and adolescents with mental and physical developmental disorders)",
+        "institutions of secondary vocational education (colleges)",
+        "various types of research institutions"
+      ]
+    },
+    "educationGroup": "B011"
+  },
+  {
+    "code": "6B01201",
+    "degree": 1,
+    "minUntScore": 75,
+    "service": {
+      "ru": [
+        "воспитатель",
+        "воспитатель-психолог",
+        "воспитатель-логопед",
+        "методист дошкольной организации",
+        "руководитель дошкольной организации"
+      ],
+      "kz": [
+        "тәрбиеші",
+        "тәрбиеші-психолог",
+        "тәрбиеші-логопед",
+        "мектепке дейінгі ұйымның әдіскері",
+        "мектепке дейінгі ұйымның басшысы"
+      ],
+      "en": [
+        "educator",
+        "educator-psychologist",
+        "educator-speech therapist",
+        "methodologist of preschool organization",
+        "head of preschool organization"
+      ]
+    },
+    "workplaces": {
+      "ru": [
+        "дошкольные организации",
+        "педагогические колледжи",
+        "центр повышения квалификации"
+      ],
+      "kz": [
+        "мектепке дейінгі ұйымдар",
+        "педагогикалық колледждер",
+        "біліктілік арттыру орталығы"
+      ],
+      "en": [
+        "preschool organizations",
+        "pedagogical colleges",
+        "professional development center"
+      ]
+    }
+  },
+  {
+    "code": "6B01301",
+    "degree": 1,
+    "minUntScore": 75,
+    "service": {
+      "ru": [
+        "учитель начальных классов в средних школах",
+        "методист в системе начального образования",
+        "педагог-организатор"
+      ],
+      "kz": [
+        "орта мектептердің бастауыш сынып мұғалімі",
+        "бастауыш білім беру жүйесіндегі әдіскер",
+        "педагог-ұйымдастырушы"
+      ],
+      "en": [
+        "primary school teacher in secondary schools",
+        "methodologist in the primary education system",
+        "teacher-organizer"
+      ]
+    },
+    "workplaces": {
+      "ru": [
+        "образовательные учреждения",
+        "педагогические колледжи",
+        "институты повышения квалификации и переподготовки учителей, департамент образования"
+      ],
+      "kz": [
+        "білім беру мекемелері",
+        "педагогикалық колледждер",
+        "мұғалімдердің біліктілігін арттыру және қайта даярлау институттары, білім беру департаменті"
+      ],
+      "en": [
+        "educational institutions",
+        "pedagogical colleges",
+        "institutes for advanced training and retraining of teachers, education department"
+      ]
+    }
+  },
+  {
+    "code": "6B01902",
+    "degree": 1,
+    "minUntScore": 75,
+    "service": {
+      "ru": [
+        "методист-дефектолог",
+        "руководитель специализированных учреждений",
+        "олигофренопедагог",
+        "сурдопедагог",
+        "тифлопедагог",
+        "логопед",
+        "специальный дошкольный педагог, специалист",
+        "оказывающий помощь детям раннего возраста с ОВ"
+      ],
+      "kz": [
+        "әдіскер-дефектолог",
+        "мамандандырылған мекемелердің басшысы",
+        "олигофренопедагог",
+        "сурдопедагог",
+        "тифлопедагог",
+        "логопед",
+        "арнайы мектепке дейінгі педагог, маман",
+        "ерте жастағы ЕБ бар балаларға көмек көрсетуші"
+      ],
+      "en": [
+        "methodologist-defectologist",
+        "head of specialized institutions",
+        "oligophrenopedagogue",
+        "sign language pedagogue",
+        "typhlopedagogue",
+        "speech therapist",
+        "special preschool teacher, specialist",
+        "provider of assistance to young children with special needs"
+      ]
+    },
+    "workplaces": {
+      "ru": [
+        "организационно-технологическая",
+        "управление производством",
+        "проективная",
+        "научно-исследовательская",
+        "педагогическая",
+        "диагностика-консультативная"
+      ],
+      "kz": [
+        "ұйымдастыру-технологиялық",
+        "өндірісті басқару",
+        "проективті",
+        "ғылыми-зерттеу",
+        "педагогикалық",
+        "диагностикалық-консультативтік"
+      ],
+      "en": [
+        "organizational and technological",
+        "production management",
+        "projective",
+        "research",
+        "pedagogical",
+        "diagnostic and advisory"
+      ]
+    }
+  },
+  {
+    "code": "6B03101",
+    "degree": 1,
+    "minUntScore": 60,
+    "service": {
+      "ru": [
+        "психолог организаций образования",
+        "коуч-тренер",
+        "тренер-психолог",
+        "менеджер-психолог",
+        "HR-менеджер"
+      ],
+      "kz": [
+        "білім беру ұйымдарының психологы",
+        "коуч-тренер",
+        "тренер-психолог",
+        "менеджер-психолог",
+        "HR-менеджер"
+      ],
+      "en": [
+        "psychologist of educational organizations",
+        "coach-trainer",
+        "trainer-psychologist",
+        "manager-psychologist",
+        "HR manager"
+      ]
+    },
+    "workplaces": {
+      "ru": [
+        "образования (психологическое изучение и сопровождение процессов обучения и воспитания)",
+        "здравоохранения и спорта (психологическое сопровождение деятельности спортивных организаций, психопрофилактика и психокоррекция)",
+        "производства (психологическое сопровождение управления человеческими ресурсами, производственной деятельностью и бизнесом, коуч)",
+        "правоохранительных органов (психологическое сопровождение оперативно-розыскной и следственной деятельности, судопроизводства, правовой профилактики и пенитенциарной деятельности)"
+      ],
+      "kz": [
+        "білім беру (оқыту мен тәрбиелеу процестерін психологиялық зерттеу және сүйемелдеу)",
+        "денсаулық сақтау және спорт (спорттық ұйымдардың қызметін психологиялық сүйемелдеу, психопрофилактика және психокоррекция)",
+        "өндіріс (адами ресурстарды басқаруды, өндірістік қызмет пен бизнесті психологиялық сүйемелдеу, коуч)",
+        "құқық қорғау органдары (жедел-іздестіру және тергеу қызметін, сот ісін жүргізуді, құқықтық профилактиканы және пенитенциарлық қызметті психологиялық сүйемелдеу)"
+      ],
+      "en": [
+        "education (psychological study and support of teaching and upbringing processes)",
+        "healthcare and sports (psychological support for the activities of sports organizations, psychoprophylaxis and psychocorrection)",
+        "production (psychological support for human resource management, production activities and business, coach)",
+        "law enforcement agencies (psychological support for investigative and search activities, legal proceedings, legal prevention and penitentiary activities)"
+      ]
+    }
+  },
+  {
+    "code": "6B03102",
+    "degree": 1,
+    "minUntScore": 60,
+    "service": {
+      "ru": [
+        "консультант-психолог",
+        "нейропсихолог",
+        "клинический психолог"
+      ],
+      "kz": [
+        "консультант-психолог",
+        "нейропсихолог",
+        "клиникалық психолог"
+      ],
+      "en": [
+        "consultant psychologist",
+        "neuropsychologist",
+        "clinical psychologist"
+      ]
+    },
+    "workplaces": {
+      "ru": [
+        "общественные, научные и учреждения социальной защиты населения",
+        "правоохранительная деятельность, оборона, учреждения безопасности общества и государства",
+        "сфера спорта и здравоохранения; клинико-психологическая диагностика",
+        "психолого-медицинская экспертиза",
+        "оказание психологической помощи или услуг физическим и юридическим лицам",
+        "исследовательские центры, направленные на решение задач психологической диагностической, экспертной и комплексной помощи гражданам",
+        "исследовательские, консалтинговые организации"
+      ],
+      "kz": [
+        "қоғамдық, ғылыми және халықты әлеуметтік қорғау мекемелері",
+        "құқық қорғау қызметі, қорғаныс, қоғам мен мемлекет қауіпсіздігі мекемелері",
+        "спорт және денсаулық сақтау саласы; клинико-психологиялық диагностика",
+        "психологиялық-медициналық сараптама",
+        "жеке және заңды тұлғаларға психологиялық көмек немесе қызмет көрсету",
+        "азаматтарға психологиялық диагностикалық, сараптамалық және кешенді көмек көрсету міндеттерін шешуге бағытталған зерттеу орталықтары",
+        "зерттеу, консалтингтік ұйымдар"
+      ],
+      "en": [
+        "public, scientific and social protection institutions",
+        "law enforcement, defense, public and state security institutions",
+        "sports and healthcare; clinical and psychological diagnostics",
+        "psychological and medical expertise",
+        "providing psychological assistance or services to individuals and legal entities",
+        "research centers aimed at solving problems of psychological diagnostic, expert and comprehensive assistance to citizens",
+        "research and consulting organizations"
+      ]
+    }
+  }
+]

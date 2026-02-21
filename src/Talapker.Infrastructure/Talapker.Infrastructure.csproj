@@ -9,8 +9,10 @@
 
     <ItemGroup>
         <PackageReference Include="AWSSDK.S3" Version="4.0.11.1" />
-        <PackageReference Include="Microsoft.Agents.AI" Version="1.0.0-preview.251125.1" />
+        <PackageReference Include="Microsoft.Agents.AI" Version="1.0.0-preview.251219.1" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.8" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.9" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="10.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
 
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.9">

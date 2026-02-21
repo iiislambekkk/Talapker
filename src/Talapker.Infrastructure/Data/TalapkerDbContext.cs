@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.AI;
 using OpenIddict.EntityFrameworkCore.Models;
+using Talapker.Infrastructure.Data.Assistant;
 using Talapker.Infrastructure.Data.Institution;
 using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
 using Talapker.Infrastructure.Data.UserAccess;
@@ -18,12 +20,14 @@ public class TalapkerDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<OpenIddictEntityFrameworkCoreScope> OpenIddictEntityFrameworkCoreScope { get; set; }
     
     public DbSet<City> Cities { get; set; }
-    public DbSet<Institution.InstitutionEntity.Institution> Institutions { get; set; }
+    public DbSet<Institution.Institution> Institutions { get; set; }
     
     public DbSet<EducationField> EducationFields { get; set; } 
     public DbSet<EducationDirection> EducationDirections { get; set; } 
+    public DbSet<Ambassador> Ambassadors { get; set; } 
     public DbSet<EducationGroup> EducationGroups { get; set; }
     public DbSet<UntSubject> UntSubjects { get; set; }
+    public DbSet<AssistantChatMessage> AssistantChatMessage { get; set; }
     public DbSet<UntPair> UntPairs { get; set; }
     public DbSet<GrantCompetitionStatistic> GrantCompetitionStatistics { get; set; }
     public DbSet<Faculty> Faculties { get; set; } 

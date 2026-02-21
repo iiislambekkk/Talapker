@@ -1,9 +1,9 @@
-﻿namespace Talapker.Institutions.Infrastructure.Data.Seeding.Models;
+﻿namespace Talapker.Infrastructure.Data.Seeding.Models;
 
 public class GrantCompetitionStatisticsSeed
 {
-    public string CompetitionType { get; set; } = String.Empty;
-    public List<Record> Records { get; set; } = new List<Record>();
+    public string CompetitionType { get; set; } = string.Empty;
+    public List<RawRecord> Records { get; set; } = new();
 }
 
-public record Record (int Score, int Ovpo);
+public record RawRecord(int Num, string Ikt, int Score, int Ovpo);

@@ -1,4 +1,4 @@
-namespace Talapker.Infrastructure.Data.Institution.InstitutionEntity;
+namespace Talapker.Infrastructure.Data.Institution;
 
 public class UntPair
 {

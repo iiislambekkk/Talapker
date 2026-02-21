@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Talapker.Infrastructure.Data.Institution.Configurations;
 
-public class InstitutionConfiguration : IEntityTypeConfiguration<InstitutionEntity.Institution>
+public class InstitutionConfiguration : IEntityTypeConfiguration<Institution>
 {
-    public void Configure(EntityTypeBuilder<InstitutionEntity.Institution> builder)
+    public void Configure(EntityTypeBuilder<Institution> builder)
     {
         builder.HasKey(u => u.Id);
         

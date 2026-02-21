@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Talapker.Infrastructure.AI.TranslationAgent;
+using Talapker.Application.AI.TranslationAgent;
 
 namespace Talapker.Web.Controllers.AI;
 

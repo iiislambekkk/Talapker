@@ -1,5 +1,6 @@
+using Talapker.Application.AI.Talapker;
+using Talapker.Application.AI.TranslationAgent;
 using Talapker.Application.UserAccess.Queries.GetUserByIdQuery;
-using Talapker.Infrastructure.AI.TranslationAgent;
 using Talapker.Infrastructure.Auth;
 using Talapker.Infrastructure.AuthZ;
 using Talapker.Infrastructure.Data.Seeding;
@@ -18,13 +19,17 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<ILanguageContext, LanguageContext>();
 
 builder.Services.ConfigureCors();
+builder.Services.AddSignalR();
 
 builder.Services.AddLocalizedRazor();
 
 builder.Host
     .AddAndConfigureWolverine(builder.Configuration, typeof(GetUserByIdQueryHandler).Assembly);
 
+builder.Services.AddMemoryCache();
+
 builder.Services
+    .AddTalapkerAgent()
     .AddTranslationAgent()
     .AddS3Storage(builder.Configuration)
     .AddTalapkerDbContext(builder.Configuration)
@@ -71,6 +76,7 @@ app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapHub<TalapkerHub>("/talapkerHub");
 app.MapControllers();
 app.MapRazorPages();
 

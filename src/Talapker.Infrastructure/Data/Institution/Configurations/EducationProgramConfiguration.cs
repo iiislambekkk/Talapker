@@ -20,7 +20,21 @@ public class EducationProgramConfiguration : IEntityTypeConfiguration<EducationP
             .HasForeignKey(e => e.EducationGroupId)
             .OnDelete(DeleteBehavior.Restrict);
         
-        builder.OwnsOne(d => d.Name, n => n.ToJson());
-        builder.OwnsOne(d => d.Description, n => n.ToJson());
+        builder.OwnsOne(p => p.Name);
+        builder.OwnsOne(p => p.Description);
+        builder.OwnsOne(p => p.WorkPlaces);
+        builder.OwnsOne(p => p.PractiseBases);
+
+        builder.OwnsMany(p => p.Prices, prices =>
+        {
+            prices.ToJson();
+        });
+
+        builder.OwnsMany(p => p.Disciplines, disciplines =>
+        {
+            disciplines.ToJson();
+            disciplines.OwnsOne(d => d.Name);
+            disciplines.OwnsOne(d => d.Description);
+        });
     }
 }

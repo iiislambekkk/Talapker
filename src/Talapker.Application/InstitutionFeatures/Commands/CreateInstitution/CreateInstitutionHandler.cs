@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Talapker.Infrastructure.Data;
+using Talapker.Infrastructure.Data.Institution;
 using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
 
 namespace Talapker.Application.InstitutionFeatures.Commands.CreateInstitution;

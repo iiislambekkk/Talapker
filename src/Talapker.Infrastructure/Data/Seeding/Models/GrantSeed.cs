@@ -1,4 +1,6 @@
-﻿namespace Talapker.Institutions.Infrastructure.Data.Seeding.Models;
+﻿using Talapker.Institutions.Infrastructure.Data.Seeding.Models;
+
+namespace Talapker.Infrastructure.Data.Seeding.Models;
 
 public class GrantSeed
 {
