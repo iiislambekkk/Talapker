@@ -9,6 +9,8 @@ using Talapker.Infrastructure.Email;
 using Talapker.Infrastructure.Exceptions;
 using Talapker.Infrastructure.S3;
 using Talapker.Infrastructure.Wolverine;
+using Talapker.Notifications;
+using Talapker.Notifications.Features.Commands;
 using Talapker.UserAccess.Infrastructure.Logging;
 using Talapker.Web.AppExtensions;
 
@@ -24,7 +26,7 @@ builder.Services.AddSignalR();
 builder.Services.AddLocalizedRazor();
 
 builder.Host
-    .AddAndConfigureWolverine(builder.Configuration, typeof(GetUserByIdQueryHandler).Assembly);
+    .AddAndConfigureWolverine(builder.Configuration, [typeof(GetUserByIdQueryHandler).Assembly, typeof(SendPushCommand).Assembly]);
 
 builder.Services.AddMemoryCache();
 
@@ -45,6 +47,9 @@ builder.Services
     .AddAuthenticationAndAuthorization(builder.Configuration);
 
 builder.Services.AddRazorPages();
+
+builder.Services.AddNotificationModule(builder.Configuration);
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -77,6 +82,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapHub<TalapkerHub>("/talapkerHub");
+app.MapNotificationModuleRoutes();
 app.MapControllers();
 app.MapRazorPages();
 

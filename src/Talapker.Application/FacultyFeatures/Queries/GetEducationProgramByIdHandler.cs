@@ -5,7 +5,6 @@ using Talapker.Infrastructure.Data;
 namespace Talapker.Application.FacultyFeatures.Queries;
 
 public record GetEducationProgramByIdQuery(
-    Guid InstitutionId,
     Guid? EducationProgramId
 );
 

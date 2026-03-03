@@ -21,6 +21,8 @@ public class FacultyController(IMessageBus messageBus) : ControllerBase
         return await messageBus.InvokeAsync<List<FacultyDto>>(new GetAllFacultiesQuery(institutionId));
     }
     
+  
+    
     [HttpGet("with-programs")]
     public async Task<ActionResult<ApiResponse<List<FacultyWithProgramsDto>>>> GetAllFacultiesWithPrograms([FromQuery] Guid institutionId)
     {

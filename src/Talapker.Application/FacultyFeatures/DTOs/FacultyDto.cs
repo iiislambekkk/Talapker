@@ -13,3 +13,12 @@ public class FacultyDto
     public string? WallPaperUrl { get; set; }
     public List<EducationProgramDto> EducationPrograms { get; set; } = new();
 }
+
+public class FacultySlimDto
+{
+    public Guid Id { get; set; }
+    public LocalizedText Name { get; set; } = new();
+    public Guid InstitutionId { get; set; }
+    public string? LogoUrl { get; set; }
+    public string? WallPaperUrl { get; set; }
+}

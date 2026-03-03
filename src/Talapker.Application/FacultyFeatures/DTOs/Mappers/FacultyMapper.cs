@@ -22,4 +22,13 @@ public static class FacultyMapper
     {
         return faculties.Select(f => f.ToDto()).ToList();
     }
+    
+    public static FacultySlimDto ToSlimDto(this Faculty faculty) => new()
+    {
+        Id = faculty.Id,
+        Name = faculty.Name,
+        InstitutionId = faculty.InstitutionId,
+        LogoUrl = faculty.LogoUrl,
+        WallPaperUrl = faculty.WallPaperUrl
+    };
 }

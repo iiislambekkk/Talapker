@@ -8,6 +8,7 @@ using Talapker.Application.FacultyFeatures.Command;
 using Talapker.Application.FacultyFeatures.Command.ChangeEducationProgram;
 using Talapker.Application.FacultyFeatures.Command.CreateEducationProgram;
 using Talapker.Application.FacultyFeatures.DTOs.Mappers;
+using Talapker.Application.FacultyFeatures.Queries;
 using Talapker.Application.FacultyFeatures.Queries.GetAllEducationGroups;
 using Talapker.Application.FacultyFeatures.Queries.GetEducationProgramsQuery;
 using Talapker.Infrastructure;
@@ -77,6 +78,7 @@ public class EducationProgramController(IMessageBus messageBus, IConfiguration c
 
         return Ok(result);
     }
+   
     
     [HttpGet]
     [Route("list")]
@@ -87,6 +89,14 @@ public class EducationProgramController(IMessageBus messageBus, IConfiguration c
         return await messageBus.InvokeAsync<List<EducationProgramDto>>(
             new GetEducationProgramsQuery(institutionId, facultyId)
         );
+    }
+    
+     
+    [HttpGet]
+    [Route("id/{id:guid}")]
+    public async Task<ActionResult<EducationProgramDto?>> GetEducationProgramByIdAsync(Guid id)
+    {
+        return await messageBus.InvokeAsync<EducationProgramDto?>(new GetEducationProgramByIdQuery(id));
     }
     
     [HttpPut]

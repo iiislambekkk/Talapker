@@ -31,4 +31,8 @@
     <_ContentIncludedByDefault Remove="wwwroot\js\qr\README.md" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Notifications\Talapker.Notifications.csproj" />
+  </ItemGroup>
+
 </Project>

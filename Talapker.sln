@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talapker.Application", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talapker.Infrastructure", "src\Talapker.Infrastructure\Talapker.Infrastructure.csproj", "{AAD69C5B-CA1A-4030-9563-29907DFE89C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notifications", "Notifications", "{DE9DAF8A-E684-0FD3-FFDC-40D3E3158533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talapker.Notifications", "src\Modules\Notifications\Talapker.Notifications.csproj", "{5429CE72-D5C9-4249-8211-64B65F115725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,18 @@ Global
 		{AAD69C5B-CA1A-4030-9563-29907DFE89C6}.Release|x64.Build.0 = Release|Any CPU
 		{AAD69C5B-CA1A-4030-9563-29907DFE89C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{AAD69C5B-CA1A-4030-9563-29907DFE89C6}.Release|x86.Build.0 = Release|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Debug|x64.Build.0 = Debug|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Debug|x86.Build.0 = Debug|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Release|x64.ActiveCfg = Release|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Release|x64.Build.0 = Release|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Release|x86.ActiveCfg = Release|Any CPU
+		{5429CE72-D5C9-4249-8211-64B65F115725}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +90,7 @@ Global
 		{A8C3755F-43DF-9530-2CCE-3ACCB7C9EEA5} = {EC447DCF-ABFA-6E24-52A5-D7FD48A5C558}
 		{A8D628BA-62E2-43A4-BC85-26F081E23FA2} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{AAD69C5B-CA1A-4030-9563-29907DFE89C6} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{DE9DAF8A-E684-0FD3-FFDC-40D3E3158533} = {EC447DCF-ABFA-6E24-52A5-D7FD48A5C558}
+		{5429CE72-D5C9-4249-8211-64B65F115725} = {DE9DAF8A-E684-0FD3-FFDC-40D3E3158533}
 	EndGlobalSection
 EndGlobal

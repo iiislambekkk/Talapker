@@ -8,6 +8,7 @@ using Npgsql;
 using Wolverine;
 using Wolverine.ErrorHandling;
 using Wolverine.FluentValidation;
+using Wolverine.Kafka;
 using Wolverine.Postgresql;
 
 namespace Talapker.Infrastructure.Wolverine;
@@ -18,7 +19,7 @@ public static class Extensions
     (
         this IHostBuilder host,
         IConfiguration configuration,
-        Assembly assembly
+        List<Assembly> assemblies
     )
     {
         
@@ -28,8 +29,11 @@ public static class Extensions
             
             opts.Policies.OnException<NpgsqlException>()
                 .RetryWithCooldown(50.Milliseconds(), 100.Milliseconds(), 250.Milliseconds());
-            
-            opts.Discovery.IncludeAssembly(assembly);
+
+            foreach (var assembly in assemblies)
+            {
+                opts.Discovery.IncludeAssembly(assembly);
+            }
             
             var connectionString = configuration.GetConnectionString("PostgresSQL");
 
@@ -38,7 +42,6 @@ public static class Extensions
                 throw new NullReferenceException();
             }
 
-            // opts.UseKafka("localhost:9094").AutoProvision();
             
             opts.PersistMessagesWithPostgresql(connectionString, "wolverine");
     
