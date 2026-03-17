@@ -10,7 +10,7 @@ public class FacultyDto
     public LocalizedText Name { get; set; } = new();
     public Guid InstitutionId { get; set; }
     public string? LogoUrl { get; set; }
-    public string? WallPaperUrl { get; set; }
+    public string Color { get; set; }
     public List<EducationProgramDto> EducationPrograms { get; set; } = new();
 }
 
@@ -20,5 +20,5 @@ public class FacultySlimDto
     public LocalizedText Name { get; set; } = new();
     public Guid InstitutionId { get; set; }
     public string? LogoUrl { get; set; }
-    public string? WallPaperUrl { get; set; }
+    public string Color { get; set; }
 }

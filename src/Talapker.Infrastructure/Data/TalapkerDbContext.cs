@@ -32,6 +32,11 @@ public class TalapkerDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<GrantCompetitionStatistic> GrantCompetitionStatistics { get; set; }
     public DbSet<Faculty> Faculties { get; set; } 
     public DbSet<EducationProgram> EducationPrograms { get; set; } 
+    public DbSet<Invitation> Invitations { get; set; } 
+    public DbSet<ChatRoom> ChatRooms { get; set; } 
+    public DbSet<ChatMessage> ChatMessages { get; set; } 
+    public DbSet<KnowledgeFile> KnowledgeFiles { get; set; } 
+    public DbSet<KnowledgeEntry> KnowledgeEntries { get; set; } 
     
     protected override void OnModelCreating(ModelBuilder builder)
     {

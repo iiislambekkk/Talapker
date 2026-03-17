@@ -69,7 +69,7 @@ public class EducationProgramController(IMessageBus messageBus, IConfiguration c
         };
 
         AIAgent agent = new OpenAIClient(configuration["OpenAIKey"]!)
-            .GetChatClient("gpt-4o-mini")
+            .GetChatClient("gpt-5-mini")
             .AsIChatClient()
             .CreateAIAgent(new ChatClientAgentOptions { ChatOptions = chatOptions });
 

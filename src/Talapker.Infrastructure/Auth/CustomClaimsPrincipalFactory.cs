@@ -13,21 +13,22 @@ public class CustomClaimsPrincipalFactory(UserManager<ApplicationUser> userManag
     {
         ClaimsIdentity claims = await base.GenerateClaimsAsync(user);
         var roles = await UserManager.GetRolesAsync(user);
-        
+
         claims.AddClaim(new Claim("FirstName", user.FirstName));
         claims.AddClaim(new Claim("LastName", user.LastName));
         claims.AddClaim(new Claim("sub", user.Id));
         claims.AddClaim(new Claim("image", $"{configuration["CloudflareCdnUrl"]}/{user.AvatarKey}"));
         claims.AddClaim(new Claim("tenantId", user.TenantId?.ToString() ?? ""));
-        
+        claims.AddClaim(new Claim("stamp", user.SecurityStamp ?? ""));
+
         foreach (var role in roles)
         {
             claims.AddClaim(new Claim(ClaimTypes.Role, role));
             claims.AddClaim(new Claim("roles", role));
         }
-        
+
         if (user.Email != null) claims.AddClaim(new Claim("email", user.Email));
-        
+
         return claims;
     }
 }

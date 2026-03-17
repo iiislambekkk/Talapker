@@ -2,7 +2,6 @@ using ImTools;
 using Microsoft.EntityFrameworkCore;
 using Talapker.Application.InstitutionFeatures.DTOs;
 using Talapker.Application.InstitutionFeatures.DTOs.Mappers;
-using Talapker.Application.InstitutionFeatures.Queries.GetAllInstitutions;
 using Talapker.Infrastructure.Auth;
 using Talapker.Infrastructure.Data;
 

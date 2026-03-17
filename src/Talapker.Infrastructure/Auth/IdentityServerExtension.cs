@@ -46,6 +46,7 @@ public static class IdentityServerExtension
                     .SetUserInfoEndpointUris("/connect/userinfo");
                 
                 opt
+                    .RegisterClaims("stamp")
                     .AllowClientCredentialsFlow()
                     .AllowRefreshTokenFlow()
                     .AllowAuthorizationCodeFlow()

@@ -1,0 +1,16 @@
+input {
+  tcp {
+    port => 5000
+    codec => json_lines
+  }
+  beats {
+    port => 5044
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["http://elasticsearch:9200"]
+    index => "talapker-logs-%{+YYYY.MM.dd}"
+  }
+}

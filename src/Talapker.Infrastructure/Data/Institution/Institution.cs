@@ -1,4 +1,5 @@
 using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
+using Talapker.Infrastructure.Data.UserAccess;
 
 namespace Talapker.Infrastructure.Data.Institution;
 
@@ -20,6 +21,8 @@ public class Institution
     public string WebSiteUrl { get; set; } = string.Empty;
     public string Coordinates { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
+    
+    public List<ApplicationUser> Prospects { get; set; } = new List<ApplicationUser>();
     
     public List<InstitutionAdvantage> Advantages { get; set; } = new();
     

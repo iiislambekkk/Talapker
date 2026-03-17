@@ -8,10 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Talapker.Infrastructure\Talapker.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="UserAccess\Commands\" />
+    <ProjectReference Include="..\Modules\Talapker.Notifications.Contracts\Talapker.Notifications.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
+    <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
-  <ItemGroup>
+    </PropertyGroup>
+    
+    <ItemGroup>
     <ProjectReference Include="..\Talapker.Application\Talapker.Application.csproj" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
-  </ItemGroup>
-
-  <ItemGroup>
+    </ItemGroup>
+    
+    <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
@@ -29,10 +29,17 @@
     <_ContentIncludedByDefault Remove="wwwroot\js\qr\qrcode.js" />
     <_ContentIncludedByDefault Remove="wwwroot\js\qr\qrcode.min.js" />
     <_ContentIncludedByDefault Remove="wwwroot\js\qr\README.md" />
-  </ItemGroup>
+    </ItemGroup>
 
-  <ItemGroup>
+    <ItemGroup>
     <ProjectReference Include="..\Modules\Notifications\Talapker.Notifications.csproj" />
-  </ItemGroup>
+    <ProjectReference Include="..\Modules\Talapker.TelegramBot\Talapker.TelegramBot.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="fcm.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 
 </Project>

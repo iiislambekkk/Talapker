@@ -24,6 +24,21 @@ namespace Talapker.Infrastructure.Migrations
             NpgsqlModelBuilderExtensions.HasPostgresExtension(modelBuilder, "hstore");
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("ApplicationUserInstitution", b =>
+                {
+                    b.Property<string>("ProspectsId")
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("SubscribedInstitutionsId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("ProspectsId", "SubscribedInstitutionsId");
+
+                    b.HasIndex("SubscribedInstitutionsId");
+
+                    b.ToTable("ApplicationUserInstitution");
+                });
+
             modelBuilder.Entity("EducationGroupUntPair", b =>
                 {
                     b.Property<Guid>("EducationGroupsId")
@@ -434,6 +449,160 @@ namespace Talapker.Infrastructure.Migrations
                     b.ToTable("AssistantChatMessage");
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Assistant.KnowledgeEntry", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Answer")
+                        .IsRequired()
+                        .HasMaxLength(5000)
+                        .HasColumnType("character varying(5000)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("InstitutionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Question")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)");
+
+                    b.Property<Guid?>("SourceFileId")
+                        .HasColumnType("uuid");
+
+                    b.PrimitiveCollection<string[]>("Tags")
+                        .IsRequired()
+                        .HasColumnType("text[]");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InstitutionId");
+
+                    b.HasIndex("SourceFileId");
+
+                    b.ToTable("knowledge_entries", (string)null);
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Assistant.KnowledgeFile", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ContentType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ErrorMessage")
+                        .HasMaxLength(2000)
+                        .HasColumnType("character varying(2000)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<Guid>("InstitutionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("ProcessedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("StorageKey")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)");
+
+                    b.Property<DateTime>("UploadedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InstitutionId");
+
+                    b.ToTable("KnowledgeFiles");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.ChatMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("ChatRoomId")
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("SentAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("character varying(4000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChatRoomId");
+
+                    b.HasIndex("SenderId");
+
+                    b.HasIndex("SentAt");
+
+                    b.ToTable("ChatMessages");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.ChatRoom", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("AmbassadorId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("InstitutionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("LastMessageAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("ProspectId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AmbassadorId");
+
+                    b.HasIndex("InstitutionId");
+
+                    b.HasIndex("ProspectId", "AmbassadorId", "InstitutionId")
+                        .IsUnique();
+
+                    b.ToTable("ChatRooms");
+                });
+
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.Ambassador", b =>
                 {
                     b.Property<Guid>("Id")
@@ -457,17 +626,6 @@ namespace Talapker.Infrastructure.Migrations
 
                     b.Property<Guid?>("EducationalProgramId")
                         .HasColumnType("uuid");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<bool>("HasCompletedOnboarding")
-                        .HasColumnType("boolean");
 
                     b.Property<int>("HelpfulVotes")
                         .HasColumnType("integer");
@@ -507,7 +665,8 @@ namespace Talapker.Infrastructure.Migrations
                     b.Property<int>("TotalReplies")
                         .HasColumnType("integer");
 
-                    b.Property<string>("WallPaperUrl")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -515,6 +674,9 @@ namespace Talapker.Infrastructure.Migrations
                     b.HasIndex("EducationalProgramId");
 
                     b.HasIndex("InstitutionId");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Ambassadors");
                 });
@@ -641,6 +803,10 @@ namespace Talapker.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<Guid>("InstitutionId")
                         .HasColumnType("uuid");
 
@@ -651,9 +817,6 @@ namespace Talapker.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("jsonb")
                         .HasColumnName("name");
-
-                    b.Property<string>("WallPaperUrl")
-                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -875,11 +1038,79 @@ namespace Talapker.Infrastructure.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.Invitation", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("AcceptedByUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("character varying(256)");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid?>("InvitedByUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("RespondedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SecretCodeHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("character varying(64)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("TenantId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SecretCodeHash");
+
+                    b.HasIndex("TenantId");
+
+                    b.HasIndex("Email", "TenantId", "Role", "Status");
+
+                    b.ToTable("Invitations");
+                });
+
             modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.ApplicationRole", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
 
                     b.HasDiscriminator().HasValue("ApplicationRole");
+                });
+
+            modelBuilder.Entity("ApplicationUserInstitution", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("ProspectsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.Institution", null)
+                        .WithMany()
+                        .HasForeignKey("SubscribedInstitutionsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EducationGroupUntPair", b =>
@@ -989,6 +1220,81 @@ namespace Talapker.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Assistant.KnowledgeEntry", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.Institution", "Institution")
+                        .WithMany()
+                        .HasForeignKey("InstitutionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.Assistant.KnowledgeFile", "SourceFile")
+                        .WithMany("Entries")
+                        .HasForeignKey("SourceFileId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Institution");
+
+                    b.Navigation("SourceFile");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Assistant.KnowledgeFile", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.Institution", "Institution")
+                        .WithMany()
+                        .HasForeignKey("InstitutionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Institution");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.ChatMessage", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.ChatRoom", "ChatRoom")
+                        .WithMany("Messages")
+                        .HasForeignKey("ChatRoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", "Sender")
+                        .WithMany()
+                        .HasForeignKey("SenderId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("ChatRoom");
+
+                    b.Navigation("Sender");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.ChatRoom", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.Ambassador", "Ambassador")
+                        .WithMany()
+                        .HasForeignKey("AmbassadorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.Institution", "Institution")
+                        .WithMany()
+                        .HasForeignKey("InstitutionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", "Prospect")
+                        .WithMany()
+                        .HasForeignKey("ProspectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Ambassador");
+
+                    b.Navigation("Institution");
+
+                    b.Navigation("Prospect");
+                });
+
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.Ambassador", b =>
                 {
                     b.HasOne("Talapker.Infrastructure.Data.Institution.EducationProgram", "EducationProgram")
@@ -999,9 +1305,17 @@ namespace Talapker.Infrastructure.Migrations
                         .WithMany()
                         .HasForeignKey("InstitutionId");
 
+                    b.HasOne("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", "User")
+                        .WithOne()
+                        .HasForeignKey("Talapker.Infrastructure.Data.Institution.Ambassador", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("EducationProgram");
 
                     b.Navigation("Institution");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.City", b =>
@@ -1626,6 +1940,17 @@ namespace Talapker.Infrastructure.Migrations
                     b.Navigation("SecondSubject");
                 });
 
+            modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.Invitation", b =>
+                {
+                    b.HasOne("Talapker.Infrastructure.Data.Institution.Institution", "Institution")
+                        .WithMany()
+                        .HasForeignKey("TenantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Institution");
+                });
+
             modelBuilder.Entity("OpenIddict.EntityFrameworkCore.Models.OpenIddictEntityFrameworkCoreApplication", b =>
                 {
                     b.Navigation("Authorizations");
@@ -1636,6 +1961,16 @@ namespace Talapker.Infrastructure.Migrations
             modelBuilder.Entity("OpenIddict.EntityFrameworkCore.Models.OpenIddictEntityFrameworkCoreAuthorization", b =>
                 {
                     b.Navigation("Tokens");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Assistant.KnowledgeFile", b =>
+                {
+                    b.Navigation("Entries");
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.ChatRoom", b =>
+                {
+                    b.Navigation("Messages");
                 });
 
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.City", b =>

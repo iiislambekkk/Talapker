@@ -28,6 +28,7 @@ public class TalapkerHub : Hub
             await _talapkerAgent.AskStreamingAsync(
                 request,
                 async chunk => await SendChunk(connectionId, chunk),
+                false,
                 Context.ConnectionAborted);
         }
         catch (Exception ex)
@@ -40,7 +41,6 @@ public class TalapkerHub : Hub
         }
     }
 
-    // Вспомогательный метод для отправки чанков
     private async Task SendChunk(string connectionId, StreamingChunk chunk)
     {
         await Clients.Client(connectionId).SendAsync("ReceiveChunk", chunk);

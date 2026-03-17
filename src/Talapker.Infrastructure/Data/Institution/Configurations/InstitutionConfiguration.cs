@@ -25,6 +25,9 @@ public class InstitutionConfiguration : IEntityTypeConfiguration<Institution>
         
         builder.OwnsOne(d => d.Name, n => n.ToJson());
         builder.OwnsOne(d => d.Description, n => n.ToJson());
+        
+        builder.HasMany(p => p.Prospects)
+            .WithMany(i => i.SubscribedInstitutions);
      
         builder.OwnsMany(u => u.Advantages, a =>
         {

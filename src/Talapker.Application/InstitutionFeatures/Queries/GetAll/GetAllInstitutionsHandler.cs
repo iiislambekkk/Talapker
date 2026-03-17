@@ -4,7 +4,7 @@ using Talapker.Application.InstitutionFeatures.DTOs.Mappers;
 using Talapker.Infrastructure.Auth;
 using Talapker.Infrastructure.Data;
 
-namespace Talapker.Application.InstitutionFeatures.Queries.GetAllInstitutions;
+namespace Talapker.Application.InstitutionFeatures.Queries.GetAll;
 
 public class GetAllInstitutionsHandler
 {

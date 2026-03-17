@@ -1,5 +1,6 @@
 using Talapker.Application.AI.Talapker;
 using Talapker.Application.AI.TranslationAgent;
+using Talapker.Application.ChatFeatures;
 using Talapker.Application.UserAccess.Queries.GetUserByIdQuery;
 using Talapker.Infrastructure.Auth;
 using Talapker.Infrastructure.AuthZ;
@@ -8,11 +9,15 @@ using Talapker.Infrastructure.Data.UserAccess;
 using Talapker.Infrastructure.Email;
 using Talapker.Infrastructure.Exceptions;
 using Talapker.Infrastructure.S3;
+using Talapker.Infrastructure.Vault;
 using Talapker.Infrastructure.Wolverine;
 using Talapker.Notifications;
 using Talapker.Notifications.Features.Commands;
-using Talapker.UserAccess.Infrastructure.Logging;
+using Talapker.TelegramBot;
 using Talapker.Web.AppExtensions;
+using Talapker.Web.Logging;
+using Talapker.Web.Middlewares;
+using Extensions = Talapker.Notifications.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddCommandLine(args);
@@ -26,7 +31,7 @@ builder.Services.AddSignalR();
 builder.Services.AddLocalizedRazor();
 
 builder.Host
-    .AddAndConfigureWolverine(builder.Configuration, [typeof(GetUserByIdQueryHandler).Assembly, typeof(SendPushCommand).Assembly]);
+    .AddAndConfigureWolverine(builder.Configuration, [typeof(GetUserByIdQueryHandler).Assembly, typeof(SendPushHandler).Assembly, typeof(TelegramWebhookController).Assembly]);
 
 builder.Services.AddMemoryCache();
 
@@ -41,6 +46,7 @@ builder.Services
 
 
 builder.Services
+    .AddVaultStore(builder.Configuration)
     .AddAspIdentity(builder.Configuration)
     .AddIdentityServer(builder.Configuration)
     .AddAuthZ()
@@ -48,13 +54,18 @@ builder.Services
 
 builder.Services.AddRazorPages();
 
-builder.Services.AddNotificationModule(builder.Configuration);
+builder.Services
+    .AddNotificationModule(builder.Configuration)
+    .AddTelegramBotModule(builder.Configuration);
 
 builder.Services.AddControllers()
+    .AddApplicationPart(typeof(TelegramWebhookController).Assembly)
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
     });
+
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
@@ -80,9 +91,11 @@ app.UseCors();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<SecurityStampMiddleware>();
 
 app.MapHub<TalapkerHub>("/talapkerHub");
-app.MapNotificationModuleRoutes();
+app.MapHub<ChatHub>("/hubs/chat");
+Extensions.MapNotificationModuleRoutes(app);
 app.MapControllers();
 app.MapRazorPages();
 

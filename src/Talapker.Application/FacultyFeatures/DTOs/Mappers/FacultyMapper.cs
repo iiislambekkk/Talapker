@@ -13,7 +13,7 @@ public static class FacultyMapper
             Name = faculty.Name,
             InstitutionId = faculty.InstitutionId,
             LogoUrl = faculty.LogoUrl,
-            WallPaperUrl = faculty.WallPaperUrl,
+            Color = faculty.Color,
             EducationPrograms = faculty.EducationPrograms.Select(ep => ep.ToDto()).ToList()
         };
     }
@@ -29,6 +29,6 @@ public static class FacultyMapper
         Name = faculty.Name,
         InstitutionId = faculty.InstitutionId,
         LogoUrl = faculty.LogoUrl,
-        WallPaperUrl = faculty.WallPaperUrl
+        Color = faculty.Color
     };
 }

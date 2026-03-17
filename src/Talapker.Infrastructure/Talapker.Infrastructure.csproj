@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="AWSSDK.S3" Version="4.0.11.1" />
+        <PackageReference Include="Elastic.Serilog.Sinks" Version="9.0.0" />
         <PackageReference Include="Microsoft.Agents.AI" Version="1.0.0-preview.251219.1" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.8" />
         <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.9" />
@@ -19,6 +20,8 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+        <PackageReference Include="Qdrant.Client" Version="1.17.0" />
+        
 
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.8" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.8" />
@@ -30,6 +33,7 @@
         <PackageReference Include="OpenIddict.EntityFrameworkCore" Version="7.1.0" />
         <PackageReference Include="Resend" Version="0.2.1" />
         <PackageReference Include="StackExchange.Redis" Version="2.9.32" />
+        <PackageReference Include="VaultSharp" Version="1.17.5.1" />
 
         <PackageReference Include="WolverineFx.EntityFrameworkCore" Version="4.11.0" />
         <PackageReference Include="WolverineFx.Postgresql" Version="4.11.0" />

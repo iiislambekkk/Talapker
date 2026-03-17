@@ -33,4 +33,12 @@ public static class UserRoles
     // Helper methods for role combinations
     public static string TenantAdmins => string.Join(",", TenantAdminRoles);
     public static string AllTenant => string.Join(",", AllTenantRoles);
+    
+    public enum UserRolesEnum
+    {
+        SystemAdmin,
+        TenantAmbassador,
+        TenantAdmin,
+        PrimaryTenantAdmin
+    }
 }

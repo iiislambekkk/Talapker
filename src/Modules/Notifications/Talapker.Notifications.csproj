@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Talapker.Application\Talapker.Application.csproj" />
     <ProjectReference Include="..\..\Talapker.Infrastructure\Talapker.Infrastructure.csproj" />
+    <ProjectReference Include="..\Talapker.Notifications.Contracts\Talapker.Notifications.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,6 +5,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Logging;
 using Talapker.Infrastructure.Data;
 using Talapker.Infrastructure.Data.Assistant;
+using ChatMessage = Microsoft.Extensions.AI.ChatMessage;
 
 namespace Talapker.Application.AI.Talapker;
 
@@ -13,7 +14,7 @@ public class UserChatHistoryProvider : ChatMessageStore
     private readonly TalapkerDbContext _dbContext;
     private Guid _userId;
     private Guid _institutionId;
-    private readonly int _maxHistoryMessages = 10;
+    private readonly int _maxHistoryMessages = 4;
     private static readonly JsonSerializerOptions _jsonOptions = new() { WriteIndented = false };
     private readonly ILogger<UserChatHistoryProvider> _logger;
 

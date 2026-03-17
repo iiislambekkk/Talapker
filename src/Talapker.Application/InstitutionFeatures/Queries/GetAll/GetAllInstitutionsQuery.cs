@@ -1,3 +1,3 @@
-namespace Talapker.Application.InstitutionFeatures.Queries.GetAllInstitutions;
+namespace Talapker.Application.InstitutionFeatures.Queries.GetAll;
 
 public record GetAllInstitutionsQuery();

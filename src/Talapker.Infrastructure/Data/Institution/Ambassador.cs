@@ -1,14 +1,15 @@
+using Talapker.Infrastructure.Data.UserAccess;
+
 namespace Talapker.Infrastructure.Data.Institution;
 
 public class Ambassador
 {
     public Guid Id { get; set; }
-    public bool HasCompletedOnboarding { get; set; }
     
-    public string FullName { get; set; }
-    public string Email { get; set; }
+    public string UserId { get; set; }
+    public ApplicationUser? User { get; set; }
+    
     public string? AvatarUrl { get; set; }
-    public string? WallPaperUrl { get; set; }
     
     public Guid? InstitutionId { get; set; }
     public Institution? Institution { get; set; }

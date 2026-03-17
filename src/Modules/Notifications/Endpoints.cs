@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Talapker.Application;
+using Talapker.Notifications.Contracts;
 using Talapker.Notifications.Features.Commands;
 using Talapker.Notifications.Features.Queries;
 using Talapker.Notifications.Models;

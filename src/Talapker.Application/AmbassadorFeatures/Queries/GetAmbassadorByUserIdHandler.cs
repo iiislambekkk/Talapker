@@ -13,15 +13,11 @@ public class GetAmbassadorByUserIdHandler()
         TalapkerDbContext db,
         CancellationToken cancellationToken)
     {
-        var user = await db.Users
-            .FirstOrDefaultAsync(u => u.Id == query.UserId.ToString(), cancellationToken);
-
-        if (user == null)
-            return null;
-
         var ambassador = await db.Ambassadors
             .Include(a => a.EducationProgram)
-            .FirstOrDefaultAsync(a => a.Email == user.Email, cancellationToken);
+            .Include(a => a.User)
+            .Include(a => a.Institution)
+            .FirstOrDefaultAsync(a => a.UserId == query.UserId.ToString(), cancellationToken);
         
         return ambassador?.ToDto();
     }

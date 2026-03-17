@@ -12,4 +12,6 @@ public class ApplicationUser : IdentityUser
     public string LastName { get; set; } = String.Empty;
     public string? AvatarKey { get; set; }
     public Guid? TenantId { get; set; }
+    
+    public List<Institution.Institution> SubscribedInstitutions { get; set; } = new List<Institution.Institution>();
 }

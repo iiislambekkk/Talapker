@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using Talapker.Application.AmbassadorFeatures.Commands.Queries;
 using Talapker.Application.AmbassadorFeatures.DTOs;
 using Talapker.Infrastructure.Data;
 using Talapker.Infrastructure.Data.Institution;
 
 namespace Talapker.Application.AmbassadorFeatures.Queries;
+
+public record GetAllAmbassadorsQuery(Guid? TenantId = null);
+
 
 public class GetAllAmbassadorsHandler
 {
@@ -17,12 +19,14 @@ public class GetAllAmbassadorsHandler
     {
         var ambassadorsQuery = db.Ambassadors
             .Include(a => a.EducationProgram)
+            .Include(a => a.User)
+            .Include(a => a.Institution)
             .AsQueryable();
         
         if (query.TenantId.HasValue)
         {
             ambassadorsQuery = ambassadorsQuery
-                .Where(a => db.Users.Any(u => u.Email == a.Email && u.TenantId == query.TenantId));
+                .Where(a => a.InstitutionId == query.TenantId);
         }
         
         return await ambassadorsQuery

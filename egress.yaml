@@ -1,0 +1,17 @@
+api_key: your_api_key
+api_secret: your_api_secretyour_api_secretyour_api_secretyour_api_secret
+ws_url: ws://livekit:7880
+
+redis:
+  address: redis:6379
+
+logging:
+  level: debug
+
+s3:
+  access_key: "9eca2c60f2003e41e3ac98c02d9f5584"
+  secret: "02a913e01b59589dbbe0e629e15b9430131aa2e15907b98894e3271b3fa75563"
+  region: "auto"
+  endpoint: "https://9399640104436316437c5acb96991d14.r2.cloudflarestorage.com"
+  bucket: "documents"
+  force_path_style: true

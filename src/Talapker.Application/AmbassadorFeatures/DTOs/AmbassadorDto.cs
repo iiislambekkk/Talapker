@@ -1,4 +1,5 @@
 using Talapker.Application.InstitutionFeatures.DTOs;
+using Talapker.Application.InstitutionFeatures.DTOs.Mappers;
 using Talapker.Infrastructure.Data.Institution;
 
 namespace Talapker.Application.AmbassadorFeatures.DTOs;
@@ -6,15 +7,14 @@ namespace Talapker.Application.AmbassadorFeatures.DTOs;
 public class AmbassadorDto
 {
     public Guid Id { get; set; }
-    public bool HasCompletedOnboarding { get; set; }
-    
-    public string FullName { get; set; } = string.Empty;
-    public string Email { get; set; } = string.Empty;
     public string? AvatarUrl { get; set; }
-    public string? WallPaperUrl { get; set; }
     
     public Guid? InstitutionId { get; set; }
-    public InstitutionDto? Institution { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string UserId { get; set; }
+    public string Email { get; set; }
+    public InstitutionAdminDto? Institution { get; set; }
     
     public Guid? EducationalProgramId { get; set; }
     public string? EducationalProgramName { get; set; }
@@ -46,14 +46,17 @@ public static class AmbassadorMapper
         return new AmbassadorDto
         {
             Id = ambassador.Id,
-            HasCompletedOnboarding = ambassador.HasCompletedOnboarding,
-            FullName = ambassador.FullName,
-            Email = ambassador.Email,
-            AvatarUrl = ambassador.AvatarUrl,
-            WallPaperUrl = ambassador.WallPaperUrl,
+            AvatarUrl = ambassador.User?.AvatarKey ?? "",
             InstitutionId = ambassador.InstitutionId,
             EducationalProgramId = ambassador.EducationalProgramId,
             EducationalProgramName = ambassador.EducationProgram?.Name.Ru ?? "",
+            Institution = ambassador.Institution?.ToAdminDto("kk"),
+            
+            FirstName = ambassador.User?.FirstName ?? "",
+            LastName = ambassador.User?.LastName ?? "",
+            Email = ambassador.User?.Email ?? "",
+            UserId = ambassador.User?.Id ?? "",
+            
             StudyYear = ambassador.StudyYear,
             DegreeType = ambassador.DegreeType,
             Tagline = ambassador.Tagline,

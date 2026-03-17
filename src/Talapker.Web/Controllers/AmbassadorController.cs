@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Talapker.Application;
-using Talapker.Application.AmbassadorFeatures.Commands.ChangeAmbassadorInfo;
-using Talapker.Application.AmbassadorFeatures.Commands.Queries;
+using Talapker.Application.AmbassadorFeatures.Commands;
 using Talapker.Application.AmbassadorFeatures.DTOs;
-using Talapker.Application.AmbassadorFeatures.InviteAmbassador;
 using Talapker.Application.AmbassadorFeatures.Queries;
-using Talapker.Infrastructure.Data.Institution;
 using Wolverine;
 
 namespace Talapker.Web.Controllers;
@@ -22,8 +19,8 @@ public class AmbassadorController(IMessageBus messageBus) : ControllerBase
     }
     
     [HttpPost]
-    [Route("invite")]
-    public async Task<ActionResult<ApiResponse>> InviteAmbassadorAsync(InviteAmbassadorCommand command)
+    [Route("invite/accept")]
+    public async Task<ActionResult<ApiResponse>> AcceptInviteAsync(AcceptAmbassadorInvitationCommand command)
     {
         var result = await messageBus.InvokeAsync<ApiResponse>(command);
         return result.ToActionResult();

@@ -33,13 +33,13 @@ public static class Extensions
     public static IServiceCollection AddFirebase(this IServiceCollection serviceCollection,
         IConfiguration configuration)
     {
-        var firebaseConfig = configuration.GetSection("Firebase").Get<Dictionary<string, string>>();
+        var firebaseKeyPath = configuration["Firebase:KeyPath"]!;
 
         if (FirebaseApp.DefaultInstance == null)
         {
             FirebaseApp.Create(new AppOptions
             {
-                Credential = GoogleCredential.FromJson(JsonSerializer.Serialize(firebaseConfig))
+                Credential = GoogleCredential.FromFile(firebaseKeyPath)
             });
         }
 

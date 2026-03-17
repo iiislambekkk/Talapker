@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Talapker.Notifications.Contracts;
 using Talapker.Notifications.Features.Commands;
 using Wolverine;
 using Wolverine.Kafka;

@@ -13,12 +13,12 @@ public record GetChatHistoryQuery(
     bool Older = true
 );
 public record GetChatHistoryResponse(
-    List<ChatMessageDto> Messages,
+    List<AiChatMessageDto> Messages,
     DateTime? NextCursor,
     bool HasMore
 );
 
-public record ChatMessageDto
+public record AiChatMessageDto
 {
     public Guid Id { get; set; }
     public string Role { get; set; } = string.Empty;
@@ -123,7 +123,7 @@ public class GetChatHistoryHandler
 
         // Конвертируем в DTO и сортируем для фронтенда (от старых к новым сверху вниз)
         var messageDtos = messages
-            .Select(m => new ChatMessageDto
+            .Select(m => new AiChatMessageDto
             {
                 Id = m.Id,
                 Role = m.Role,

@@ -13,8 +13,6 @@ public static class AuthExtensions
 {
     public static IServiceCollection AddAspIdentity(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, CustomClaimsPrincipalFactory>();
-        
         services
             .Configure<IdentitySettings>(configuration.GetSection(nameof(IdentitySettings)))
             .AddDefaultIdentity<ApplicationUser>(options =>
