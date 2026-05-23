@@ -4,15 +4,8 @@ namespace Talapker.Application.AI.Knowledge;
 
 // ── Wolverine messages ─────────────────────────────────────────────────────
 
-public record ProcessKnowledgeFile(Guid FileId);
-
-public record EmbedKnowledgeEntry(
-    Guid InstitutionId,
-    Guid SourceFileId,
-    string Question,
-    string Answer,
-    List<string> Tags
-);
+public record ProcessKnowledgeFile(Guid FileId, string? AdditionalText = null);
+public record EmbedKnowledgeEntry(Guid InstitutionId, Guid? SourceFileId, string Question, string Answer, List<string> Tags);
 
 public record ReEmbedKnowledgeEntry(Guid EntryId);
 
@@ -82,7 +75,8 @@ public record KnowledgeFileDto(
     string? ErrorMessage,
     DateTime UploadedAt,
     DateTime? ProcessedAt,
-    int EntriesCount
+    int EntriesCount,
+    string TextContent
 );
 
 public record KnowledgeEntryDto(

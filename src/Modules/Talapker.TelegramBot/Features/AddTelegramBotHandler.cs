@@ -61,6 +61,7 @@ public class AddTelegramBotHandler
 
             await vaultStore.StoreTokenAsync(bot.Id, command.BotToken, cancellationToken);
 
+            
             var webhookUrl = $"{configuration["Telegram:AppUrl"]}/api/telegram/webhook/{bot.Id}";
             await botClient.SetWebhook(webhookUrl, cancellationToken: cancellationToken);
 

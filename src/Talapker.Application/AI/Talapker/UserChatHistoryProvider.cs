@@ -14,7 +14,7 @@ public class UserChatHistoryProvider : ChatMessageStore
     private readonly TalapkerDbContext _dbContext;
     private Guid _userId;
     private Guid _institutionId;
-    private readonly int _maxHistoryMessages = 4;
+    private readonly int _maxHistoryMessages = 10;
     private static readonly JsonSerializerOptions _jsonOptions = new() { WriteIndented = false };
     private readonly ILogger<UserChatHistoryProvider> _logger;
 

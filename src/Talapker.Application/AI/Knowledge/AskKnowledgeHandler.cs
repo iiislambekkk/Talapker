@@ -5,69 +5,49 @@ using Microsoft.Extensions.Configuration;
 using OpenAI;
 using Qdrant.Client;
 using Qdrant.Client.Grpc;
+using Talapker.Infrastructure;
+using Talapker.Infrastructure.Secrets;
 using ChatMessage = Microsoft.Extensions.AI.ChatMessage;
 using Filter = Qdrant.Client.Grpc.Filter;
 
 namespace Talapker.Application.AI.Knowledge;
 
-public class AskKnowledgeHandler(IConfiguration configuration)
+public class AskKnowledgeHandler(IKnowledgeSearchService knowledgeSearch, IConfiguration configuration)
 {
-    private const string QdrantCollection = "knowledge";
-
     public async Task<AskKnowledgeResult> Handle(AskKnowledge message)
     {
-        var openAIClient = new OpenAIClient(configuration["OpenAIKey"]!);
+        var searchResult = await knowledgeSearch.SearchAsync(new KnowledgeSearchOptions(
+            Question: message.Question,
+            InstitutionId: message.InstitutionId
+        ));
 
-        var embeddingClient = openAIClient.GetEmbeddingClient("text-embedding-3-small");
-        var embeddingResult = await embeddingClient.GenerateEmbeddingAsync(message.Question);
-        var queryEmbedding = embeddingResult.Value.ToFloats().ToArray();
-
-        var qdrant = CreateQdrantClient();
-        var searchResults = await qdrant.SearchAsync(
-            QdrantCollection,
-            queryEmbedding,
-            filter: new Filter
-            {
-                Must =
-                {
-                    new Condition
-                    {
-                        Field = new FieldCondition
-                        {
-                            Key = "institution_id",
-                            Match = new Match { Text = message.InstitutionId.ToString() }
-                        }
-                    }
-                }
-            },
-            limit: 3
-        );
+        var apiKey = configuration[SecretsKeys.OpenAIKey];
+        var openAIClient = new OpenAIClient(apiKey);
 
         var contextBuilder = new StringBuilder();
         contextBuilder.AppendLine("Контекст из базы знаний:");
 
         var sources = new List<KnowledgeSourceRef>();
 
-        foreach (var r in searchResults)
+        foreach (var chunk in searchResult.Chunks)
         {
-            contextBuilder.AppendLine($"- Вопрос: {r.Payload["question"].StringValue}");
-            contextBuilder.AppendLine($"  Ответ: {r.Payload["answer"].StringValue}");
-            contextBuilder.AppendLine($"  Источник: {r.Payload["source_file_name"].StringValue}");
+            contextBuilder.AppendLine($"- Вопрос: {chunk.Question}");
+            contextBuilder.AppendLine($"  Ответ: {chunk.Answer}");
+            contextBuilder.AppendLine($"  Источник ID: {chunk.SourceFileId}");
             contextBuilder.AppendLine();
 
-            var fileKey = r.Payload["source_file_key"].StringValue;
-            if (!string.IsNullOrEmpty(fileKey) && sources.All(s => s.FileKey != fileKey))
+            if (!string.IsNullOrEmpty(chunk.SourceFileId) && sources.All(s => s.FileKey != chunk.SourceFileId))
             {
                 sources.Add(new KnowledgeSourceRef(
-                    r.Payload["source_file_name"].StringValue,
-                    fileKey,
-                    r.Payload["question"].StringValue
+                    chunk.SourceFileId,
+                    chunk.SourceFileId,
+                    chunk.Question
                 ));
             }
         }
 
         var agent = openAIClient
-            .GetChatClient("gpt-5-mini")
+            .GetChatClient("gpt-5-nano-2025-08-07")
             .AsIChatClient()
             .CreateAIAgent(new ChatClientAgentOptions
             {
@@ -77,7 +57,6 @@ public class AskKnowledgeHandler(IConfiguration configuration)
                         Ты помощник по вопросам поступления в университет.
                         Отвечай только на основе предоставленного контекста.
                         Если ответа нет в контексте — скажи что не знаешь.
-                        В конце ответа укажи источники в формате: **Источник:** название файла.
                         Отвечай на русском языке.
 
                         {contextBuilder}
@@ -99,10 +78,4 @@ public class AskKnowledgeHandler(IConfiguration configuration)
             Sources: sources
         );
     }
-
-    private QdrantClient CreateQdrantClient() =>
-        new(
-            configuration["Qdrant:Host"] ?? "localhost",
-            int.Parse(configuration["Qdrant:Port"] ?? "6334")
-        );
 }

@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
+using Talapker.Application.AI.Talapker;
 using Talapker.Infrastructure;
 using Talapker.Infrastructure.Data;
 using Talapker.Infrastructure.Data.Institution;
@@ -24,6 +26,7 @@ public class CreateEducationProgramHandler
     public async Task<ApiResponse<Guid>> Handle(
         CreateEducationProgramCommand command,
         TalapkerDbContext db,
+        IDistributedCache cache,
         CancellationToken cancellationToken)
     {
         var faculty = await db.Faculties
@@ -56,6 +59,9 @@ public class CreateEducationProgramHandler
         
         db.EducationPrograms.Add(program);
         await db.SaveChangesAsync(cancellationToken);
+        
+        await TalapkerToolsCache.InvalidateAllProgramsAsync(cache, cancellationToken);
+        await TalapkerToolsCache.InvalidateInstitutionContextAsync(cache, faculty.InstitutionId, cancellationToken);
         
         return ApiResponse<Guid>.Success(program.Id);
     }

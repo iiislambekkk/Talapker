@@ -5,7 +5,12 @@ using OpenIddict.EntityFrameworkCore.Models;
 using Talapker.Infrastructure.Data.Assistant;
 using Talapker.Infrastructure.Data.Institution;
 using Talapker.Infrastructure.Data.Institution.InstitutionEntity;
+using Talapker.Infrastructure.Data.Tg;
 using Talapker.Infrastructure.Data.UserAccess;
+
+
+
+
 
 namespace Talapker.Infrastructure.Data;
 
@@ -37,6 +42,8 @@ public class TalapkerDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<ChatMessage> ChatMessages { get; set; } 
     public DbSet<KnowledgeFile> KnowledgeFiles { get; set; } 
     public DbSet<KnowledgeEntry> KnowledgeEntries { get; set; } 
+    
+    public DbSet<BotToken> BotTokens { get; set; }
     
     protected override void OnModelCreating(ModelBuilder builder)
     {

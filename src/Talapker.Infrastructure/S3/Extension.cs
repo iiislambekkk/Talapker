@@ -2,6 +2,8 @@
 using Amazon.S3;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging.Abstractions;
+using Talapker.Infrastructure.Secrets;
 using Talapker.Infrastructure.Settings;
 
 namespace Talapker.Infrastructure.S3;
@@ -12,6 +14,12 @@ public static class Extension
     {
         var awsSettings = configuration.GetSection(nameof(AWS3Settings)).Get<AWS3Settings>()!;
         
+        var secretProvider = new SecretProvider(configuration, NullLogger<SecretProvider>.Instance);
+        var secretKey = secretProvider
+            .GetRequiredAsync("AWS3Settings:SecretKey")
+            .GetAwaiter()
+            .GetResult();
+        
         services.AddSingleton<IAmazonS3>(conf =>
             {
                 var s3Config = new AmazonS3Config()
@@ -19,7 +27,7 @@ public static class Extension
                     ServiceURL = awsSettings.Endpoint
                 };
                 
-                var credentials = new BasicAWSCredentials(awsSettings.AccessKey, awsSettings.SecretKey);
+                var credentials = new BasicAWSCredentials(awsSettings.AccessKey, secretKey);
 
                 return new AmazonS3Client(credentials,  s3Config);
             }

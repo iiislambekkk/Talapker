@@ -1,0 +1,572 @@
+[
+  {
+    "score": 44,
+    "ovpo": "002",
+    "type": "prof"
+  },
+  {
+    "score": 34,
+    "ovpo": "002",
+    "type": "prof"
+  },
+  {
+    "score": 32,
+    "ovpo": "182",
+    "type": "prof"
+  },
+  {
+    "score": 30,
+    "ovpo": "069",
+    "type": "prof"
+  },
+  {
+    "score": 126,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "002",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "003",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "045",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "069",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "141",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "154",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "045",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "045",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "184",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 98,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 98,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "033",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "141",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "003",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "003",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "122",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "003",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "045",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "016",
+    "type": "ped"
+  },
+  {
+    "score": 94,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "002",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "501",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "015",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "174",
+    "type": "ped"
+  },
+  {
+    "score": 92,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 92,
+    "ovpo": "002",
+    "type": "ped"
+  },
+  {
+    "score": 92,
+    "ovpo": "045",
+    "type": "ped"
+  },
+  {
+    "score": 92,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 92,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 93,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 92,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 91,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 95,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 90,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 88,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 87,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 86,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 86,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 84,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 83,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 78,
+    "ovpo": "040",
+    "type": "ped"
+  }
+]

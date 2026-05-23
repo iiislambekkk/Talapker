@@ -6,6 +6,9 @@ using Elastic.Serilog.Sinks;
 
 namespace Talapker.Web.Logging;
 
+
+
+
 public static class Extensions
 {
     public static IServiceCollection AddAndConfigureSerilog
@@ -20,6 +23,7 @@ public static class Extensions
             .MinimumLevel.Override("System", LogEventLevel.Warning)
             .MinimumLevel.Override("Marten", LogEventLevel.Warning)
             .MinimumLevel.Override("Wolverine", LogEventLevel.Warning)
+            .MinimumLevel.Override( "Talapker.Application.AI.Knowledge", LogEventLevel.Debug)
             .MinimumLevel.Override("Npgsql", LogEventLevel.Warning)
             .Enrich.FromLogContext()
             .WriteTo.Console(

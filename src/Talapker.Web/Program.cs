@@ -1,3 +1,4 @@
+using Talapker.Application.AI.Knowledge;
 using Talapker.Application.AI.Talapker;
 using Talapker.Application.AI.TranslationAgent;
 using Talapker.Application.ChatFeatures;
@@ -9,6 +10,7 @@ using Talapker.Infrastructure.Data.UserAccess;
 using Talapker.Infrastructure.Email;
 using Talapker.Infrastructure.Exceptions;
 using Talapker.Infrastructure.S3;
+using Talapker.Infrastructure.Secrets;
 using Talapker.Infrastructure.Vault;
 using Talapker.Infrastructure.Wolverine;
 using Talapker.Notifications;
@@ -24,8 +26,10 @@ builder.Configuration.AddCommandLine(args);
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<ILanguageContext, LanguageContext>();
+builder.Services.AddScoped<ILanguageContext, LanguageContext>();
 
 builder.Services.ConfigureCors();
+builder.Services.AddSecretsProvider();
 builder.Services.AddSignalR();
 
 builder.Services.AddLocalizedRazor();
@@ -34,6 +38,7 @@ builder.Host
     .AddAndConfigureWolverine(builder.Configuration, [typeof(GetUserByIdQueryHandler).Assembly, typeof(SendPushHandler).Assembly, typeof(TelegramWebhookController).Assembly]);
 
 builder.Services.AddMemoryCache();
+
 
 builder.Services
     .AddTalapkerAgent()
@@ -44,6 +49,11 @@ builder.Services
     .AddEmailSender(builder.Configuration)
     .AddAndConfigureSerilog(builder.Configuration);
 
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = "localhost:6379";
+    options.InstanceName = "talapker:"; 
+});
 
 builder.Services
     .AddVaultStore(builder.Configuration)
@@ -95,6 +105,7 @@ app.UseMiddleware<SecurityStampMiddleware>();
 
 app.MapHub<TalapkerHub>("/talapkerHub");
 app.MapHub<ChatHub>("/hubs/chat");
+app.MapHub<KnowledgeHub>("/hubs/knowledge");
 Extensions.MapNotificationModuleRoutes(app);
 app.MapControllers();
 app.MapRazorPages();

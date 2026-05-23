@@ -19,6 +19,7 @@ public class GrantCompetitionStatisticConfiguration : IEntityTypeConfiguration<G
             .HasForeignKey(u => u.EducationGroupId)
             .OnDelete(DeleteBehavior.Cascade);
         
-        builder.OwnsMany(e => e.Records, record => record.ToJson());
+        builder.OwnsMany(e => e.FrequencyScoreRecords, record => record.ToJson());
+        builder.OwnsMany(e => e.OvpoScoreRecords, record => record.ToJson());
     }
 }

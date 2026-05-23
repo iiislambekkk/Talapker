@@ -5,7 +5,6 @@ using Microsoft.Extensions.AI;
 using OpenAI;
 using Talapker.Application;
 using Talapker.Application.FacultyFeatures.Command;
-using Talapker.Application.FacultyFeatures.Command.ChangeEducationProgram;
 using Talapker.Application.FacultyFeatures.Command.CreateEducationProgram;
 using Talapker.Application.FacultyFeatures.DTOs.Mappers;
 using Talapker.Application.FacultyFeatures.Queries;
@@ -97,6 +96,13 @@ public class EducationProgramController(IMessageBus messageBus, IConfiguration c
     public async Task<ActionResult<EducationProgramDto?>> GetEducationProgramByIdAsync(Guid id)
     {
         return await messageBus.InvokeAsync<EducationProgramDto?>(new GetEducationProgramByIdQuery(id));
+    }
+    
+    [HttpGet]
+    [Route("code/{code}")]
+    public async Task<ActionResult<EducationProgramDto?>> GetEducationProgramByCodeAsync(string code)
+    {
+        return await messageBus.InvokeAsync<EducationProgramDto?>(new GetEducationProgramByCodeQuery(code));
     }
     
     [HttpPut]

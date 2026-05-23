@@ -1,5 +1,5 @@
 name: "TalapkerDevInfra"
-
+  
 services:
   postgresDb:
     image: "postgres:latest"
@@ -18,18 +18,18 @@ services:
       timeout: 5s
       retries: 10
   
-#  pgadmin:
-#    image: dpage/pgadmin4
-#    container_name: talapker-pgadmin
-#    environment:
-#      PGADMIN_DEFAULT_EMAIL: "admin@gmail.com"
-#      PGADMIN_DEFAULT_PASSWORD: "admin@gmail.com"
-#    ports:
-#      - "5050:80"
-#    depends_on:
-#      - postgresDb
-#    volumes:
-#      - talapker_pgadmin_data:/var/lib/pgadmin
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: talapker-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "admin@gmail.com"
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgresDb
+    volumes:
+      - talapker_pgadmin_data:/var/lib/pgadmin
   
   kafka:
     image: apache/kafka:latest
@@ -59,79 +59,55 @@ services:
       timeout: 10s
       retries: 5
   
-#  kafka-ui:
-#    image: provectuslabs/kafka-ui
-#    container_name: kafka-ui
-#    ports:
-#      - "8088:8080"
-#    environment:
-#      KAFKA_CLUSTERS_0_NAME: local
-#      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:9092
-#      KAFKA_CLUSTERS_0_READONLY: "false"
-#    depends_on:
-#      kafka:
-#        condition: service_healthy
+  kafka-ui:
+    image: provectuslabs/kafka-ui
+    container_name: kafka-ui
+    ports:
+      - "8088:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:9092
+      KAFKA_CLUSTERS_0_READONLY: "false"
+    depends_on:
+      kafka:
+        condition: service_healthy
   
-#  elasticsearch:
-#    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.4
-#    container_name: elasticsearch
-#    environment:
-#      - discovery.type=single-node
-#      - xpack.security.enabled=false
-#      - xpack.security.http.ssl.enabled=false
-#      - ELASTIC_PASSWORD=elasticpassword
-#      - ES_JAVA_OPTS=-Xms1g -Xmx1g
-#      - xpack.security.enrollment.enabled=false
-#    ports:
-#      - "9200:9200"
-#    volumes:
-#      - ./volumes/es_data:/usr/share/elasticsearch/data
-#    networks:
-#      - elastic
-#    healthcheck:
-#      test: ["CMD-SHELL", "curl -s http://localhost:9200/_cluster/health | grep -q '\"status\":\"green\"\\|\"status\":\"yellow\"'"]
-#      interval: 10s
-#      timeout: 10s
-#      retries: 10
-#  
-#  kibana:
-#    image: docker.elastic.co/kibana/kibana:9.1.4
-#    container_name: kibana
-#    depends_on:
-#      elasticsearch:
-#        condition: service_healthy
-#    environment:
-#      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-#      - xpack.security.enrollment.enabled=false
-#    ports:
-#      - "5601:5601"
-#    networks:
-#      - elastic
-#  
-#  migrate:
-#    image: openfga/openfga:latest
-#    container_name: migrate
-#    command: migrate
-#    environment:
-#      - OPENFGA_DATASTORE_ENGINE=postgres
-#      - OPENFGA_DATASTORE_URI=postgres://postgres:postgres@postgresDb/openfga
-#
-#
-#  openfga:
-#    depends_on:
-#      migrate:
-#        condition: service_completed_successfully
-#    image: openfga/openfga:latest
-#    container_name: openfga
-#    environment:
-#      - OPENFGA_DATASTORE_ENGINE=postgres
-#      - OPENFGA_DATASTORE_URI=postgres://postgres:postgres@postgresDb/openfga
-#      - OPENFGA_LOG_FORMAT=json
-#    command: run
-#    ports:
-#      - "8080:8080"
-#      - "3000:3000"
-#  
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.1.4
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - ELASTIC_PASSWORD=elasticpassword
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.enrollment.enabled=false
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./volumes/es_data:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200/_cluster/health | grep -q '\"status\":\"green\"\\|\"status\":\"yellow\"'"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:9.1.4
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - xpack.security.enrollment.enabled=false
+    ports:
+      - "5601:5601"
+    networks:
+      - elastic
+
   vault:
     image: hashicorp/vault:latest
     container_name: vault
@@ -153,34 +129,34 @@ services:
     ports:
       - "6379:6379"
 
-#  livekit:
-#    image: livekit/livekit-server:latest
-#    command: --config /etc/livekit.yaml
-#    restart: unless-stopped
-#    ports:
-#      - "7880:7880"
-#      - "7881:7881"
-#      - "50000-50200:50000-50200/udp"
-#    networks:
-#      - liveKit
-#    extra_hosts:
-#      - "host.docker.internal:host-gateway"
-#    volumes:
-#      - ./livekit.yaml:/etc/livekit.yaml
-#
-#  egress:
-#    image: livekit/egress:latest
-#    restart: unless-stopped
-#    environment:
-#      - EGRESS_CONFIG_FILE=/etc/egress.yaml
-#    networks:
-#      - liveKit
-#    extra_hosts:
-#      - "host.docker.internal:host-gateway"
-#    volumes:
-#      - ./egress.yaml:/etc/egress.yaml
-#    cap_add:
-#      - SYS_ADMIN
+  livekit:
+    image: livekit/livekit-server:latest
+    command: --config /etc/livekit.yaml
+    restart: unless-stopped
+    ports:
+      - "7880:7880"
+      - "7881:7881"
+      - "50000-50200:50000-50200/udp"
+    networks:
+      - liveKit
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./livekit.yaml:/etc/livekit.yaml
+
+  egress:
+    image: livekit/egress:latest
+    restart: unless-stopped
+    environment:
+      - EGRESS_CONFIG_FILE=/etc/egress.yaml
+    networks:
+      - liveKit
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./egress.yaml:/etc/egress.yaml
+    cap_add:
+      - SYS_ADMIN
 
   qdrant:
     image: qdrant/qdrant:latest

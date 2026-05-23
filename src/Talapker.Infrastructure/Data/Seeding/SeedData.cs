@@ -17,6 +17,8 @@ public class SeedData(TalapkerDbContext context)
         SeedClassifications(context);
         SeedStatistics(context);
         SeedEducationPrograms(context);
+        SeedMagistracyGroups(context);
+        SeedMagistracyGrants(context);
     }
     
     private static void SeedEducationPrograms(TalapkerDbContext context)
@@ -415,10 +417,20 @@ public class SeedData(TalapkerDbContext context)
     {
         var scoreFrequencies = rawRecords
             .GroupBy(r => r.Score)
-            .Select(g => new GrantCompetitionRecord
+            .Select(g => new GrantCompetitionFrequencyRecord
             {
                 Score = g.Key,
-                Frequency = g.Count()
+                Frequency = g.Count(),
+            })
+            .ToList();
+        
+        var ovpoRecords = rawRecords
+            .GroupBy(r => new { r.Score, r.Ovpo })
+            .Select(g => new GrantCompetitionOvpoRecord
+            {
+                Score = g.Key.Score,
+                Frequency = g.Count(),
+                Ovpo = g.Key.Ovpo
             })
             .ToList();
 
@@ -428,9 +440,145 @@ public class SeedData(TalapkerDbContext context)
             Year = 2025,
             EducationGroup = educationGroup,
             CompetitionType = competitionType,
-            Records = scoreFrequencies,
+            FrequencyScoreRecords = scoreFrequencies,
+            OvpoScoreRecords = ovpoRecords,
             MinScore = rawRecords.Min(r => r.Score),
-            TotalGrants = rawRecords.Count
+            TotalGrants = rawRecords.Count,
+            Degree = GrantDegree.Bachelor
+        };
+    }
+    
+    private static void SeedMagistracyGroups(TalapkerDbContext context)
+    {
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+        var basePath = Path.Combine(AppContext.BaseDirectory, "SeedingData");
+        var jsonString = File.ReadAllText(Path.Combine(basePath, "magistracyEdGroups.json"));
+        var seeds = JsonSerializer.Deserialize<List<MagistracyGroupSeed>>(jsonString, options)
+                    ?? new List<MagistracyGroupSeed>();
+
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine($"Starting magistracy groups seeding, found {seeds.Count} groups.");
+
+        if (context.EducationGroups.Any(eg => eg.NationalCode.StartsWith("M")))
+        {
+            Console.WriteLine("Magistracy groups already seeded, skipping...");
+            Console.ResetColor();
+            return;
+        }
+
+        foreach (var seed in seeds)
+        {
+            var group = new EducationGroup
+            {
+                Id = Guid.NewGuid(),
+                NationalCode = seed.Code,
+                Name = new LocalizedText(seed.NameEn, seed.NameRu, seed.NameKk),
+                EducationFieldId = null,
+            };
+
+            Console.WriteLine($"Adding magistracy group: {seed.Code} — {seed.NameRu}");
+            context.EducationGroups.Add(group);
+        }
+
+        context.SaveChanges();
+        Console.WriteLine("Magistracy groups seeded.");
+        Console.ResetColor();
+    }
+
+    private static void SeedMagistracyGrants(TalapkerDbContext context)
+    {
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+        var basePath = Path.Combine(AppContext.BaseDirectory, "SeedingData", "MagistracyGrants");
+        var files = Directory.GetFiles(basePath, "*.json");
+
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine($"Starting magistracy grants seeding, found {files.Length} files.");
+
+        if (context.GrantCompetitionStatistics.Any(g => g.Degree == GrantDegree.Magistracy))
+        {
+            Console.WriteLine("Magistracy grants already seeded, skipping...");
+            Console.ResetColor();
+            return;
+        }
+
+        var magistracyGroups = context.EducationGroups
+            .Where(eg => eg.NationalCode.StartsWith("M"))
+            .ToList();
+
+        foreach (var file in files)
+        {
+            var code = Path.GetFileNameWithoutExtension(file); // "M056"
+            var group = magistracyGroups.FirstOrDefault(g => g.NationalCode == code);
+
+            if (group == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"{Path.GetFileName(file)}: No education group with code {code}, skipping.");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                continue;
+            }
+
+            var jsonString = File.ReadAllText(file);
+            var records = JsonSerializer.Deserialize<List<MagistracyGrantRecordSeed>>(jsonString, options)
+                          ?? new List<MagistracyGrantRecordSeed>();
+
+            if (records.Count == 0) continue;
+
+            // Группируем по type: prof / ped
+            var byType = records.GroupBy(r => r.Type.ToLower()).ToDictionary(g => g.Key, g => g.ToList());
+
+            foreach (var (type, typeRecords) in byType)
+            {
+                var competitionType = type == "prof"
+                    ? GrantCompetitionType.Profile
+                    : GrantCompetitionType.Ped;
+
+                var statistic = BuildMagistracyStatistic(group, competitionType, typeRecords);
+                context.GrantCompetitionStatistics.Add(statistic);
+                Console.WriteLine($"  {code} [{type}]: {typeRecords.Count} records, minScore={statistic.MinScore}");
+            }
+        }
+
+        context.SaveChanges();
+        Console.WriteLine("Magistracy grants seeded.");
+        Console.ResetColor();
+    }
+
+    private static GrantCompetitionStatistic BuildMagistracyStatistic(
+        EducationGroup group,
+        GrantCompetitionType competitionType,
+        List<MagistracyGrantRecordSeed> records)
+    {
+        var scoreFrequencies = records
+            .GroupBy(r => r.Score)
+            .Select(g => new GrantCompetitionFrequencyRecord
+            {
+                Score = g.Key,
+                Frequency = g.Count(),
+            })
+            .ToList();
+
+        var ovpoRecords = records
+            .GroupBy(r => new { r.Score, r.Ovpo })
+            .Select(g => new GrantCompetitionOvpoRecord
+            {
+                Score = g.Key.Score,
+                Frequency = g.Count(),
+                Ovpo = int.TryParse(g.Key.Ovpo, out var ovpoInt) ? ovpoInt : 0
+            })
+            .ToList();
+
+        return new GrantCompetitionStatistic
+        {
+            Id = Guid.NewGuid(),
+            Year = 2025,
+            EducationGroup = group,
+            CompetitionType = competitionType,
+            FrequencyScoreRecords = scoreFrequencies,
+            OvpoScoreRecords = ovpoRecords,
+            MinScore = records.Min(r => r.Score),
+            TotalGrants = records.Count,
+            Degree = GrantDegree.Magistracy
         };
     }
 }

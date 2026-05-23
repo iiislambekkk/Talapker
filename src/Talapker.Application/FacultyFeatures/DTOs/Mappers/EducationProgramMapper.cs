@@ -28,6 +28,8 @@ public class EducationProgramDto
     public LocalizedText PractiseBases { get; set; } = new();
 
     public int MinimumUntScore { get; set; }
+    public int MinimumPlatnoeUntScore { get; set; }
+    public int MinimumGrantUntScore { get; set; }
     public string Code { get; set; } = string.Empty;
     public StudyForm StudyForm { get; set; }
     public decimal DurationYears { get; set; }
@@ -56,6 +58,9 @@ public static class EducationProgramMapper
         StudyForm = program.StudyForm,
         DurationYears = program.DurationYears,
         Languages = program.Languages ?? new(),
+        
+        MinimumPlatnoeUntScore = program.MinimumPlatnoeUntScore,
+        MinimumGrantUntScore = program.MinimumGrantUntScore,
 
         Faculty = program.Faculty?.ToSlimDto() ?? new(),
 

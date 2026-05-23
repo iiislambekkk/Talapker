@@ -2,17 +2,17 @@ using Microsoft.Extensions.Configuration;
 using OpenAI;
 using Qdrant.Client;
 using Qdrant.Client.Grpc;
+using Talapker.Application.AI.Knowledge;
+using Talapker.Infrastructure;
 using Talapker.Infrastructure.Data;
 using Talapker.Infrastructure.Data.Assistant;
-
-namespace Talapker.Application.AI.Knowledge;
 
 public class EmbedKnowledgeEntryHandler
 {
     private const string QdrantCollection = "knowledge";
     private const int VectorSize = 1536;
 
-    public async Task Handle(EmbedKnowledgeEntry message, TalapkerDbContext db, IConfiguration configuration)
+    public async Task Handle(EmbedKnowledgeEntry message, TalapkerDbContext db, IConfiguration configuration, QdrantClient qdrant)
     {
         var entry = new KnowledgeEntry
         {
@@ -26,26 +26,22 @@ public class EmbedKnowledgeEntryHandler
         db.KnowledgeEntries.Add(entry);
         await db.SaveChangesAsync();
 
-        await EmbedAndUpsertAsync(entry, message.SourceFileId.ToString(), "", "", configuration);
+        await EmbedAndUpsertAsync(entry, message.SourceFileId?.ToString() ?? "", configuration, qdrant);
     }
 
     internal async Task EmbedAndUpsertAsync(
         KnowledgeEntry entry,
         string sourceFileId,
-        string sourceFileName,
-        string sourceFileKey,
-        IConfiguration configuration
+        IConfiguration configuration,
+        QdrantClient qdrant
     )
     {
-        var openAIClient = new OpenAIClient(configuration["OpenAIKey"]!);
+        var apiKey = configuration[SecretsKeys.OpenAIKey];
+        var openAIClient = new OpenAIClient(apiKey);
         var embeddingClient = openAIClient.GetEmbeddingClient("text-embedding-3-small");
         var embeddingResult = await embeddingClient.GenerateEmbeddingAsync(entry.Question);
         var embedding = embeddingResult.Value.ToFloats().ToArray();
 
-        var qdrant = new QdrantClient(
-            configuration["Qdrant:Host"] ?? "localhost",
-            int.Parse(configuration["Qdrant:Port"] ?? "6334")
-        );
         await EnsureCollectionAsync(qdrant);
 
         await qdrant.UpsertAsync(QdrantCollection,
@@ -60,9 +56,7 @@ public class EmbedKnowledgeEntryHandler
                     ["answer"] = entry.Answer,
                     ["tags"] = string.Join(",", entry.Tags),
                     ["institution_id"] = entry.InstitutionId.ToString(),
-                    ["source_file_id"] = sourceFileId,
-                    ["source_file_name"] = sourceFileName,
-                    ["source_file_key"] = sourceFileKey
+                    ["source_file_id"] = sourceFileId
                 }
             }
         ]);

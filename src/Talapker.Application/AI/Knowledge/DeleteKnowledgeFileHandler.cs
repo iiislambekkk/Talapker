@@ -36,11 +36,13 @@ public class DeleteKnowledgeFileHandler
         if (entryIds.Count > 0)
             await qdrant.DeleteAsync(QdrantCollection, entryIds);
 
-        await s3Client.DeleteObjectAsync(new DeleteObjectRequest
-        {
-            BucketName = configuration["AWS3Settings:Bucket"]!,
-            Key = file.StorageKey
-        });
+        if (!String.IsNullOrWhiteSpace(file.StorageKey)) {
+            await s3Client.DeleteObjectAsync(new DeleteObjectRequest
+                {
+                    BucketName = configuration["AWS3Settings:Bucket"]!,
+                    Key = file.StorageKey
+                });
+        }
 
         db.KnowledgeFiles.Remove(file);
         await db.SaveChangesAsync();

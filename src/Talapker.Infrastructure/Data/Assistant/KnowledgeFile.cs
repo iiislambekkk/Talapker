@@ -5,9 +5,11 @@ public class KnowledgeFile
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public Guid InstitutionId { get; set; }
+    public Guid? UploadedById { get; set; }
     public Institution.Institution Institution { get; set; } = null!;
     public string FileName { get; set; } = string.Empty;
     public string StorageKey { get; set; } = string.Empty;
+    public string TextContent { get; set; } = string.Empty;
     public KnowledgeFileStatus Status { get; set; } = KnowledgeFileStatus.Pending;
     public string? ErrorMessage { get; set; }
     public DateTime UploadedAt { get; set; } = DateTime.UtcNow;

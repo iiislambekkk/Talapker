@@ -1,0 +1,4692 @@
+[
+  {
+    "score": 47,
+    "ovpo": "038",
+    "type": "prof"
+  },
+  {
+    "score": 46,
+    "ovpo": "093",
+    "type": "prof"
+  },
+  {
+    "score": 46,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 43,
+    "ovpo": "093",
+    "type": "prof"
+  },
+  {
+    "score": 42,
+    "ovpo": "184",
+    "type": "prof"
+  },
+  {
+    "score": 42,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 42,
+    "ovpo": "031",
+    "type": "prof"
+  },
+  {
+    "score": 42,
+    "ovpo": "038",
+    "type": "prof"
+  },
+  {
+    "score": 41,
+    "ovpo": "501",
+    "type": "prof"
+  },
+  {
+    "score": 41,
+    "ovpo": "031",
+    "type": "prof"
+  },
+  {
+    "score": 41,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 39,
+    "ovpo": "011",
+    "type": "prof"
+  },
+  {
+    "score": 39,
+    "ovpo": "011",
+    "type": "prof"
+  },
+  {
+    "score": 39,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 39,
+    "ovpo": "032",
+    "type": "prof"
+  },
+  {
+    "score": 38,
+    "ovpo": "053",
+    "type": "prof"
+  },
+  {
+    "score": 37,
+    "ovpo": "173",
+    "type": "prof"
+  },
+  {
+    "score": 37,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 36,
+    "ovpo": "182",
+    "type": "prof"
+  },
+  {
+    "score": 36,
+    "ovpo": "093",
+    "type": "prof"
+  },
+  {
+    "score": 35,
+    "ovpo": "069",
+    "type": "prof"
+  },
+  {
+    "score": 35,
+    "ovpo": "184",
+    "type": "prof"
+  },
+  {
+    "score": 34,
+    "ovpo": "053",
+    "type": "prof"
+  },
+  {
+    "score": 34,
+    "ovpo": "093",
+    "type": "prof"
+  },
+  {
+    "score": 34,
+    "ovpo": "049",
+    "type": "prof"
+  },
+  {
+    "score": 33,
+    "ovpo": "182",
+    "type": "prof"
+  },
+  {
+    "score": 33,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 33,
+    "ovpo": "093",
+    "type": "prof"
+  },
+  {
+    "score": 33,
+    "ovpo": "093",
+    "type": "prof"
+  },
+  {
+    "score": 32,
+    "ovpo": "182",
+    "type": "prof"
+  },
+  {
+    "score": 32,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 32,
+    "ovpo": "029",
+    "type": "prof"
+  },
+  {
+    "score": 32,
+    "ovpo": "184",
+    "type": "prof"
+  },
+  {
+    "score": 31,
+    "ovpo": "053",
+    "type": "prof"
+  },
+  {
+    "score": 30,
+    "ovpo": "158",
+    "type": "prof"
+  },
+  {
+    "score": 30,
+    "ovpo": "053",
+    "type": "prof"
+  },
+  {
+    "score": 30,
+    "ovpo": "173",
+    "type": "prof"
+  },
+  {
+    "score": 30,
+    "ovpo": "019",
+    "type": "prof"
+  },
+  {
+    "score": 132,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 130,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 130,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 130,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 129,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 129,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 128,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 128,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 126,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 126,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 125,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 125,
+    "ovpo": "053",
+    "type": "ped"
+  },
+  {
+    "score": 125,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 125,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 125,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 123,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "040",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 122,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "184",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 121,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "501",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "158",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 120,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 119,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 118,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 117,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "049",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "057",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "141",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 115,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "043",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 114,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "053",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 113,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "057",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "057",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "002",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "002",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 111,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "005",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "045",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "053",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "053",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "069",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "069",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "501",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 109,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "184",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "049",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "002",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "053",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "184",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "141",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "049",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "019",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "184",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "034",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "019",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "038",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "021",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "093",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "501",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "153",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "141",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "057",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "173",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "005",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "029",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "182",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "049",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "421",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "190",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "185",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "032",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "027",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "013",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "146",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "522",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "302",
+    "type": "ped"
+  },
+  {
+    "score": 106,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "010",
+    "type": "ped"
+  },
+  {
+    "score": 116,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 99,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 98,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 98,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 98,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 97,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 96,
+    "ovpo": "011",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 112,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 110,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 108,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 107,
+    "ovpo": "012",
+    "type": "ped"
+  },
+  {
+    "score": 124,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 103,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 101,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "031",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 105,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 104,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "036",
+    "type": "ped"
+  },
+  {
+    "score": 102,
+    "ovpo": "037",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "037",
+    "type": "ped"
+  },
+  {
+    "score": 100,
+    "ovpo": "037",
+    "type": "ped"
+  }
+]

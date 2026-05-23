@@ -43,6 +43,8 @@ public class EducationProgram
     public LocalizedText PractiseBases { get; set; } = new();
 
     public int MinimumUntScore { get; set; }
+    public int MinimumPlatnoeUntScore { get; set; }
+    public int MinimumGrantUntScore { get; set; }
     public string Code { get; set; } = string.Empty;
 
     public StudyForm StudyForm { get; set; } = StudyForm.FullTime;

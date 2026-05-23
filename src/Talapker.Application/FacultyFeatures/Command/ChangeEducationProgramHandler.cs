@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
+using Talapker.Application.AI.Talapker;
 using Talapker.Infrastructure;
 using Talapker.Infrastructure.Data;
 using Talapker.Infrastructure.Data.Institution;
 
-namespace Talapker.Application.FacultyFeatures.Command.ChangeEducationProgram;
+namespace Talapker.Application.FacultyFeatures.Command;
 
 public record ChangeEducationProgramCommand(
     Guid Id,
@@ -12,6 +14,8 @@ public record ChangeEducationProgramCommand(
     LocalizedText WorkPlaces,
     LocalizedText PractiseBases,
     int MinimumUntScore,
+    int MinimumGrantUntScore,
+    int MinimumPlatnoeUntScore,
     string Code,
     StudyForm StudyForm,
     decimal DurationYears,
@@ -25,6 +29,7 @@ public class ChangeEducationProgramHandler
     public async Task<ApiResponse> Handle(
         ChangeEducationProgramCommand command,
         TalapkerDbContext db,
+        IDistributedCache cache,
         CancellationToken cancellationToken)
     {
         var program = await db.EducationPrograms
@@ -38,6 +43,12 @@ public class ChangeEducationProgramHandler
 
         if (educationGroup == null)
             return ApiResponse.Fail("Education group not found", ErrorCodes.Default);
+        
+        var faculty = await db.Faculties
+            .FirstOrDefaultAsync(f => f.Id == command.FacultyId, cancellationToken);
+            
+        if (faculty == null)
+            return ApiResponse.Fail("Faculty not found", ErrorCodes.Default);
 
         program.Name = command.Name;
         program.Description = command.Description;
@@ -50,8 +61,12 @@ public class ChangeEducationProgramHandler
         program.EducationGroupId = command.EducationGroupId;
         program.Languages = command.Languages ?? new List<Language>();
         program.FacultyId = command.FacultyId;
+        program.MinimumGrantUntScore =  command.MinimumGrantUntScore;
+        program.MinimumPlatnoeUntScore =  command.MinimumPlatnoeUntScore;
 
         await db.SaveChangesAsync(cancellationToken);
+        await TalapkerToolsCache.InvalidateAllProgramsAsync(cache, cancellationToken);
+        await TalapkerToolsCache.InvalidateInstitutionContextAsync(cache, faculty.InstitutionId, cancellationToken);
 
         return ApiResponse.Success();
     }

@@ -9,7 +9,7 @@ public static class Extension
 {
     public static IServiceCollection AddVaultStore(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddTransient<IVaultStore, VaultStore>();
+        services.AddTransient<IVaultStore, DbTokenStore>();
         
         return services;
     }

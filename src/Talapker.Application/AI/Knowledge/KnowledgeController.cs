@@ -22,52 +22,84 @@ public class KnowledgeController(
     [HttpPost("files")]
     public async Task<ActionResult<UploadKnowledgeFileResponse>> UploadFileAsync(
         Guid institutionId,
-        IFormFile file,
-        [FromForm] string? name)
+        IFormFile? file,
+        [FromForm] string? name,
+        [FromForm] string? text, [FromForm] Guid? userId)
     {
-        if (file.Length == 0)
-            return BadRequest("Файл пустой");
+        if (file is null && string.IsNullOrWhiteSpace(text))
+            return BadRequest("Нужен файл или текст");
 
         var institution = await db.Institutions.FindAsync(institutionId);
         if (institution is null)
             return NotFound("Учреждение не найдено");
 
-        var fileId = Guid.NewGuid();
-        var ext = Path.GetExtension(file.FileName);
-        var displayName = string.IsNullOrWhiteSpace(name) ? file.FileName : name.Trim() + ext;
-        var key = $"knowledge/{institutionId}/{Guid.NewGuid()}{ext}";
-
-        using var memoryStream = new MemoryStream();
-        await file.CopyToAsync(memoryStream);
-
-        await s3Client.PutObjectAsync(new PutObjectRequest
+        if (file is not null)
         {
-            InputStream = new MemoryStream(memoryStream.ToArray()),
-            Key = key,
-            BucketName = configuration["AWS3Settings:Bucket"]!,
-            ContentType = file.ContentType,
-            UseChunkEncoding = false
-        });
+            var allowedTypes = new[]
+            {
+                "application/pdf",
+                "text/plain",
+                "image/jpeg",
+                "image/png",
+                "image/webp",
+                "image/gif"
+            };
+
+            if (!allowedTypes.Contains(file.ContentType))
+                return BadRequest($"Неподдерживаемый тип: {file.ContentType}");
+        }
+
+        var fileId = Guid.NewGuid();
+        string? storageKey = null;
+        string displayName;
+        string contentType;
+
+        if (file is not null)
+        {
+            var ext = Path.GetExtension(file.FileName);
+            displayName = string.IsNullOrWhiteSpace(name) ? file.FileName : name.Trim() + ext;
+            contentType = file.ContentType;
+            storageKey = $"knowledge/{institutionId}/{Guid.NewGuid()}{ext}";
+
+            using var ms = new MemoryStream();
+            await file.CopyToAsync(ms);
+
+            await s3Client.PutObjectAsync(new PutObjectRequest
+            {
+                InputStream = new MemoryStream(ms.ToArray()),
+                Key = storageKey,
+                BucketName = configuration["AWS3Settings:Bucket"]!,
+                ContentType = file.ContentType,
+                UseChunkEncoding = false
+            });
+        }
+        else
+        {
+            displayName = string.IsNullOrWhiteSpace(name) ? "Текст" : name.Trim();
+            contentType = "text/plain";
+        }
 
         var knowledgeFile = new KnowledgeFile
         {
             Id = fileId,
             InstitutionId = institutionId,
             FileName = displayName,
-            StorageKey = key,
+            StorageKey = storageKey ?? string.Empty,
+            UploadedById = userId,
             Status = KnowledgeFileStatus.Pending,
-            ContentType = file.ContentType
+            ContentType = contentType,
+            TextContent = text ?? ""
         };
 
         db.KnowledgeFiles.Add(knowledgeFile);
         await db.SaveChangesAsync();
 
-        await bus.PublishAsync(new ProcessKnowledgeFile(fileId));
+        await bus.PublishAsync(new ProcessKnowledgeFile(fileId, text));
 
         return Ok(new UploadKnowledgeFileResponse(
             FileId: fileId,
             FileName: displayName,
-            StorageKey: key,
+            StorageKey: storageKey ?? string.Empty,
             Status: KnowledgeFileStatus.Pending.ToString()
         ));
     }
@@ -86,7 +118,8 @@ public class KnowledgeController(
                 f.ErrorMessage,
                 f.UploadedAt,
                 f.ProcessedAt,
-                f.Entries.Count
+                f.Entries.Count,
+                f.TextContent
             ))
             .ToListAsync();
 

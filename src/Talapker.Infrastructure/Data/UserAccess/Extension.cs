@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Talapker.Infrastructure.Secrets;
+using Talapker.Infrastructure.Vault;
 
 namespace Talapker.Infrastructure.Data.UserAccess;
 

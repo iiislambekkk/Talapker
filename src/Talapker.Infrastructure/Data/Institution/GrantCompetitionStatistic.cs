@@ -8,19 +8,37 @@ public class GrantCompetitionStatistic
     public GrantCompetitionType CompetitionType { get; set; }
     public Guid EducationGroupId { get; set; }
     public EducationGroup EducationGroup { get; set; } = null!;
-    public List<GrantCompetitionRecord> Records { get; set; } = new List<GrantCompetitionRecord>();
+    public List<GrantCompetitionFrequencyRecord> FrequencyScoreRecords { get; set; } = new List<GrantCompetitionFrequencyRecord>();
+    public List<GrantCompetitionOvpoRecord> OvpoScoreRecords { get; set; } = new List<GrantCompetitionOvpoRecord>();
     public int MinScore { get; set; }
     public int TotalGrants { get; set; }
+    public GrantDegree Degree { get; set; }
 }
 
 public enum GrantCompetitionType
 {
     General,
-    Rural
+    Rural,
+    Profile,
+    Ped
 }
 
-public class GrantCompetitionRecord
+public enum GrantDegree
+{
+    Bachelor,
+    Magistracy,
+    Philosopher
+}
+
+public class GrantCompetitionFrequencyRecord
 {
     public int Score { get; set; }
     public int Frequency  { get; set; }
+}
+
+public class GrantCompetitionOvpoRecord
+{
+    public int Score { get; set; }
+    public int Frequency  { get; set; }
+    public int Ovpo { get; set; }
 }

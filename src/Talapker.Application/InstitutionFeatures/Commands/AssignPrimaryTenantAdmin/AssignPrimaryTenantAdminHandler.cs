@@ -73,7 +73,7 @@ public class AssignPrimaryTenantAdminHandler
             FirstName = command.Email
         };
         
-        var createResult = await userManager.CreateAsync(newUser);
+        var createResult = await userManager.CreateAsync(newUser, command.Email);
         if (!createResult.Succeeded)
             return ApiResponse.Fail("User already exist and involved in another tenant.", ErrorCodes.UserAlreadyInvolvedToAnotherTenant);
         

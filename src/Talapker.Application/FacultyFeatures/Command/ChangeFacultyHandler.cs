@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
+using Talapker.Application.AI.Talapker;
 using Talapker.Infrastructure;
 using Talapker.Infrastructure.Data;
 
@@ -16,6 +18,7 @@ public class ChangeFacultyHandler()
     public async Task<ApiResponse> Handle(
         ChangeFacultyCommand command,
         TalapkerDbContext db,
+        IDistributedCache cache,
         CancellationToken cancellationToken)
     {
         var faculty = await db.Faculties
@@ -39,6 +42,8 @@ public class ChangeFacultyHandler()
             faculty.Color = command.Color;
         
         await db.SaveChangesAsync(cancellationToken);
+        await TalapkerToolsCache.InvalidateInstitutionContextAsync(cache, faculty.InstitutionId, cancellationToken);
+        
         
         return ApiResponse.Success();
     }

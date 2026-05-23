@@ -524,8 +524,15 @@ namespace Talapker.Infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("character varying(1000)");
 
+                    b.Property<string>("TextContent")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<DateTime>("UploadedAt")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid?>("UploadedById")
+                        .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
@@ -742,7 +749,7 @@ namespace Talapker.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("EducationFieldId")
+                    b.Property<Guid?>("EducationFieldId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("NationalCode")
@@ -781,6 +788,12 @@ namespace Talapker.Infrastructure.Migrations
                     b.PrimitiveCollection<int[]>("Languages")
                         .IsRequired()
                         .HasColumnType("integer[]");
+
+                    b.Property<int>("MinimumGrantUntScore")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("MinimumPlatnoeUntScore")
+                        .HasColumnType("integer");
 
                     b.Property<int>("MinimumUntScore")
                         .HasColumnType("integer");
@@ -832,6 +845,9 @@ namespace Talapker.Infrastructure.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<int>("CompetitionType")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Degree")
                         .HasColumnType("integer");
 
                     b.Property<Guid>("EducationGroupId")
@@ -956,6 +972,31 @@ namespace Talapker.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("UntSubjects", (string)null);
+                });
+
+            modelBuilder.Entity("Talapker.Infrastructure.Data.Tg.BotToken", b =>
+                {
+                    b.Property<Guid>("BotId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("bot_id");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<string>("EncryptedToken")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("encrypted_token");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("updated_at");
+
+                    b.HasKey("BotId");
+
+                    b.ToTable("bot_tokens", (string)null);
                 });
 
             modelBuilder.Entity("Talapker.Infrastructure.Data.UserAccess.ApplicationUser", b =>
@@ -1430,8 +1471,7 @@ namespace Talapker.Infrastructure.Migrations
                     b.HasOne("Talapker.Infrastructure.Data.Institution.EducationField", "EducationField")
                         .WithMany("EducationGroups")
                         .HasForeignKey("EducationFieldId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.OwnsOne("Talapker.Infrastructure.LocalizedText", "Name", b1 =>
                         {
@@ -1734,7 +1774,7 @@ namespace Talapker.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsMany("Talapker.Infrastructure.Data.Institution.GrantCompetitionRecord", "Records", b1 =>
+                    b.OwnsMany("Talapker.Infrastructure.Data.Institution.GrantCompetitionFrequencyRecord", "FrequencyScoreRecords", b1 =>
                         {
                             b1.Property<Guid>("GrantCompetitionStatisticId")
                                 .HasColumnType("uuid");
@@ -1753,7 +1793,35 @@ namespace Talapker.Infrastructure.Migrations
 
                             b1.ToTable("GrantCompetitionStatistics");
 
-                            b1.ToJson("Records");
+                            b1.ToJson("FrequencyScoreRecords");
+
+                            b1.WithOwner()
+                                .HasForeignKey("GrantCompetitionStatisticId");
+                        });
+
+                    b.OwnsMany("Talapker.Infrastructure.Data.Institution.GrantCompetitionOvpoRecord", "OvpoScoreRecords", b1 =>
+                        {
+                            b1.Property<Guid>("GrantCompetitionStatisticId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<int>("__synthesizedOrdinal")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer");
+
+                            b1.Property<int>("Frequency")
+                                .HasColumnType("integer");
+
+                            b1.Property<int>("Ovpo")
+                                .HasColumnType("integer");
+
+                            b1.Property<int>("Score")
+                                .HasColumnType("integer");
+
+                            b1.HasKey("GrantCompetitionStatisticId", "__synthesizedOrdinal");
+
+                            b1.ToTable("GrantCompetitionStatistics");
+
+                            b1.ToJson("OvpoScoreRecords");
 
                             b1.WithOwner()
                                 .HasForeignKey("GrantCompetitionStatisticId");
@@ -1761,7 +1829,9 @@ namespace Talapker.Infrastructure.Migrations
 
                     b.Navigation("EducationGroup");
 
-                    b.Navigation("Records");
+                    b.Navigation("FrequencyScoreRecords");
+
+                    b.Navigation("OvpoScoreRecords");
                 });
 
             modelBuilder.Entity("Talapker.Infrastructure.Data.Institution.Institution", b =>

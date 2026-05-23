@@ -4,7 +4,9 @@ using JasperFx.Core;
 using JasperFx.Resources;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging.Abstractions;
 using Npgsql;
+using Talapker.Infrastructure.Secrets;
 using Wolverine;
 using Wolverine.ErrorHandling;
 using Wolverine.FluentValidation;
@@ -35,13 +37,11 @@ public static class Extensions
                 opts.Discovery.IncludeAssembly(assembly);
             }
             
-            var connectionString = configuration.GetConnectionString("PostgresSQL");
-
-            if (connectionString == null)
-            {
-                throw new NullReferenceException();
-            }
-
+            var secretProvider = new SecretProvider(configuration, NullLogger<SecretProvider>.Instance);
+            var connectionString = secretProvider
+                .GetRequiredAsync("ConnectionStrings:PostgresSQL")
+                .GetAwaiter()
+                .GetResult();
             
             opts.PersistMessagesWithPostgresql(connectionString, "wolverine");
     
